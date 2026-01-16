@@ -1,6 +1,6 @@
-# BetterSolano.org
+# BetterCalauan.org
 
-A civic-tech initiative providing transparent access to municipal services, programs, and public funds of LGU Solano, Nueva Vizcaya, Philippines.
+A civic-tech initiative providing transparent access to municipal services, programs, and public funds of LGU Calauan, Laguna, Philippines.
 
 ![Version](https://img.shields.io/badge/version-1.1.7-green)
 ![License](https://img.shields.io/badge/license-MIT%20%7C%20CC%20BY%204.0-blue)
@@ -13,7 +13,7 @@ A civic-tech initiative providing transparent access to municipal services, prog
 
 ## Version Notice
 
-A **React + TypeScript** version of BetterSolano.org is now available for contributors who prefer modern tooling and component-based architecture.
+A **React + TypeScript** version of BetterCalauan.org is now available for contributors who prefer modern tooling and component-based architecture.
 
 | Version | Branch | Status | Documentation |
 |---------|--------|--------|---------------|
@@ -37,13 +37,13 @@ To adapt this project for your LGU, fork the repository and customize the conten
 
 ## About
 
-BetterSolano.org is a volunteer-driven, open-source project that empowers the people of Solano with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
+BetterCalauan.org is a volunteer-driven, open-source project that empowers the people of Calauan with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
 
-**Cost to the People of Solano = ₱0**
+**Cost to the People of Calauan = ₱0**
 
 ## Live Demo
 
-Visit the live website: [https://bettersolano.org](https://bettersolano.org)
+Visit the live website: [https://bettercalauan.org](https://bettercalauan.org)
 
 ## Technology Stack
 
@@ -87,10 +87,10 @@ Visit the live website: [https://bettersolano.org](https://bettersolano.org)
 
 ```bash
 # Clone the repository
-git clone https://github.com/BetterSolano/bettersolano.git
+git clone https://github.com/BetterCalauan/bettercalauan.git
 
 # Navigate to project directory
-cd bettersolano
+cd bettercalauan
 
 # Install dependencies
 npm install
@@ -117,8 +117,8 @@ npm run dev
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/BetterSolano/bettersolano.git
-cd bettersolano
+git clone https://github.com/BetterCalauan/bettercalauan.git
+cd bettercalauan
 ```
 
 2. **Install dependencies**
@@ -176,7 +176,7 @@ npm run build
 ## Project Structure
 
 ```
-bettersolano/
+bettercalauan/
 ├── assets/
 │   ├── css/              # Stylesheets (9 files)
 │   ├── js/               # JavaScript modules (15 files)
@@ -209,7 +209,7 @@ bettersolano/
 
 ## Contributing
 
-We welcome contributions from everyone! Whether you're a developer, designer, data researcher, content writer, translator, or a concerned citizen of Solano, your participation helps shape this project for all.
+We welcome contributions from everyone! Whether you're a developer, designer, data researcher, content writer, translator, or a concerned citizen of Calauan, your participation helps shape this project for all.
 
 ### How to Contribute
 
@@ -264,8 +264,8 @@ All public information is sourced from official government portals:
 
 | Source | URL | Data Type |
 |--------|-----|-----------|
-| LGU Solano Official Website | [solano.gov.ph](https://solano.gov.ph/) | Services, Officials |
-| Sangguniang Bayan ng Solano | [sangguniangbayan.solano.gov.ph](https://sangguniangbayan.solano.gov.ph/) | Ordinances, Resolutions |
+| LGU Calauan Official Website | [calauan.gov.ph](https://calauanlaguna.gov.ph/) | Services, Officials |
+| Sangguniang Bayan ng Calauan | [sangguniangbayan.calauan.gov.ph](https://calauansb.online/) | Ordinances, Resolutions |
 | Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/) | Budget, Financial Reports |
 | Philippine Statistics Authority | [psa.gov.ph](https://psa.gov.ph/) | Demographics, Census |
 | DTI CMCI Portal | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/) | Competitive Index |
@@ -285,25 +285,25 @@ See [LICENSE](LICENSE) for full details.
 
 | Channel | Link |
 |---------|------|
-| Website | [bettersolano.org](https://bettersolano.org) |
-| Email | volunteer@bettersolano.org |
-| Facebook | [@bettersolano.org](https://www.facebook.com/bettersolano.org) |
-| LinkedIn | [BetterSolano](https://www.linkedin.com/company/bettersolano/) |
+| Website | [bettercalauan.org](https://bettercalauan.org) |
+| Email | volunteer@bettercalauan.org |
+| Facebook | [@bettercalauan.org](https://www.facebook.com/bettercalauan.org) |
+| LinkedIn | [BetterCalauan](https://www.linkedin.com/company/bettercalauan/) |
 | Discord | [Join Community](https://discord.com/invite/qeSu7RJkjQ) |
-| GitHub | [BetterSolano/bettersolano](https://github.com/BetterSolano/bettersolano) |
+| GitHub | [BetterCalauan/bettercalauan](https://github.com/BetterCalauan/bettercalauan) |
 
 ## Acknowledgments
 
 - [BetterGov.ph](https://bettergov.ph) for the civic-tech initiative in the Philippines
-- LGU Solano for public data availability and transparency
+- LGU Calauan for public data availability and transparency
 - All volunteers and contributors who dedicate their time
 - Open-source community for the tools and libraries used
-- Citizens of Solano for their feedback and support
+- Citizens of Calauan for their feedback and support
 
 ---
 
-Made for the people of Solano, Nueva Vizcaya
+Made for the people of Calauan, Laguna
 
-## Developer
+## Upstream Developer
 
 [Ramon Logan Jr.](https://ramonloganjr.com/) is a UAE-based full-stack developer and IT professional specializing in web development, design, cloud services, and cybersecurity. He is the developer behind BetterSolano.org and the founder of the small cloud-based solutions initiative, [HelloPinas.com](https://hellopinas.com). Ramon actively contributes to civic-tech efforts like [BetterGov.ph](https://bettergov.ph) and is an individual participant in the [OpenJS Foundation](https://openjsf.org/).
