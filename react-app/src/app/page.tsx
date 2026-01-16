@@ -8,6 +8,7 @@ import History from '@/components/home/History';
 import QuickStats from '@/components/home/QuickStats';
 import WeatherMap from '@/components/home/WeatherMap';
 import MunicipalLeadership from '@/components/home/MunicipalLeadership';
+import ContactInformation from '@/components/home/ContactInformation';
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -159,40 +160,7 @@ export default function HomePage() {
       <MunicipalLeadership t={t} />
 
       {/* Contact Information */}
-      <section className="section">
-        <div className="container">
-          <div className="home-section-header">
-            <h2>{t('section-contact')}</h2>
-            <Link href="/contact" className="home-section-link">{t('btn-view-all')} <i className="bi bi-arrow-right"></i></Link>
-          </div>
-          <div className="home-contact-v2-grid">
-            <a href="tel:0788053581" className="home-contact-v2-card">
-              <div className="home-contact-v2-icon"><i className="bi bi-telephone-fill"></i></div>
-              <div className="home-contact-v2-content">
-                <h3>{t('contact-phone')}</h3>
-                <p className="home-contact-v2-value">(078) 805-3581</p>
-                <span className="home-contact-v2-note">{t('contact-hours')}</span>
-              </div>
-            </a>
-            <a href="mailto:lgusolanonv@gmail.com" className="home-contact-v2-card">
-              <div className="home-contact-v2-icon"><i className="bi bi-envelope-fill"></i></div>
-              <div className="home-contact-v2-content">
-                <h3>{t('contact-email')}</h3>
-                <p className="home-contact-v2-value">lgusolanonv@gmail.com</p>
-                <span className="home-contact-v2-note">{t('contact-response')}</span>
-              </div>
-            </a>
-            <div className="home-contact-v2-card">
-              <div className="home-contact-v2-icon"><i className="bi bi-geo-alt-fill"></i></div>
-              <div className="home-contact-v2-content">
-                <h3>{t('contact-address')}</h3>
-                <p className="home-contact-v2-value">{t('contact-municipal-hall')}</p>
-                <span className="home-contact-v2-note">Solano, Nueva Vizcaya 3708</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactInformation t={t} />
     </>
   );
 }
