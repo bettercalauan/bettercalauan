@@ -53,6 +53,14 @@ export default function ContactInformation({ t }: ContactInformationProps) {
             </div>
             <div className="home-contact-v2-content">
               <h3>{t('contact-address')}</h3>
+              <a 
+                href="https://maps.app.goo.gl/EG33jkbH9MzuquAP7" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="home-contact-v2-map-link"
+              >
+                <i className="bi bi-box-arrow-up-right"></i> {t('Open in Google Maps')}
+              </a>
               <p className="home-contact-v2-value">{t('contact-municipal-hall')}</p>
               <span className="home-contact-v2-note">Brgy. Silangan, Calauan, Laguna 4012</span>
             </div>
