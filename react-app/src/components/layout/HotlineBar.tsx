@@ -1,33 +1,21 @@
+import { hotlines } from '@/data/navigation';
+
 export default function HotlineBar() {
   return (
     <div className="hotline-bar">
       <div className="container">
         <div className="hotline-inner">
           <div className="hotline-items">
-            <a href="tel:09985985643" className="hotline-item">
-              <i className="bi bi-shield-fill" aria-hidden="true"></i>
-              <span>Police: 0998 598 5643</span>
-            </a>
-            <a href="tel:___________" className="hotline-item">
-              <i className="bi bi-heart-fill" aria-hidden="true"></i>
-              <span>MSWDO: ____ ___ ____</span>
-            </a>
-            <a href="tel:09519658289" className="hotline-item">
-              <i className="bi bi-fire" aria-hidden="true"></i>
-              <span>Fire: 0951 965 8289</span>
-            </a>
-            <a href="tel:0906188086" className="hotline-item">
-              <i className="bi bi-building" aria-hidden="true"></i>
-              <span>DILG: 0906 188 086</span>
-            </a>
-            <a href="tel:___________" className="hotline-item">
-              <i className="bi bi-exclamation-triangle-fill" aria-hidden="true"></i>
-              <span>MDRRMO: ____ ___ ____</span>
-            </a>
-            <a href="tel:___________" className="hotline-item">
-              <i className="bi bi-truck" aria-hidden="true"></i>
-              <span>MHO: ____ ___ ____</span>
-            </a>
+            {hotlines.map((hotline, index) => (
+              <a 
+                key={index}
+                href={`tel:${hotline.number.replace(/\s/g, '')}`} 
+                className="hotline-item"
+              >
+                <i className={`bi ${hotline.icon}`} aria-hidden="true"></i>
+                <span>{hotline.name}: {hotline.number}</span>
+              </a>
+            ))}
           </div>
         </div>
       </div>
