@@ -7,6 +7,7 @@ import SearchAutocomplete from '@/components/SearchAutocomplete';
 import History from '@/components/home/History';
 import QuickStats from '@/components/home/QuickStats';
 import WeatherMap from '@/components/home/WeatherMap';
+import MunicipalLeadership from '@/components/home/MunicipalLeadership';
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -155,33 +156,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Municipal Leadership */}
-      <section className="section home-leadership-section">
-        <div className="container">
-          <div className="home-section-header">
-            <h2>{t('section-leadership')}</h2>
-            <Link href="/government" className="home-section-link"><span>{t('btn-view-officials')}</span> <i className="bi bi-arrow-right"></i></Link>
-          </div>
-          <div className="home-leadership-grid">
-            <div className="home-leader-card">
-              <div className="home-leader-badge">{t('title-mayor')}</div>
-              <h3>Hon. Philip A. Dacayo</h3>
-              <div className="home-leader-contacts">
-                <a href="mailto:mayor@solano.gov.ph"><i className="bi bi-envelope"></i> mayor@solano.gov.ph</a>
-                <a href="tel:0783265002"><i className="bi bi-telephone"></i> (078) 326-5002</a>
-              </div>
-            </div>
-            <div className="home-leader-card">
-              <div className="home-leader-badge">{t('title-vice-mayor')}</div>
-              <h3>Hon. Eduardo D. Tiongson</h3>
-              <div className="home-leader-contacts">
-                <a href="mailto:vicemayor@solano.gov.ph"><i className="bi bi-envelope"></i> vicemayor@solano.gov.ph</a>
-                <a href="tel:0783265003"><i className="bi bi-telephone"></i> (078) 326-5003</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <MunicipalLeadership t={t} />
 
       {/* Contact Information */}
       <section className="section">
