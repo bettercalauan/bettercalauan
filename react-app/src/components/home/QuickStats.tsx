@@ -11,10 +11,10 @@ interface StatCard {
 }
 
 const stats: StatCard[] = [
-  { href: '/statistics', icon: 'bi-people-fill', value: '69,296', label: 'Population', source: '2024 Census' },
-  { href: '/government', icon: 'bi-geo-alt-fill', value: '22', label: 'Barangays', source: 'Administrative Units' },
-  { href: '/budget', icon: 'bi-award-fill', value: '1st Class', label: 'Municipality', source: 'Income Classification' },
-  { href: '/statistics', icon: 'bi-rulers', value: '162.70 km²', label: 'Land Area', source: 'Total Municipal Area' },
+  { href: '/statistics', icon: 'bi-people-fill', value: '89,670', label: 'Population', source: '2024 Census' },
+  { href: '/government', icon: 'bi-geo-alt-fill', value: '17', label: 'Barangays', source: 'Administrative Units' },
+  { href: '/budget', icon: 'bi-award-fill', value: '2nd Class', label: 'Municipality', source: 'Income Classification' },
+  { href: '/statistics', icon: 'bi-rulers', value: '65.40 km²', label: 'Land Area', source: 'Total Municipal Area' },
 ];
 
 export default function QuickStats() {
@@ -22,7 +22,7 @@ export default function QuickStats() {
     <section className="home-stats-v2">
       <div className="container">
         <div className="home-stats-v2-header">
-          <h2>Solano at a Glance</h2>
+          <h2>Calauan at a Glance</h2>
           <Link href="/statistics" className="home-section-link">
             View Statistics <i className="bi bi-arrow-right" />
           </Link>

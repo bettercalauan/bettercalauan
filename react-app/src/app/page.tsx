@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import SearchAutocomplete from '@/components/SearchAutocomplete';
 import History from '@/components/home/History';
+import QuickStats from '@/components/home/QuickStats';
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -109,48 +110,7 @@ export default function HomePage() {
       </section>
 
       {/* Quick Stats */}
-      <section className="home-stats-v2">
-        <div className="container">
-          <div className="home-stats-v2-header">
-            <h2>Solano at a Glance</h2>
-            <Link href="/statistics" className="home-section-link">View Statistics <i className="bi bi-arrow-right"></i></Link>
-          </div>
-          <div className="home-stats-v2-grid">
-            <Link href="/statistics" className="home-stat-card">
-              <div className="home-stat-card-icon"><i className="bi bi-people-fill"></i></div>
-              <div className="home-stat-card-content">
-                <span className="home-stat-card-value">69,296</span>
-                <span className="home-stat-card-label">Population</span>
-                <span className="home-stat-card-source">2024 Census</span>
-              </div>
-            </Link>
-            <Link href="/government" className="home-stat-card">
-              <div className="home-stat-card-icon"><i className="bi bi-geo-alt-fill"></i></div>
-              <div className="home-stat-card-content">
-                <span className="home-stat-card-value">22</span>
-                <span className="home-stat-card-label">Barangays</span>
-                <span className="home-stat-card-source">Administrative Units</span>
-              </div>
-            </Link>
-            <Link href="/budget" className="home-stat-card">
-              <div className="home-stat-card-icon"><i className="bi bi-award-fill"></i></div>
-              <div className="home-stat-card-content">
-                <span className="home-stat-card-value">1st Class</span>
-                <span className="home-stat-card-label">Municipality</span>
-                <span className="home-stat-card-source">Income Classification</span>
-              </div>
-            </Link>
-            <Link href="/statistics" className="home-stat-card">
-              <div className="home-stat-card-icon"><i className="bi bi-rulers"></i></div>
-              <div className="home-stat-card-content">
-                <span className="home-stat-card-value">162.70 km²</span>
-                <span className="home-stat-card-label">Land Area</span>
-                <span className="home-stat-card-source">Total Municipal Area</span>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <QuickStats />
 
       {/* Weather & Map */}
       <section className="section weather-map-section">
