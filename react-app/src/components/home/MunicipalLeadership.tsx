@@ -19,25 +19,25 @@ export default function MunicipalLeadership({ t }: MunicipalLeadershipProps) {
         <div className="home-leadership-grid">
           <div className="home-leader-card">
             <div className="home-leader-badge">{t('title-mayor')}</div>
-            <h3>Hon. Philip A. Dacayo</h3>
+            <h3>Hon. Roseller G. Caratihan</h3>
             <div className="home-leader-contacts">
-              <a href="mailto:mayor@solano.gov.ph">
-                <i className="bi bi-envelope"></i> mayor@solano.gov.ph
+              <a href="mailto:mayor@calauanlaguna.gov.ph">
+                <i className="bi bi-envelope"></i> mayor@calauanlaguna.gov.ph
               </a>
-              <a href="tel:0783265002">
-                <i className="bi bi-telephone"></i> (078) 326-5002
+              <a href="tel:(049) 564-6927">
+                <i className="bi bi-telephone"></i> (049) 564-6927
               </a>
             </div>
           </div>
           <div className="home-leader-card">
             <div className="home-leader-badge">{t('title-vice-mayor')}</div>
-            <h3>Hon. Eduardo D. Tiongson</h3>
+            <h3>Hon. Allan Jun V. Sanchez</h3>
             <div className="home-leader-contacts">
-              <a href="mailto:vicemayor@solano.gov.ph">
-                <i className="bi bi-envelope"></i> vicemayor@solano.gov.ph
+              <a href="mailto:vicemayor@calauanlaguna.gov.ph">
+                <i className="bi bi-envelope"></i> vicemayor@calauanlaguna.gov.ph
               </a>
-              <a href="tel:0783265003">
-                <i className="bi bi-telephone"></i> (078) 326-5003
+              <a href="tel:____ ___ ____">
+                <i className="bi bi-telephone"></i> ____ ___ ____
               </a>
             </div>
           </div>
