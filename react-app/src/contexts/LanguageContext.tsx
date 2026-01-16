@@ -15,8 +15,8 @@ const translations: Record<string, Record<string, string>> = {
     "nav-contact": "Contact",
 
     // Hero Section
-    "hero-welcome": "Welcome to BetterSolano.org",
-    "hero-subtitle": "Access government services, information, and resources for the people of Solano, Nueva Vizcaya.",
+    "hero-welcome": "Welcome to BetterCalauan.org",
+    "hero-subtitle": "Access government services, information, and resources for the people of Calauan, Laguna.",
     "hero-find-service": "Find a Service",
 
     // Popular Services
@@ -54,7 +54,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Services Page
     "services-title": "Municipal Services Directory",
-    "services-subtitle": "Browse all services offered by the Municipality of Solano",
+    "services-subtitle": "Browse all services offered by the Municipality of Calauan",
     "life-events-title": "Browse by Life Event",
     "life-events-subtitle": "Find services based on what's happening in your life",
     "life-starting-business": "Starting a Business",
@@ -111,8 +111,8 @@ const translations: Record<string, Record<string, string>> = {
     "nav-contact": "Makipag-ugnayan",
 
     // Hero Section
-    "hero-welcome": "Maligayang Pagdating sa BetterSolano.org",
-    "hero-subtitle": "I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Solano, Nueva Vizcaya.",
+    "hero-welcome": "Maligayang Pagdating sa BetterCalauan.org",
+    "hero-subtitle": "I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Calauan, Laguna.",
     "hero-find-service": "Maghanap ng Serbisyo",
 
     // Popular Services
@@ -150,7 +150,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Services Page
     "services-title": "Direktoryo ng Serbisyong Munisipal",
-    "services-subtitle": "Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Solano",
+    "services-subtitle": "Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Calauan",
     "life-events-title": "Maghanap Ayon sa Pangyayari sa Buhay",
     "life-events-subtitle": "Hanapin ang mga serbisyo batay sa nangyayari sa iyong buhay",
     "life-starting-business": "Magsimula ng Negosyo",
@@ -207,8 +207,8 @@ const translations: Record<string, Record<string, string>> = {
     "nav-contact": "Kontaken",
 
     // Hero Section
-    "hero-welcome": "Naragsak nga Isasangbay iti BetterSolano.org",
-    "hero-subtitle": "Aksesen dagiti serbisyo ti gobierno, impormasyon, ken dagiti resources para kadagiti umili ti Solano, Nueva Vizcaya.",
+    "hero-welcome": "Naragsak nga Isasangbay iti BetterCalauan.org",
+    "hero-subtitle": "Aksesen dagiti serbisyo ti gobierno, impormasyon, ken dagiti resources para kadagiti umili ti Calauan, Laguna.",
     "hero-find-service": "Agsapul ti Serbisyo",
 
     // Popular Services
@@ -246,7 +246,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Services Page
     "services-title": "Direktorio ti Serbisyo ti Munisipalidad",
-    "services-subtitle": "Kitaen amin a serbisyo nga idatag ti Munisipalidad ti Solano",
+    "services-subtitle": "Kitaen amin a serbisyo nga idatag ti Munisipalidad ti Calauan",
     "life-events-title": "Agsapul Segun iti Pasamak iti Biag",
     "life-events-subtitle": "Biroken dagiti serbisyo segun iti mapasamak iti biagmo",
     "life-starting-business": "Mangrugi ti Negosyo",
@@ -309,7 +309,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     // Load saved language from localStorage
-    const savedLang = localStorage.getItem('bettersolano_lang') as Language;
+    const savedLang = localStorage.getItem('bettercalauan_lang') as Language;
     if (savedLang && ['en', 'fil', 'ilo'].includes(savedLang)) {
       setLanguageState(savedLang);
     }
@@ -317,7 +317,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('bettersolano_lang', lang);
+    localStorage.setItem('bettercalauan_lang', lang);
   };
 
   const t = (key: string): string => {

@@ -15,8 +15,8 @@ export const translations: Record<Language, TranslationKeys> = {
     'nav-sitemap': 'Sitemap',
 
     // Hero Section
-    'hero-welcome': 'Welcome to BetterSolano.org',
-    'hero-subtitle': 'Access government services, information, and resources for the people of Solano, Nueva Vizcaya.',
+    'hero-welcome': 'Welcome to BetterCalauan.org',
+    'hero-subtitle': 'Access government services, information, and resources for the people of Calauan, Laguna.',
 
     // Popular Services
     'section-popular': 'Popular Services',
@@ -44,14 +44,14 @@ export const translations: Record<Language, TranslationKeys> = {
     'legislative-resolutions': 'Resolutions',
 
     // Footer
-    'footer-title': 'Better Solano',
-    'footer-desc': 'A service-first information portal for the Municipality of Solano, Nueva Vizcaya.',
+    'footer-title': 'Better Calauan',
+    'footer-desc': 'A service-first information portal for the Municipality of Calauan, Laguna.',
     'footer-quick-links': 'Quick Links',
     'footer-all-services': 'All Services',
     'footer-officials': 'Officials',
     'footer-contact-us': 'Contact Us',
     'footer-faq': 'FAQ',
-    'footer-copyright': 'Better Solano. All rights reserved.',
+    'footer-copyright': 'Better Calauan. All rights reserved.',
     'footer-resources': 'Resources',
     'footer-privacy': 'Privacy Policy',
     'footer-terms': 'Terms of Use',
@@ -72,8 +72,8 @@ export const translations: Record<Language, TranslationKeys> = {
     'nav-sitemap': 'Mapa ng Site',
 
     // Hero Section
-    'hero-welcome': 'Maligayang Pagdating sa BetterSolano.org',
-    'hero-subtitle': 'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Solano, Nueva Vizcaya.',
+    'hero-welcome': 'Maligayang Pagdating sa BetterCalauan.org',
+    'hero-subtitle': 'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Calauan, Laguna.',
 
     // Popular Services
     'section-popular': 'Mga Sikat na Serbisyo',
@@ -101,14 +101,14 @@ export const translations: Record<Language, TranslationKeys> = {
     'legislative-resolutions': 'Mga Resolusyon',
 
     // Footer
-    'footer-title': 'Better Solano',
-    'footer-desc': 'Isang portal ng impormasyon na inuuna ang serbisyo para sa Munisipalidad ng Solano, Nueva Vizcaya.',
+    'footer-title': 'Better Calauan',
+    'footer-desc': 'Isang portal ng impormasyon na inuuna ang serbisyo para sa Munisipalidad ng Calauan, Laguna.',
     'footer-quick-links': 'Mabilis na Links',
     'footer-all-services': 'Lahat ng Serbisyo',
     'footer-officials': 'Mga Opisyal',
     'footer-contact-us': 'Makipag-ugnayan sa Amin',
     'footer-faq': 'Mga Madalas Itanong',
-    'footer-copyright': 'Better Solano. Nakalaan ang lahat ng karapatan.',
+    'footer-copyright': 'Better Calauan. Nakalaan ang lahat ng karapatan.',
     'footer-resources': 'Mga Mapagkukunan',
     'footer-privacy': 'Patakaran sa Privacy',
     'footer-terms': 'Mga Tuntunin ng Paggamit',
@@ -129,8 +129,8 @@ export const translations: Record<Language, TranslationKeys> = {
     'nav-sitemap': 'Mapa ti Site',
 
     // Hero Section
-    'hero-welcome': 'Naragsak nga Isasangbay iti BetterSolano.org',
-    'hero-subtitle': 'Aksesen dagiti serbisio ti gobierno, impormasion, ken dagiti resources para kadagiti umili ti Solano, Nueva Vizcaya.',
+    'hero-welcome': 'Naragsak nga Isasangbay iti BetterCalauan.org',
+    'hero-subtitle': 'Aksesen dagiti serbisio ti gobierno, impormasion, ken dagiti resources para kadagiti umili ti Calauan, Laguna.',
 
     // Popular Services
     'section-popular': 'Dagiti Popular a Serbisio',
@@ -158,14 +158,14 @@ export const translations: Record<Language, TranslationKeys> = {
     'legislative-resolutions': 'Dagiti Resolusion',
 
     // Footer
-    'footer-title': 'Better Solano',
-    'footer-desc': 'Maysa a portal ti impormasion a mangipangpangulo ti serbisio para iti Munisipalidad ti Solano, Nueva Vizcaya.',
+    'footer-title': 'Better Calauan',
+    'footer-desc': 'Maysa a portal ti impormasion a mangipangpangulo ti serbisio para iti Munisipalidad ti Calauan, Laguna.',
     'footer-quick-links': 'Dagiti Napartak a Links',
     'footer-all-services': 'Amin a Serbisio',
     'footer-officials': 'Dagiti Opisial',
     'footer-contact-us': 'Kontaken Kami',
     'footer-faq': 'Masansan a Maisaludsod',
-    'footer-copyright': 'Better Solano. Amin a karbengan ket naireserbaan.',
+    'footer-copyright': 'Better Calauan. Amin a karbengan ket naireserbaan.',
     'footer-resources': 'Dagiti Resources',
     'footer-privacy': 'Patakaran ti Privacy',
     'footer-terms': 'Dagiti Kondision ti Panagusar',
