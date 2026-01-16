@@ -21,7 +21,7 @@ const Popup = dynamic(
   { ssr: false }
 );
 
-const SOLANO_COORDS: [number, number] = [16.5167, 121.1833];
+const CALAUAN_COORDS: [number, number] = [14.14649, 121.31451];
 
 export default function WeatherMap() {
   const [mounted, setMounted] = useState(false);
@@ -34,7 +34,7 @@ export default function WeatherMap() {
     <section className="section weather-map-section">
       <div className="container">
         <div className="home-stats-v2-header">
-          <h2>Weather and Map of Solano</h2>
+          <h2>Weather and Map of Calauan</h2>
         </div>
         <div className="weather-map-grid">
           <div className="weather-column">
@@ -47,7 +47,7 @@ export default function WeatherMap() {
                 </div>
                 <div className="weather-details">
                   <p className="weather-desc">Partly Cloudy</p>
-                  <p className="weather-location">Solano, Nueva Vizcaya</p>
+                  <p className="weather-location">Calauan, Laguna</p>
                 </div>
               </div>
             </div>
@@ -55,11 +55,11 @@ export default function WeatherMap() {
 
           <div className="map-column">
             <div className="map-card">
-              <div id="map-container" role="application" aria-label="Interactive map of Solano, Nueva Vizcaya">
+              <div id="map-container" role="application" aria-label="Interactive map of Calauan, Laguna">
                 {mounted && (
                   <MapContainer
-                    center={SOLANO_COORDS}
-                    zoom={13}
+                    center={CALAUAN_COORDS}
+                    zoom={15}
                     style={{ height: '300px', width: '100%' }}
                     scrollWheelZoom={false}
                   >
@@ -67,14 +67,14 @@ export default function WeatherMap() {
                       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    <Marker position={SOLANO_COORDS}>
-                      <Popup>Solano Municipal Hall</Popup>
+                    <Marker position={CALAUAN_COORDS}>
+                      <Popup>Calauan Municipal Hall</Popup>
                     </Marker>
                   </MapContainer>
                 )}
               </div>
               <p className="map-attribution">
-                <i className="bi bi-geo-alt" aria-hidden="true" /> Solano Municipal Hall, Nueva Vizcaya 3708
+                <i className="bi bi-geo-alt" aria-hidden="true" /> Calauan Municipal Hall, Laguna 4012
               </p>
             </div>
           </div>
