@@ -35,10 +35,10 @@ export const mainNavigation: NavItem[] = [
 ];
 
 export const hotlines: Hotline[] = [
-  { name: 'Police', number: '0927 400 8033', icon: 'bi-shield-fill' },
-  { name: 'MSWDO', number: '0916 284 0885', icon: 'bi-heart-fill' },
-  { name: 'Fire', number: '0936 062 0305', icon: 'bi-fire' },
-  { name: 'DILG', number: '0906 188 086', icon: 'bi-building' },
-  { name: 'MDRRMO', number: '0926 383 3744', icon: 'bi-exclamation-triangle-fill' },
-  { name: 'R2TMC', number: '0906 819 5569', icon: 'bi-truck' },
+  { name: 'Fire', number: '0951 965 8289', icon: 'bi-fire' },
+  { name: 'Police', number: '0998 598 5643', icon: 'bi-shield-fill' },
+  { name: 'MDRRMO', number: '0910 323 1784', icon: 'bi-exclamation-triangle-fill' },
+  { name: 'RHU', number: '543 6638', icon: 'bi-truck' },
+  { name: 'DILG', number: '568-0012 loc 108', icon: 'bi-building' },
+  { name: 'MSWDO', number: '____ ___ ____', icon: 'bi-heart-fill' },
 ];
