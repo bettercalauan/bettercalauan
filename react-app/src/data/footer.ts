@@ -37,7 +37,7 @@ export const footerData = {
     costValue: "₱0",
     actions: [
       { href: "mailto:volunteer@bettercalauan.org", icon: "bi-envelope-heart", label: "Volunteer with us", external: false },
-      { href: "https://github.com/BetterCalauan/bettercalauan", icon: "bi-github", label: "Contribute code with us", external: true },
+      { href: "https://github.com/bettercalauan/bettercalauan/tree/react-typescript", icon: "bi-github", label: "Contribute code with us", external: true },
     ],
   },
   copyright: {
