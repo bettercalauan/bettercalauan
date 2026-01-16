@@ -1,35 +1,4 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic';
-
-// Dynamically import Leaflet to avoid SSR issues
-const MapContainer = dynamic(
-  () => import('react-leaflet').then((mod) => mod.MapContainer),
-  { ssr: false }
-);
-const TileLayer = dynamic(
-  () => import('react-leaflet').then((mod) => mod.TileLayer),
-  { ssr: false }
-);
-const Marker = dynamic(
-  () => import('react-leaflet').then((mod) => mod.Marker),
-  { ssr: false }
-);
-const Popup = dynamic(
-  () => import('react-leaflet').then((mod) => mod.Popup),
-  { ssr: false }
-);
-
-const CALAUAN_COORDS: [number, number] = [14.14649, 121.31451];
-
 export default function WeatherMap() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <section className="section weather-map-section">
       <div className="container">
@@ -39,42 +8,53 @@ export default function WeatherMap() {
         <div className="weather-map-grid">
           <div className="weather-column">
             <div id="weather-container" aria-live="polite">
-              {/* Weather widget - implement with actual API */}
-              <div className="weather-card">
-                <div className="weather-main">
-                  <i className="bi bi-cloud-sun weather-icon" />
-                  <span className="weather-temp">28°C</span>
+              <div className="weather-widget" role="region" aria-label="Current weather in Calauan">
+                <div className="weather-current">
+                  <div className="weather-current-icon">
+                    <i className="bi bi-cloud-sun-fill"></i>
+                  </div>
+                  <div className="weather-current-info">
+                    <div className="weather-current-temp">__°C</div>
+                    <div className="weather-current-condition">______ _____</div>
+                    <div className="weather-current-location">
+                      <i className="bi bi-geo-alt"></i> Calauan, Laguna
+                    </div>
+                  </div>
                 </div>
-                <div className="weather-details">
-                  <p className="weather-desc">Partly Cloudy</p>
-                  <p className="weather-location">Calauan, Laguna</p>
+                <div className="weather-stats">
+                  <div className="weather-stat">
+                    <i className="bi bi-droplet"></i>
+                    <span>__%</span>
+                  </div>
+                  <div className="weather-stat">
+                    <i className="bi bi-wind"></i>
+                    <span>__ km/h</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
           <div className="map-column">
             <div className="map-card">
-              <div id="map-container" role="application" aria-label="Interactive map of Calauan, Laguna">
-                {mounted && (
-                  <MapContainer
-                    center={CALAUAN_COORDS}
-                    zoom={15}
-                    style={{ height: '300px', width: '100%' }}
-                    scrollWheelZoom={false}
-                  >
-                    <TileLayer
-                      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-                    <Marker position={CALAUAN_COORDS}>
-                      <Popup>Calauan Municipal Hall</Popup>
-                    </Marker>
-                  </MapContainer>
-                )}
+              <div
+                id="map-container"
+                role="application"
+                aria-label="Interactive map of Calauan, Laguna"
+                className="map-container-iframe"
+              >
+                <iframe
+                  width="100%"
+                  height="300"
+                  frameBorder="0"
+                  scrolling="no"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=121.28871917724611%2C14.129715337310271%2C121.35086059570312%2C14.167458790750569"
+                  className="map-iframe"
+                  title="Map of Calauan"
+                  loading="lazy"
+                />
               </div>
               <p className="map-attribution">
-                <i className="bi bi-geo-alt" aria-hidden="true" /> Calauan Municipal Hall, Laguna 4012
+                <i className="bi bi-geo-alt" aria-hidden="true"></i> Calauan Municipal Hall, Laguna 4012
               </p>
             </div>
           </div>
