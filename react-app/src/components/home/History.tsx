@@ -13,32 +13,44 @@ interface HistoryCard {
 
 const timeline: TimelineItem[] = [
   { 
-    year: '1760', 
-    content: <>The original name of the town was <strong>Bintauan</strong>, then a Gaddang settlement that is now a barangay of Villaverde.</> 
+    year: '1572', 
+    content: <>Captain <strong>Juan de Salcedo</strong> passed through Laguna and Tayabas on his way to Bicol, taking notice of Calauan&apos;s fertile soil.</> 
   },
   { 
-    year: '1767', 
-    content: <>The town was formally founded by <strong>Father Alejandro Vidal</strong>, a Dominican priest who led a Spanish mission.</> 
+    year: '1582', 
+    content: <>Spanish authorities established a town government two kilometers from the present Poblacion, in what is now <strong>Barrio Mabacan</strong>. The town was named <em>Calauan</em> from the Tagalog word <em>kalawang</em> (rust).</> 
   },
   { 
-    year: '1768', 
-    content: <>Named <strong>Lungabang</strong>, from the Gaddang word for cave, <em>lungab</em>. Later changed to Lumabang by the Spaniards.</> 
+    year: '1703', 
+    content: <>Following an <strong>epidemic in 1694</strong>, the town was relocated from its original site in <strong>Barrio Mabacan</strong> to its present location at the fork of three roads leading to San Pablo, Santa Cruz, and Manila.</> 
   },
   { 
-    year: '1851', 
-    content: <>Governor General Antonio Urbiztondo declared Lumabang a barrio of Bayombong for insufficient inhabitants and revenue.</> 
+    year: '1800s', 
+    content: <>When <strong>Bay</strong> was designated as the provincial capital of Laguna, Calauan became a sitio of Bay and served as a passage for merchants traveling to Southern Luzon.</> 
   },
   { 
-    year: '1853', 
-    content: <>The first <strong>Ilocanos arrived</strong>, brought by Don Diego Lumicao, a former gobernadorcillo.</> 
+    year: '1812', 
+    content: <>An opulent Spaniard named <strong>Iñigo</strong> bought large tracts of land in Calauan, which became known as <strong>Hacienda Calauan</strong>.</> 
   },
   { 
-    year: '1889', 
-    content: <>Renamed <strong>Solano</strong> in honor of Governor General <strong>Ramon Solano y Llanderal</strong>. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.</> 
+    year: '1897', 
+    content: <><strong>Basilio Geiroza</strong> (Cabesang Basilio) and his men routed a battalion of <em>guardia civiles</em> in a five-hour battle in Barrio Cupangan (now Lamot I) during the Philippine Revolution.</> 
   },
   { 
-    year: '1957', 
-    content: <>The barrios of Ibung and Bintawan were separated to form the town of Ibung, later renamed as <strong>Villaverde</strong>. Solano&apos;s land area was reduced to <strong>13,980 hectares</strong>.</> 
+    year: '1902', 
+    content: <>With the establishment of civilian authority, the Americans assigned <strong>Mariano Marfori</strong> as the first <em>presidente</em> of Calauan.</> 
+  },
+  { 
+    year: '1926', 
+    content: <><strong>Hacienda Calauan</strong> financed the construction of a hospital, with Mariano O. Marfori Jr. serving as hospital director.</> 
+  },
+  { 
+    year: '1939', 
+    content: <>By request of President <strong>Manuel L. Quezon</strong>, Doña Margarita Roxas vda. de Soriano subdivided Hacienda Calauan and sold it to the tenants.</> 
+  },
+  { 
+  year: '1945', 
+  content: <>Filipino guerrillas, including the <strong>HUKBALAHAP</strong>, <strong>Hunters ROTC</strong>, and <strong>Marking Guerrillas</strong>, liberated Calauan from Japanese occupation as part of the Laguna liberation campaigns during World War II.</> 
   },
 ];
 
