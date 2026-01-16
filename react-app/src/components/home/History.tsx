@@ -30,7 +30,7 @@ const timeline: TimelineItem[] = [
   },
   { 
     year: '1812', 
-    content: <>An opulent Spaniard named <strong>Iñigo</strong> bought large tracts of land in Calauan, which became known as <strong>Hacienda Calauan</strong>.</> 
+    content: <>A wealthy Spaniard named <strong>Iñigo</strong> bought large tracts of land in Calauan, which became known as <strong>Hacienda Calauan</strong>. The estate would later be inherited by his descendants, the Roxas family.</> 
   },
   { 
     year: '1897', 
@@ -56,14 +56,34 @@ const timeline: TimelineItem[] = [
 
 const historyCards: HistoryCard[] = [
   {
-    icon: 'bi-geo-alt-fill',
-    title: 'Once the Largest',
-    description: 'Solano was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.',
+    icon: 'bi-droplet-fill',
+    title: 'Origin of the Name',
+    description: 'Calauan derives from "kalawang" (rust). Legend says rusty-colored water seeped from holes dug for the church foundation, or from Macalawang Spring where rust-colored lumps surfaced.',
   },
   {
-    icon: 'bi-grid-3x3',
-    title: 'Urban Planning',
-    description: 'The 1889 redevelopment created a grid of 100 square blocks, each with an aggregate area of one hectare, with streets running north-south and east-west.',
+    icon: 'bi-person-fill',
+    title: 'Calauaneños',
+    description: 'Residents of Calauan are called Calauaneños. The town is home to industrious farmers who cultivate the fertile lands at the foothills of Mount Kalisungan.',
+  },
+  {
+    icon: 'bi-star-fill',
+    title: 'Patron Saints',
+    description: 'San Isidro Labrador (St. Isidore the Laborer), patron of farmers, was installed as patron saint in 1787 along with San Roque, reflecting the town\'s rich agricultural heritage.',
+  },
+  {
+    icon: 'bi-people-fill',
+    title: 'Land for the Farmers',
+    description: 'In 1939, at the request of President Manuel L. Quezon, Hacienda Calauan was subdivided and sold to tenant farmers, ending decades of vast landholdings under the Roxas heirs.',
+  },
+  {
+    icon: 'bi-signpost-split-fill',
+    title: 'Crossroads of the South',
+    description: 'The town sits at a strategic fork of three roads-leading southwest to San Pablo, southeast to Santa Cruz, and north to Manila-making it a key passage for merchants traveling to Southern Luzon.',
+  },
+  {
+    icon: 'bi-tropical-storm',
+    title: 'Sweet Laguna Pineapple',
+    description: 'Calauan is known as the "Home of the Sweet Laguna Pineapple." The Pinya Festival is celebrated every May 15, coinciding with the feast of San Isidro Labrador.',
   },
 ];
 
@@ -72,7 +92,7 @@ export default function History() {
     <section className="section history-section">
       <div className="container">
         <div className="home-stats-v2-header">
-          <h2><i className="bi bi-book" aria-hidden="true" /> Brief History of Solano</h2>
+          <h2><i className="bi bi-book" aria-hidden="true" /> Brief History of Calauan</h2>
         </div>
         <div className="history-content">
           <div className="history-timeline">
