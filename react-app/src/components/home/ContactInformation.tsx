@@ -17,26 +17,36 @@ export default function ContactInformation({ t }: ContactInformationProps) {
           </Link>
         </div>
         <div className="home-contact-v2-grid">
-          <a href="tel:(049) 564-6927" className="home-contact-v2-card">
+          <div className="home-contact-v2-card">
             <div className="home-contact-v2-icon">
               <i className="bi bi-telephone-fill"></i>
             </div>
             <div className="home-contact-v2-content">
               <h3>{t('contact-phone')}</h3>
-              <p className="home-contact-v2-value">(049) 564-6927</p>
+              <p className="home-contact-v2-value">
+                <a href="tel:(049) 564-6927">(049) 564-6927</a>
+              </p>
+              <p className="home-contact-v2-value">
+                <a href="tel:(049) 568-0012">(049) 568-0012</a>
+              </p>
               <span className="home-contact-v2-note">{t('contact-hours')}</span>
             </div>
-          </a>
-          <a href="mailto:calauanadm@gmail.com" className="home-contact-v2-card">
+          </div>
+          <div className="home-contact-v2-card">
             <div className="home-contact-v2-icon">
               <i className="bi bi-envelope-fill"></i>
             </div>
             <div className="home-contact-v2-content">
               <h3>{t('contact-email')}</h3>
-              <p className="home-contact-v2-value">calauanadm@gmail.com</p>
+              <p className="home-contact-v2-value">
+                <a href="mailto:calauanadm@gmail.com">calauanadm@gmail.com</a>
+              </p>
+              <p className="home-contact-v2-value">
+                <a href="mailto:mayoroselcaratihan@gmail.com">mayoroselcaratihan@gmail.com</a>
+              </p>
               <span className="home-contact-v2-note">{t('contact-response')}</span>
             </div>
-          </a>
+          </div>
           <div className="home-contact-v2-card">
             <div className="home-contact-v2-icon">
               <i className="bi bi-geo-alt-fill"></i>
