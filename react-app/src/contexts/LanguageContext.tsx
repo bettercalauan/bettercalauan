@@ -136,7 +136,7 @@ const translations: Record<string, Record<string, string>> = {
     "municipal-offices-desc": "Municipal offices providing services to citizens",
     "barangay-units": "Barangay Units",
     "barangay-units-title": "Barangays of Calauan",
-    "barangay-units-desc": "16 Barangays serving our community",
+    "barangay-units-desc": "17 Barangays serving our community",
 
     // Statistics Page
     "stats-title": "Statistics",
@@ -333,7 +333,7 @@ const translations: Record<string, Record<string, string>> = {
     "municipal-offices-desc": "Mga opisina ng munisipyo na nagbibigay ng serbisyo sa mga mamamayan",
     "barangay-units": "Mga Yunit ng Barangay",
     "barangay-units-title": "Mga Barangay ng Calauan",
-    "barangay-units-desc": "16 Barangay na nagsisilbi sa ating komunidad",
+    "barangay-units-desc": "17 Barangay na nagsisilbi sa ating komunidad",
 
     // Statistics Page
     "stats-title": "Estadistika",
@@ -530,7 +530,7 @@ const translations: Record<string, Record<string, string>> = {
     "municipal-offices-desc": "Dagiti opisina ti munisipalidad a mangted kadagiti serbisyo kadagiti umili",
     "barangay-units": "Dagiti Unidad ti Barangay",
     "barangay-units-title": "Dagiti Barangay ti Calauan",
-    "barangay-units-desc": "16 a Barangay a nagserbi iti komunidad tayo",
+    "barangay-units-desc": "17 a Barangay a nagserbi iti komunidad tayo",
 
     // Statistics Page
     "stats-title": "Estadistika",
