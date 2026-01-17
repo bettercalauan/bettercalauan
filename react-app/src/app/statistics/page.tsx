@@ -1,8 +1,7 @@
-'use client'
-
-'use client'
+'use client';
 
 import { useEffect } from 'react'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { PopulationTrendsChart, PopulationDistributionChart, BarangayPopulationChart, CMCIRankingsChart, EconomicSectorsChart, KeyIndicatorsTrendChart } from '@/components/charts/Charts'
 import { keyMetrics, populationStats, povertyStats, cmciOverview, economicSectors, barangaysPopulation } from '@/data/statistics'
 import MetricsCard from '@/components/statistics/MetricsCard'
@@ -16,6 +15,7 @@ import CMCIOverviewGrid from '@/components/statistics/CMCIOverviewGrid'
 import EconomicSectorBars from '@/components/statistics/EconomicSectorBars'
 
 export default function StatisticsPage() {
+  const { t } = useLanguage()
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -38,18 +38,18 @@ export default function StatisticsPage() {
 
       <div className="container">
         <nav className="breadcrumbs" aria-label="Breadcrumb">
-          <a href="/">Home</a>
+          <a href="/">{t('nav-home')}</a>
           <span>/</span>
-          <span aria-current="page">Statistics</span>
+          <span aria-current="page">{t('nav-statistics')}</span>
         </nav>
       </div>
 
       <section className="stats-hero">
         <div className="container">
           <div className="stats-hero-content">
-            <span className="stats-hero-badge"><i className="bi bi-bar-chart-fill"></i> Municipal Data</span>
-            <h1>Municipal Statistics</h1>
-            <p>Data and statistics about Solano, Nueva Vizcaya</p>
+            <span className="stats-hero-badge"><i className="bi bi-bar-chart-fill"></i> {t('stats-badge')}</span>
+            <h1>{t('stats-title')}</h1>
+            <p>{t('stats-description')}</p>
           </div>
         </div>
       </section>
@@ -73,9 +73,9 @@ export default function StatisticsPage() {
       <section className="stats-section stats-finance animate-on-scroll">
         <div className="container">
           <div className="section-header-minimal">
-            <span className="section-tag"><i className="bi bi-cash-stack"></i> Finance</span>
-            <h2>Municipal Income</h2>
-            <p>Financial standing for fiscal year 2023</p>
+            <span className="section-tag"><i className="bi bi-cash-stack"></i> {t('finance-section')}</span>
+            <h2>{t('finance-title')}</h2>
+            <p>{t('finance-desc')}</p>
           </div>
 
           <div className="finance-grid">
@@ -83,7 +83,7 @@ export default function StatisticsPage() {
           </div>
 
           <div className="income-breakdown animate-on-scroll">
-            <h4>Income Composition</h4>
+            <h4>{t('income-composition')}</h4>
             <div className="breakdown-bar">
               <div className="breakdown-segment breakdown-ira" style={{ width: povertyStats.iraDependency }}>
                 <span className="breakdown-label">IRA {povertyStats.iraDependency}</span>
@@ -93,8 +93,8 @@ export default function StatisticsPage() {
               </div>
             </div>
             <div className="breakdown-legend">
-              <div className="legend-item"><span className="legend-dot legend-ira"></span>Internal Revenue Allotment</div>
-              <div className="legend-item"><span className="legend-dot legend-local"></span>Local Sources</div>
+              <div className="legend-item"><span className="legend-dot legend-ira"></span>{t('income-ira')}</div>
+              <div className="legend-item"><span className="legend-dot legend-local"></span>{t('income-local')}</div>
             </div>
           </div>
 
@@ -105,9 +105,9 @@ export default function StatisticsPage() {
       <section className="stats-section stats-trends animate-on-scroll">
         <div className="container">
           <div className="section-header-minimal">
-            <span className="section-tag"><i className="bi bi-graph-up"></i> Growth</span>
-            <h2>Population Trends</h2>
-            <p>Historical growth from 1990 to 2024</p>
+            <span className="section-tag"><i className="bi bi-graph-up"></i> {t('growth-section')}</span>
+            <h2>{t('growth-title')}</h2>
+            <p>{t('growth-desc')}</p>
           </div>
 
           <PopulationTrendsSummary />
@@ -123,9 +123,9 @@ export default function StatisticsPage() {
       <section className="stats-section stats-distribution animate-on-scroll">
         <div className="container">
           <div className="section-header-minimal">
-            <span className="section-tag"><i className="bi bi-pie-chart-fill"></i> Distribution</span>
-            <h2>Population by Barangay</h2>
-            <p>2024 Census of Population</p>
+            <span className="section-tag"><i className="bi bi-pie-chart-fill"></i> {t('distribution-section')}</span>
+            <h2>{t('distribution-title')}</h2>
+            <p>{t('distribution-desc')}</p>
           </div>
 
           <div className="distribution-layout">
@@ -136,7 +136,7 @@ export default function StatisticsPage() {
           </div>
 
           <details className="more-barangays">
-            <summary>View all 22 barangays</summary>
+            <summary>{t('view-all-barangays')}</summary>
             <AllBarangaysList />
           </details>
 
@@ -147,15 +147,15 @@ export default function StatisticsPage() {
       <section className="stats-section stats-economy animate-on-scroll">
         <div className="container">
           <div className="section-header-minimal">
-            <span className="section-tag"><i className="bi bi-briefcase-fill"></i> Economy</span>
-            <h2>Economic Indicators</h2>
-            <p>Key economic data and business statistics</p>
+            <span className="section-tag"><i className="bi bi-briefcase-fill"></i> {t('economy-section')}</span>
+            <h2>{t('economy-title')}</h2>
+            <p>{t('economy-desc')}</p>
           </div>
 
           <EconomyCards />
 
           <div className="sectors-chart animate-on-scroll">
-            <h4>Economic Sectors</h4>
+            <h4>{t('economic-sectors')}</h4>
             <EconomicSectorBars />
           </div>
 
@@ -166,9 +166,9 @@ export default function StatisticsPage() {
       <section className="stats-section stats-poverty animate-on-scroll">
         <div className="container">
           <div className="section-header-minimal">
-            <span className="section-tag"><i className="bi bi-graph-down-arrow"></i> Poverty</span>
-            <h2>Poverty Statistics</h2>
-            <p>2021 City and Municipal Level Poverty Estimates</p>
+            <span className="section-tag"><i className="bi bi-graph-down-arrow"></i> {t('poverty-section')}</span>
+            <h2>{t('poverty-title')}</h2>
+            <p>{t('poverty-desc')}</p>
           </div>
 
           <PovertyComparison />
@@ -180,15 +180,15 @@ export default function StatisticsPage() {
       <section className="stats-section stats-competitive animate-on-scroll" id="competitive-index">
         <div className="container">
           <div className="section-header-minimal">
-            <span className="section-tag"><i className="bi bi-trophy-fill"></i> Competitiveness</span>
-            <h2>Solano Competitive Index</h2>
-            <p>Cities and Municipalities Competitiveness Index (CMCI) Performance 2016-2024</p>
+            <span className="section-tag"><i className="bi bi-trophy-fill"></i> {t('competitive-section')}</span>
+            <h2>{t('competitive-title')}</h2>
+            <p>{t('competitive-desc')}</p>
           </div>
 
           <CMCIOverviewGrid />
 
           <div className="cmci-chart-container">
-            <h4><i className="bi bi-bar-chart-line"></i> Key Indicators Trend (2016-2024)</h4>
+            <h4><i className="bi bi-bar-chart-line"></i> {t('key-indicators-trend')}</h4>
             <div className="chart-wrapper">
               <KeyIndicatorsTrendChart />
             </div>
@@ -201,9 +201,9 @@ export default function StatisticsPage() {
       <section className="stats-section stats-barchart animate-on-scroll">
         <div className="container">
           <div className="section-header-minimal">
-            <span className="section-tag"><i className="bi bi-bar-chart-fill"></i> Visual</span>
-            <h2>Population Bar Chart</h2>
-            <p>Comparative view of all 22 barangays</p>
+            <span className="section-tag"><i className="bi bi-bar-chart-fill"></i> {t('visual-section')}</span>
+            <h2>{t('visual-title')}</h2>
+            <p>{t('visual-desc')}</p>
           </div>
 
           <div className="chart-wrapper chart-wrapper-bar">

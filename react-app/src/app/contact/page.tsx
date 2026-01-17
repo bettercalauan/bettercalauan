@@ -1,16 +1,18 @@
 'use client';
 
 import Link from 'next/link';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function ContactPage() {
+  const { t } = useLanguage()
   return (
     <>
       {/* Breadcrumbs */}
       <div className="container">
         <nav className="breadcrumbs" aria-label="Breadcrumb">
-          <Link href="/">Home</Link>
+          <Link href="/">{t('nav-home')}</Link>
           <span>/</span>
-          <span aria-current="page">Contact</span>
+          <span aria-current="page">{t('nav-contact')}</span>
         </nav>
       </div>
 
@@ -18,9 +20,9 @@ export default function ContactPage() {
       <section className="page-header">
         <div className="container">
           <div className="page-header-content">
-            <span className="page-header-badge"><i className="bi bi-envelope-fill"></i> Contact</span>
-            <h1>Contact Us</h1>
-            <p className="page-header-desc">We&apos;re here to help. Reach out to us through any of these channels.</p>
+            <span className="page-header-badge"><i className="bi bi-envelope-fill"></i> {t('nav-contact')}</span>
+            <h1>{t('contact-title')}</h1>
+            <p className="page-header-desc">{t('contact-description')}</p>
           </div>
         </div>
       </section>
@@ -28,29 +30,29 @@ export default function ContactPage() {
       {/* Contact Information */}
       <section className="section">
         <div className="container">
-          <div className="grid grid-3" style={{ gap: 'var(--spacing-md)' }}>
+            <div className="grid grid-3" style={{ gap: 'var(--spacing-md)' }}>
             <a href="mailto:lgusolanonv@gmail.com" className="contact-card">
               <div className="contact-card-icon"><i className="bi bi-envelope-fill"></i></div>
               <div className="contact-card-content">
-                <h3>Email</h3>
+                <h3>{t('contact-label-email')}</h3>
                 <p className="contact-card-value">lgusolanonv@gmail.com</p>
-                <span className="contact-card-note">We&apos;ll respond within 24 hours</span>
+                <span className="contact-card-note">{t('contact-response-hours')}</span>
               </div>
             </a>
             <a href="tel:09175951931" className="contact-card">
               <div className="contact-card-icon"><i className="bi bi-phone-fill"></i></div>
               <div className="contact-card-content">
-                <h3>Mobile</h3>
+                <h3>{t('contact-label-mobile')}</h3>
                 <p className="contact-card-value">0917-595-1931</p>
-                <span className="contact-card-note">Mon-Fri: 8:00 AM - 5:00 PM</span>
+                <span className="contact-card-note">{t('contact-hours-monfri')}</span>
               </div>
             </a>
             <a href="tel:0788053581" className="contact-card">
               <div className="contact-card-icon"><i className="bi bi-telephone-fill"></i></div>
               <div className="contact-card-content">
-                <h3>Phone</h3>
+                <h3>{t('contact-label-phone')}</h3>
                 <p className="contact-card-value">(078) 805-3581</p>
-                <span className="contact-card-note">Mon-Fri: 8:00 AM - 5:00 PM</span>
+                <span className="contact-card-note">{t('contact-hours-monfri')}</span>
               </div>
             </a>
           </div>
@@ -63,7 +65,7 @@ export default function ContactPage() {
           <div className="office-hours-inner">
             <div className="office-hours-header">
               <i className="bi bi-clock-fill"></i>
-              <h2>Office Hours</h2>
+              <h2>{t('contact-hours-title')}</h2>
             </div>
             <div className="office-hours-schedule">
               <div className="office-hours-item office-hours-item--open">
@@ -72,18 +74,18 @@ export default function ContactPage() {
                 <span className="office-hours-status"><i className="bi bi-check-circle-fill"></i> Open</span>
               </div>
               <div className="office-hours-item office-hours-item--break">
-                <span className="office-hours-day">Lunch Break</span>
-                <span className="office-hours-time">12:00 PM - 1:00 PM</span>
+                <span className="office-hours-day">{t('contact-hours-lunch')}</span>
+                <span className="office-hours-time">{t('contact-hours-lunch-time')}</span>
                 <span className="office-hours-status"><i className="bi bi-pause-circle-fill"></i> Break</span>
               </div>
               <div className="office-hours-item office-hours-item--closed">
-                <span className="office-hours-day">Saturday &amp; Sunday</span>
-                <span className="office-hours-time">Closed</span>
+                <span className="office-hours-day">{t('contact-hours-weekend')}</span>
+                <span className="office-hours-time">{t('contact-hours-closed')}</span>
                 <span className="office-hours-status"><i className="bi bi-x-circle-fill"></i> Closed</span>
               </div>
               <div className="office-hours-item office-hours-item--closed">
-                <span className="office-hours-day">National &amp; Local Holidays</span>
-                <span className="office-hours-time">Closed</span>
+                <span className="office-hours-day">{t('contact-hours-holidays')}</span>
+                <span className="office-hours-time">{t('contact-hours-closed')}</span>
                 <span className="office-hours-status"><i className="bi bi-x-circle-fill"></i> Closed</span>
               </div>
             </div>
@@ -96,10 +98,10 @@ export default function ContactPage() {
         <div className="container">
           <div className="hotlines-header">
             <div className="hotlines-title">
-              <span className="hotlines-badge"><i className="bi bi-exclamation-triangle-fill"></i> Emergency</span>
-              <h2>Emergency Hotlines</h2>
+              <span className="hotlines-badge"><i className="bi bi-exclamation-triangle-fill"></i> {t('contact-section-hotlines')}</span>
+              <h2>{t('contact-section-hotlines-title')}</h2>
             </div>
-            <p>For emergencies and inquiries, contact these numbers anytime.</p>
+            <p>{t('contact-section-hotlines-desc')}</p>
           </div>
           <div className="hotlines-grid">
             <a href="tel:09263833744" className="hotline-card">
@@ -166,10 +168,10 @@ export default function ContactPage() {
         <div className="container">
           <div className="hotlines-header">
             <div className="hotlines-title">
-              <span className="hotlines-badge hotlines-badge--medical"><i className="bi bi-hospital-fill"></i> Medical</span>
-              <h2>Medical Emergency Hotlines</h2>
+              <span className="hotlines-badge hotlines-badge--medical"><i className="bi bi-hospital-fill"></i> {t('contact-section-medical')}</span>
+              <h2>{t('contact-section-medical-title')}</h2>
             </div>
-            <p>For medical emergencies and hospital inquiries.</p>
+            <p>{t('contact-section-medical-desc')}</p>
           </div>
           <div className="hotlines-grid">
             <a href="tel:09679103054" className="hotline-card hotline-card--medical">
