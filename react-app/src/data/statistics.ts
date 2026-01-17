@@ -92,10 +92,10 @@ export const cmciOverview = {
 }
 
 export const economicSectors = [
-  { name: 'Agriculture', pct: '45%' },
-  { name: 'Trade & Commerce', pct: '30%' },
-  { name: 'Services', pct: '20%' },
-  { name: 'Industry', pct: '5%' },
+  { name: 'Agriculture', pct: '__%' },
+  { name: 'Trade & Commerce', pct: '__%' },
+  { name: 'Services', pct: '__%' },
+  { name: 'Industry', pct: '__%' },
 ]
 
 export const barangaysPopulation = [
