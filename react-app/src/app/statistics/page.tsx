@@ -163,7 +163,19 @@ export default function StatisticsPage() {
             <AllBarangaysList />
           </details>
 
-          <p className="data-source"><i className="bi bi-info-circle"></i> Source: <a href="https://psa.gov.ph/" target="_blank" rel="noopener noreferrer">Philippine Statistics Authority (PSA)</a> - 2024 Census</p>
+                    <p className="data-source">
+            <i className="bi bi-info-circle"></i> Source:{" "}
+            <a href="https://psa.gov.ph/" target="_blank" rel="noopener noreferrer">
+              Philippine Statistics Authority (PSA)
+            </a>{" "}
+            <a 
+              href="https://psa.gov.ph/system/files/phcd/CALABARZON_0.xlsx" 
+              download 
+              className="btn btn-sm btn-outline-secondary ms-2"
+            >
+              <i className="bi bi-download"></i> Download
+            </a>
+          </p>
         </div>
       </section>
 
