@@ -45,10 +45,10 @@ export const populationStats: PopulationStats = {
 }
 
 export const financeMetrics = {
-  annualIncome: '₱371.33M',
-  annualIncomeFull: '₱371,329,918.71',
-  iraShare: '₱220.77M',
-  iraDependency: '59.45%',
+  annualIncome: '₱342.95M',
+  annualIncomeFull: '₱342,946,370.28',
+  iraShare: '₱267.86M',
+  iraDependency: '78%',
   iraDependencyLabel: 'National Tax Share',
 }
 
@@ -79,7 +79,7 @@ export const povertyStats = {
   year2021: '6.4',
   year2021CI: '90% CI: 4.7% - 8.1%',
   improvement: '-0.6%',
-  iraDependency: '59.45%',
+  iraDependency: '78%',
   iraDependencyLabel: 'National Tax Share',
 }
 
