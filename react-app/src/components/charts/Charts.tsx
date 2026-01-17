@@ -394,7 +394,7 @@ export function KeyIndicatorsTrendChart() {
         datasets: [
             {
                 label: 'Health',
-                data: [2.40, 0.70, 0.45, 0.35, 0.35, 0.40, 0.38, 0.35, 0.32],
+                data: [0.2068, 0.1125, 0.0000, 0.0795, 0.0653, 0.1025, 0.0307, 0.0760, 0.0795],
                 borderColor: '#0032a0',
                 backgroundColor: '#0032a0',
                 tension: 0.35,
@@ -404,7 +404,7 @@ export function KeyIndicatorsTrendChart() {
             },
             {
                 label: 'Education',
-                data: [0.65, 0.32, 0.28, 0.25, 0.18, 0.15, 0.12, 0.10, 0.08],
+                data: [0.0717, 0.0974, 0.0000, 0.0729, 0.0796, 0.0274, 0.0851, 0.0830, 0.0682],
                 borderColor: '#f59e0b',
                 backgroundColor: '#f59e0b',
                 tension: 0.35,
@@ -414,7 +414,7 @@ export function KeyIndicatorsTrendChart() {
             },
             {
                 label: 'Social Protection',
-                data: [0.25, 0.28, 0.22, 0.05, 0.28, 0.35, 0.30, 0.22, 0.18],
+                data: [0.3736, 0.2655, 0.0000, 0.4092, 0.5424, 0.4651, 0.0009, 0.8550, 0.4097],
                 borderColor: '#10b981',
                 backgroundColor: '#10b981',
                 tension: 0.35,
@@ -424,7 +424,7 @@ export function KeyIndicatorsTrendChart() {
             },
             {
                 label: 'Peace & Order',
-                data: [0.12, 0.35, 0.55, 0.42, 0.38, 0.42, 0.40, 0.38, 0.35],
+                data: [0.0572, 0.5076, 0.0000, 0.0659, 0.0659, 0.0543, 0.0333, 0.2000, 0.0722],
                 borderColor: '#0ea5e9',
                 backgroundColor: '#0ea5e9',
                 tension: 0.35,
@@ -434,7 +434,7 @@ export function KeyIndicatorsTrendChart() {
             },
             {
                 label: 'LGU Investment',
-                data: [0.08, 0.15, 0.18, 0.12, 0.10, 0.15, 0.18, 0.22, 0.25],
+                data: [0.7483, 0.4761, 0.0000, 0.2341, 0.1384, 0.0157, 0.0008, 0.0058, 0.0043],
                 borderColor: '#8b5cf6',
                 backgroundColor: '#8b5cf6',
                 tension: 0.35,
@@ -470,7 +470,7 @@ export function KeyIndicatorsTrendChart() {
         scales: {
             y: {
                 beginAtZero: true,
-                max: 2.5,
+                max: .9,
                 ticks: {
                     font: { size: 10 },
                     color: '#666',

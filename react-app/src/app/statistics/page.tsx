@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { PopulationTrendsChart, PopulationDistributionChart, BarangayPopulationChart, CMCIRankingsChart, EconomicSectorsChart, KeyIndicatorsTrendChart } from '@/components/charts/Charts'
-import { keyMetrics, populationStats, povertyStats, cmciOverview, economicSectors, barangaysPopulation } from '@/data/statistics'
+import { keyMetrics, populationStats, povertyStats, economicSectors, barangaysPopulation } from '@/data/statistics'
 import MetricsCard from '@/components/statistics/MetricsCard'
 import PopulationTrendsSummary from '@/components/statistics/PopulationTrendsSummary'
 import FinanceCards from '@/components/statistics/FinanceCards'
