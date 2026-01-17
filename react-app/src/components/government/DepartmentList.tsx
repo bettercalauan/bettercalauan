@@ -16,7 +16,7 @@ export default function DepartmentList() {
                   <a href={`tel:${dept.phone.replace(/\s/g, '')}`}>
                     <i className="bi bi-telephone"></i> {dept.phone}
                   </a>
-                  <a href="https://www.facebook.com/profile.php?id=61564916854423" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/calauanppeso/" target="_blank" rel="noopener noreferrer">
                     <i className="bi bi-facebook"></i> View Job Vacancies
                   </a>
                 </div>
