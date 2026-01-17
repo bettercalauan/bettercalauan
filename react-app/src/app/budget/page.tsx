@@ -195,8 +195,8 @@ export default function BudgetPage() {
         <div className="container">
           <div className="infra-header-v5">
             <span className="infra-label-v5"><i className="bi bi-building"></i> National Government Projects</span>
-            <h2>DPWH Infrastructure Projects in Solano</h2>
-            <p>Implementing Agency: Nueva Vizcaya District Engineering Office</p>
+            <h2>DPWH Infrastructure Projects in Calauan</h2>
+            <p>Implementing Agency: <a href="https://www.dpwh.gov.ph/dpwh/node/1559" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Laguna 3rd District Engineering Office - San Pablo City</a></p>
           </div>
           <div id="dpwh-projects-container">
             <p className="loading-text">Loading DPWH projects...</p>
