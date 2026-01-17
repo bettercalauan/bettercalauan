@@ -47,60 +47,55 @@ export const executiveData: Executive[] = [
 
 export const councilorsData: Councilor[] = [
   {
-    name: 'Hon. Thomas Dave C. Santos',
-    badge: 'SB Member',
-    committees: 'Entrepreneurship & Economic Development, Historical Records & Preservation of Heritage, Culture and Arts',
+    "name": "Hon. Allan Antonio V. Sanchez II",
+    "badge": "Councilor",
+    "committees": "Committee on Health, Nutrition and Sanitation"
   },
   {
-    name: 'Hon. Edwin Clifford F. Tito, O.D.',
-    badge: 'SB Member',
-    committees: 'Health & Sanitation, Finance Appropriation and Budget',
+    "name": "Hon. Joewel M. Gonzales",
+    "badge": "Councilor",
+    "committees": "Committee on Public Works and Public Utilities and Facilities"
   },
   {
-    name: 'Hon. Michael Dl. Tiongson, LPT',
-    badge: 'SB Member',
-    committees: 'Education, Science & Technology, Transportation, Commerce, Trade & Industry',
+    "name": "June Joseph F. Brion",
+    "badge": "Councilor",
+    "committees": "Committee on Market, Slaughterhouse, Trade, Commerce and Industry"
   },
   {
-    name: 'Hon. Walter D. Savedra, Sr.',
-    badge: 'SB Member',
-    committees: 'Cooperative Development, Senior Citizens and Disability Affairs',
+    "name": "Hon. Dante C. Escarez",
+    "badge": "Councilor",
+    "committees": "Committee on Finance, Budget, Appropriation and Ways and Means"
   },
   {
-    name: 'Hon. Atty. Jerome G. Marcos',
-    badge: 'SB Member',
-    committees: 'Legal, Good Governance, Justice, Human Rights, Environmental Management',
+    "name": "Hon. Homer Jeffrille E. Hilario",
+    "badge": "Councilor",
+    "committees": "Committee on Women, Family and Social Welfare"
   },
   {
-    name: 'Hon. Roland M. Carub, J.D.',
-    badge: 'SB Member',
-    committees: 'Agriculture, Aquaculture & Food Security, Overseas Filipino Workers Affairs',
+    "name": "Hon. Joselito M. Manalo",
+    "badge": "Councilor",
+    "committees": "Committee on Education"
   },
   {
-    name: 'Hon. Joseph T. Alindada',
-    badge: 'SB Member',
-    committees: 'Games, Entertainment & Amusement, Internal Affairs',
+    "name": "Hon. Kenneth B. Kraft",
+    "badge": "Councilor",
+    "committees": "Committee on Transportation"
   },
   {
-    name: 'Hon. Luisito L. Lannu',
-    badge: 'SB Member',
-    committees: 'Public Safety, Peace & Order, Family, Women, Children & Social Services',
+    "name": "Hon. Mac Jefferson T. Roxas",
+    "badge": "Councilor",
+    "committees": "Committee on Peace and Order, Public Safety and Communications"
   },
   {
-    name: 'Hon. Melchor E. Marzo',
-    badge: 'Liga ng mga Barangay President',
-    committees: 'Barangay Affairs, Tourism',
+    "name": "Hon. Joan Pamela M. Babatid",
+    "badge": "Ex-Officio-LNB President",
+    "committees": "Committee on Human Resource Management, Development and Appointments"
   },
   {
-    name: 'Hon. Isaac R. Divina',
-    badge: 'SK Federation President',
-    committees: 'Youth & Sports Development, Legislative Drafting',
-  },
-  {
-    name: 'Hon. IPMR Leon G. Dumani',
-    badge: 'IPMR',
-    committees: 'Indigenous People Affairs',
-  },
+    "name": "Olympio S. Amante",
+    "badge": "SK-Fed President",
+    "committees": "Committee on Youth Development"
+  }
 ]
 
 export const departmentsData: Department[] = [
