@@ -74,3 +74,18 @@ export interface Hotline {
   number: string;
   icon: string;
 }
+
+// Contact page types
+export interface ContactInfo {
+  href: string;
+  icon: string;
+  labelKey: string;
+  value: string;
+  noteKey: string;
+}
+
+export interface OfficeHoursItem {
+  day: string;
+  time: string;
+  status: 'open' | 'break' | 'closed';
+}
