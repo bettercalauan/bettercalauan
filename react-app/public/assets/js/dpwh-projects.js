@@ -158,7 +158,7 @@
                             <span class="dpwh-proj-id">${p.id}</span>
                             <span class="dpwh-cat-badge ${getCategoryClass(p.category)}">${getCategoryLabel(p.category)}</span>
                         </div>
-                        <span class="dpwh-proj-title" title="${p.name}">${truncateText(p.name, CONFIG.truncateLength)}</span>
+                        <a href="https://transparency.dpwh.gov.ph/?project=${p.id}" target="_blank" rel="noopener noreferrer" class="dpwh-proj-title" title="${p.name}">${truncateText(p.name, CONFIG.truncateLength)}</a>
                         <span class="dpwh-proj-location"><i class="bi bi-geo-alt"></i>${p.location}</span>
                     </td>
                     <td class="col-contractor">

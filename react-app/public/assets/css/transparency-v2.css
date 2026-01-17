@@ -1083,6 +1083,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.dpwh-proj-title:hover {
+    color: #1a5f2a;
+    text-decoration: underline;
 }
 
 .dpwh-proj-location {

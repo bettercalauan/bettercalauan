@@ -142,7 +142,14 @@ export function DPWHProjectsTable() {
                                             {getCategoryLabel(p.category)}
                                         </span>
                                     </div>
-                                    <span className="dpwh-proj-title">{p.name}</span>
+                                    <a
+                                        href={`https://transparency.dpwh.gov.ph/?project=${p.id}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="dpwh-proj-title"
+                                    >
+                                        {p.name}
+                                    </a>
                                     <span className="dpwh-proj-location">
                                         <i className="bi bi-geo-alt"></i> {p.location}
                                     </span>
