@@ -66,7 +66,7 @@ export function PopulationTrendsChart() {
         datasets: [
             {
                 label: 'Population',
-                data: [38006, 42857, 47288, 53004, 56831, 62649, 65896, 69296],
+                data: [32736, 36677, 43284, 54248, 74890, 80453, 87693, 89670],
                 borderColor: '#0032a0',
                 backgroundColor: 'rgba(0, 50, 160, 0.12)',
                 fill: true,
