@@ -12,7 +12,7 @@ export const contactInfo: ContactInfo[] = [
     href: 'tel:...',
     icon: 'bi-phone-fill',
     labelKey: 'contact-label-mobile',
-    value: '...',
+    value: 'TBD',
     noteKey: 'contact-hours-monfri',
   },
   {
@@ -50,12 +50,12 @@ export const emergencyHotlines: Hotline[] = [
   },
   {
     name: 'MSWDO Calauan',
-    number: '...',
+    number: 'TBD',
     icon: 'bi-heart-fill',
   },
   {
     name: "Mayor's Office",
-    number: '...',
+    number: 'TBD',
     icon: 'bi-building-fill',
   },
   {
@@ -65,7 +65,7 @@ export const emergencyHotlines: Hotline[] = [
   },
   {
     name: 'Calauan Public Market',
-    number: '...',
+    number: 'TBD',
     icon: 'bi-shop',
   },
   {
@@ -78,7 +78,7 @@ export const emergencyHotlines: Hotline[] = [
 export const medicalEmergencyHotlines: Hotline[] = [
   {
     name: 'RHU Calauan',
-    number: '...',
+    number: 'TBD',
     icon: 'bi-hospital',
   },
   {

@@ -40,7 +40,7 @@ export const executiveData: Executive[] = [
     title: 'Municipal Vice Mayor',
     name: 'Hon. Allan Jun v. Sanchez',
     email: 'vicemayor@calauanlaguna.gov.ph',
-    phone: '...',
+    phone: 'TBD',
     hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
   },
 ]
