@@ -74,12 +74,12 @@ export const economyMetrics = [
 ]
 
 export const povertyStats = {
-  year2018: '7.0',
-  year2018CI: '90% CI: 4.7% - 9.2%',
-  year2021: '6.4',
-  year2021CI: '90% CI: 4.7% - 8.1%',
-  improvement: '-0.6%',
-  iraDependency: '78%',
+  year2018: '__',
+  year2018CI: '__',
+  year2021: '__',
+  year2021CI: '__',
+  improvement: '__%',
+  iraDependency: '__%',
   iraDependencyLabel: 'National Tax Share',
 }
 
