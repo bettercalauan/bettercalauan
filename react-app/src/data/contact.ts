@@ -2,26 +2,26 @@ import { ContactInfo, OfficeHoursItem, Hotline } from '@/types'
 
 export const contactInfo: ContactInfo[] = [
   {
-    href: 'mailto:lgusolanonv@gmail.com',
+    href: 'mailto:calauanadm@gmail.com',
     icon: 'bi-envelope-fill',
     labelKey: 'contact-label-email',
-    value: 'lgusolanonv@gmail.com',
+    value: 'calauanadm@gmail.com',
     noteKey: 'contact-response-hours',
   },
   {
-    href: 'tel:09175951931',
+    href: 'tel:...',
     icon: 'bi-phone-fill',
     labelKey: 'contact-label-mobile',
-    value: '0917-595-1931',
+    value: '...',
     noteKey: 'contact-hours-monfri',
   },
   {
-    href: 'tel:0788053581',
+    href: 'tel:0495680012',
     icon: 'bi-telephone-fill',
     labelKey: 'contact-label-phone',
-    value: '(078) 805-3581',
+    value: '(049) 568-0012',
     noteKey: 'contact-hours-monfri',
-  },
+  },  
 ]
 
 export const officeHoursSchedule: OfficeHoursItem[] = [
@@ -34,91 +34,76 @@ export const officeHoursSchedule: OfficeHoursItem[] = [
 
 export const emergencyHotlines: Hotline[] = [
   {
-    name: 'MDRRMO Solano',
-    number: '0926 383 3744',
-    icon: 'bi-exclamation-triangle-fill',
+    name: 'BFP Calauan',
+    number: '09519658289',
+    icon: 'bi-fire',
   },
   {
-    name: 'PNP Solano',
-    number: '0927 400 8033',
+    name: 'PNP Calauan',
+    number: '09985985643',
     icon: 'bi-shield-fill',
   },
   {
-    name: 'MSWDO Solano',
-    number: '0916 284 0885',
+    name: 'MDRRMO Calauan',
+    number: '09103231784',
+    icon: 'bi-exclamation-triangle-fill',
+  },
+  {
+    name: 'MSWDO Calauan',
+    number: '...',
     icon: 'bi-heart-fill',
   },
   {
-    name: 'KABALIKAT Civicom',
-    number: '0905 447 1061',
-    icon: 'bi-broadcast',
-  },
-  {
-    name: 'NUVELCO Solano',
-    number: '0935 812 1081',
-    icon: 'bi-lightning-fill',
-  },
-  {
     name: "Mayor's Office",
-    number: '0917 595 1931',
+    number: '...',
     icon: 'bi-building-fill',
   },
   {
-    name: 'DILG Solano',
-    number: '0906 188 0868',
+    name: 'DILG Calauan',
+    number: '(049) 568-0012 loc 108',
     icon: 'bi-building',
   },
   {
-    name: 'SEEDO Public Market',
-    number: '0917 134 5511',
+    name: 'Calauan Public Market',
+    number: '...',
     icon: 'bi-shop',
   },
   {
-    name: 'MAGRO Solano',
-    number: '0916 174 4979',
-    icon: 'bi-tree-fill',
-  },
-  {
-    name: 'PDRRMO N. Vizcaya',
-    number: '0917 122 7150',
+    name: 'PDRRMO Laguna',
+    number: '(049) 501-4672',
     icon: 'bi-cone-striped',
-  },
-  {
-    name: 'BFP Solano',
-    number: '0936 062 0305',
-    icon: 'bi-fire',
   },
 ]
 
 export const medicalEmergencyHotlines: Hotline[] = [
   {
-    name: 'RHU Solano',
-    number: '0967 910 3054',
+    name: 'RHU Calauan',
+    number: '...',
     icon: 'bi-hospital',
   },
   {
-    name: 'R2TMC (Former VRH)',
-    number: '0906 819 5569',
-    icon: 'bi-truck',
-  },
-  {
-    name: 'PLT Hospital',
-    number: '0920 833 5766',
+    name: 'Calauan Maternity Clinic',
+    number: '09421999954',
     icon: 'bi-hospital',
   },
   {
-    name: 'MMG Hospital',
-    number: '0947 498 1746',
+    name: 'SPC Medical - San Pablo, Laguna',
+    number: '09178441000',
     icon: 'bi-hospital',
   },
   {
-    name: 'Salubris Hospital',
-    number: '0917 108 0452',
+    name: 'Provincial Hospital - Bay, Laguna',
+    number: '(049) 536-8357',
     icon: 'bi-hospital',
   },
   {
-    name: 'Red Cross',
-    number: '0917 507 9950',
-    icon: 'bi-plus-circle-fill',
+    name: 'Global Care Medical - Bay, Laguna',
+    number: '(049) 559-6145',
+    icon: 'bi-hospital',
+  },
+  {
+    name: 'Laguna Medical - Sta. Cruz, Laguna',
+    number: '(049) 559-6145',
+    icon: 'bi-hospital',
   },
 ]
