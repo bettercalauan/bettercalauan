@@ -88,7 +88,7 @@ export const councilorsData: Councilor[] = [
   },
   {
     "name": "Hon. Joan Pamela M. Babatid",
-    "badge": "Ex-Officio LNB President",
+    "badge": "Liga ng mga Barangay President",
     "committees": "Human Resource Management, Development and Appointments; Barangay Affairs"
   },
   {
