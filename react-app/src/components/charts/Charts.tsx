@@ -15,6 +15,7 @@ import {
     Filler,
 } from 'chart.js';
 import { Line, Pie, Doughnut, Bar } from 'react-chartjs-2';
+import { barangaysPopulation, economicSectors } from '@/data/statistics';
 
 // Register Chart.js components
 ChartJS.register(
@@ -135,10 +136,10 @@ export function PopulationTrendsChart() {
 // Population Distribution Pie Chart
 export function PopulationDistributionChart() {
     const data = {
-        labels: ['Roxas', 'Quirino', 'Osmeña', 'Quezon', 'Curifang', 'Bagahabag', 'Uddiawan', 'Bascaran', 'Aggub', 'San Luis'],
+        labels: barangaysPopulation.slice(0, 10).map(b => b.name),
         datasets: [
             {
-                data: [9088, 6572, 6403, 5758, 4885, 4731, 4217, 3845, 3101, 2668],
+                data: barangaysPopulation.slice(0, 10).map(b => parseInt(b.pop.replace(/,/g, ''))),
                 backgroundColor: [
                     '#0032a0',
                     '#F77F00',
@@ -500,18 +501,10 @@ export function KeyIndicatorsTrendChart() {
 
 // Barangay Population Horizontal Bar Chart
 export function BarangayPopulationChart() {
-    const barangayData = [
-        { name: 'Roxas', pop: 9088 },
-        { name: 'Quirino', pop: 6572 },
-        { name: 'Osmeña', pop: 6403 },
-        { name: 'Quezon', pop: 5758 },
-        { name: 'Curifang', pop: 4885 },
-        { name: 'Bagahabag', pop: 4731 },
-        { name: 'Uddiawan', pop: 4217 },
-        { name: 'Bascaran', pop: 3845 },
-        { name: 'Aggub', pop: 3101 },
-        { name: 'San Luis', pop: 2668 },
-    ];
+    const barangayData = barangaysPopulation.slice(0, 10).map(b => ({
+        name: b.name,
+        pop: parseInt(b.pop.replace(/,/g, ''))
+    }))
 
     const data = {
         labels: barangayData.map(d => d.name),
@@ -582,11 +575,11 @@ export function BarangayPopulationChart() {
 // Economic Sectors Bar Chart
 export function EconomicSectorsChart() {
     const data = {
-        labels: ['Agriculture', 'Trade & Commerce', 'Services', 'Industry'],
+        labels: economicSectors.map(s => s.name),
         datasets: [
             {
                 label: 'Share',
-                data: [45, 30, 20, 5],
+                data: economicSectors.map(s => parseInt(s.pct)),
                 backgroundColor: ['#0032a0', '#0077BE', '#06A77D', '#F77F00'],
                 borderRadius: 4,
             },
