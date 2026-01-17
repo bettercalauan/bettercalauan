@@ -6,7 +6,7 @@ export interface Metric {
 }
 
 export interface PopulationStats {
-  year1990: string
+  year2000: string
   year2024: string
   growth: string
 }
@@ -39,9 +39,9 @@ export const keyMetrics: Metric[] = [
 ]
 
 export const populationStats: PopulationStats = {
-  year1990: '38,006',
-  year2024: '69,296',
-  growth: '+82.3%',
+  year2000: '43,284',
+  year2024: '89,670',
+  growth: '+107.20%',
 }
 
 export const financeMetrics = {
