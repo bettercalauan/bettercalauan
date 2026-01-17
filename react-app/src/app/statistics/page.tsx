@@ -97,8 +97,19 @@ export default function StatisticsPage() {
               <div className="legend-item"><span className="legend-dot legend-local"></span>{t('income-local')}</div>
             </div>
           </div>
-
-          <p className="data-source"><i className="bi bi-info-circle"></i> Source: <a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer">Bureau of Local Government Finance (BLGF)</a></p>
+          <p className="data-source">
+            <i className="bi bi-info-circle"></i> Source:{" "}
+            <a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer">
+              Bureau of Local Government Finance (BLGF)
+            </a>{" "}
+            <a 
+              href="https://blgf.gov.ph/wp-content/uploads/2025/06/By-LGU-ARI-and-Dependencies-2024.xlsx" 
+              download 
+              className="btn btn-sm btn-outline-secondary ms-2"
+            >
+              <i className="bi bi-download"></i> Download
+            </a>
+          </p>
         </div>
       </section>
 
@@ -116,7 +127,19 @@ export default function StatisticsPage() {
             <PopulationTrendsChart />
           </div>
 
-          <p className="data-source"><i className="bi bi-info-circle"></i> Source: <a href="https://psa.gov.ph/" target="_blank" rel="noopener noreferrer">Philippine Statistics Authority (PSA)</a></p>
+          <p className="data-source">
+            <i className="bi bi-info-circle"></i> Source:{" "}
+            <a href="https://psa.gov.ph/" target="_blank" rel="noopener noreferrer">
+              Philippine Statistics Authority (PSA)
+            </a>{" "}
+            <a 
+              href="https://psa.gov.ph/system/files/phcd/CALABARZON_0.xlsx" 
+              download 
+              className="btn btn-sm btn-outline-secondary ms-2"
+            >
+              <i className="bi bi-download"></i> Download
+            </a>
+          </p>
         </div>
       </section>
 
