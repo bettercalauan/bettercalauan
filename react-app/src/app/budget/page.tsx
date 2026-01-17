@@ -198,12 +198,12 @@ export default function BudgetPage() {
             <h2>DPWH Infrastructure Projects in Solano</h2>
             <p>Implementing Agency: Nueva Vizcaya District Engineering Office</p>
           </div>
-
           <div id="dpwh-projects-container">
             <p className="loading-text">Loading DPWH projects...</p>
           </div>
-
-          <p className="sre-source dpwh-source-margin"><i className="bi bi-info-circle"></i> Source: <a href="https://transparency.dpwh.gov.ph/" target="_blank" rel="noopener noreferrer">DPWH Transparency Portal</a></p>
+          <p className="sre-source dpwh-source-margin">
+            <i className="bi bi-info-circle"></i> Source: <a href="https://transparency.dpwh.gov.ph/" target="_blank" rel="noopener noreferrer">DPWH Transparency Portal</a> (Mirrored January 17, 2026 — may not reflect current data)
+          </p>
         </div>
       </section>
 
