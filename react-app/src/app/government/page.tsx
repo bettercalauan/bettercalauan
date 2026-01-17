@@ -54,8 +54,9 @@ export default function GovernmentPage() {
             <h3 style={{ fontSize: '1.75rem', marginBottom: 'var(--spacing-xs)' }}>{t('legislative-branch-title')}</h3>
             <p style={{ color: 'var(--color-text-light)' }}>{t('legislative-branch-desc')}</p>
           </div>
-
-          <CouncilorList />
+            <div className="grid grid-3">
+              <CouncilorList />
+            </div>
         </div>
       </section>
 
