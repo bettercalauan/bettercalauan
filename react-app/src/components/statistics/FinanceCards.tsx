@@ -8,8 +8,8 @@ export default function FinanceCards() {
           <i className="bi bi-graph-up-arrow"></i>
           <span>Annual Income</span>
         </div>
-        <div className="finance-card-value">{financeMetrics.annualIncomeFull}</div>
-        <div className="finance-card-detail">{financeMetrics.annualIncome}</div>
+        <div className="finance-card-value">{financeMetrics.annualIncome}</div>
+        <div className="finance-card-detail">{financeMetrics.annualIncomeFull}</div>
       </div>
       <div className="finance-card">
         <div className="finance-card-header">
