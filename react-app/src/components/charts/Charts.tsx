@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useLayoutEffect } from 'react';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -29,6 +29,35 @@ ChartJS.register(
     Legend,
     Filler
 );
+
+// Hook to constrain chart width and prevent overflow
+function useChartConstrain(containerRef: React.RefObject<HTMLDivElement | null>, enabled = true) {
+  useLayoutEffect(() => {
+    if (!enabled || !containerRef.current) return
+
+    const container = containerRef.current
+    const chartContainer = container.closest('.sre-breakdown-panel')
+    if (!chartContainer) return
+
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const { width } = entry.contentRect
+        const chartCanvas = container.querySelector('canvas')
+        if (chartCanvas) {
+          const chartWidth = Math.floor((width - 20) / 2) // Subtract 20px gap, divide by 2 for 2 columns
+          Object.assign(chartCanvas.style, {
+            width: `${chartWidth}px`,
+            maxWidth: `${chartWidth}px`,
+          })
+        }
+      }
+    })
+
+    observer.observe(chartContainer)
+
+    return () => observer.disconnect()
+  }, [containerRef, enabled])
+}
 
 // Population Trends Line Chart
 export function PopulationTrendsChart() {
@@ -179,6 +208,9 @@ export function IncomeSourcesChart({
     externalValue?: number;
     totalIncome?: number;
 }) {
+    const containerRef = useRef<HTMLDivElement>(null)
+    useChartConstrain(containerRef)
+
     const data = {
         labels: ['Local Sources', 'External Sources (NTA)'],
         datasets: [
@@ -194,7 +226,7 @@ export function IncomeSourcesChart({
 
     const options = {
         responsive: true,
-        maintainAspectRatio: false,
+        aspectRatio: 1.6,
         cutout: '62%',
         plugins: {
             legend: {
@@ -214,7 +246,7 @@ export function IncomeSourcesChart({
     };
 
     return (
-        <div className="chart-container-doughnut" style={{ height: '160px', width: '100%', position: 'relative' }}>
+        <div ref={containerRef} className="chart-container-doughnut">
             <Doughnut data={data} options={options} />
             <div className="chart-center-label">
                 <div className="chart-center-value">₱{totalIncome.toFixed(2)}M</div>
@@ -238,6 +270,9 @@ export function ExpenditureChart({
     debtValue?: number;
     totalExpense?: number;
 }) {
+    const containerRef = useRef<HTMLDivElement>(null)
+    useChartConstrain(containerRef)
+
     const data = {
         labels: ['General Public Services', 'Social Services', 'Economic Services', 'Debt Service'],
         datasets: [
@@ -253,7 +288,7 @@ export function ExpenditureChart({
 
     const options = {
         responsive: true,
-        maintainAspectRatio: false,
+        aspectRatio: 1.6,
         cutout: '62%',
         plugins: {
             legend: {
@@ -273,7 +308,7 @@ export function ExpenditureChart({
     };
 
     return (
-        <div className="chart-container-doughnut" style={{ height: '160px', width: '100%', position: 'relative' }}>
+        <div ref={containerRef} className="chart-container-doughnut">
             <Doughnut data={data} options={options} />
             <div className="chart-center-label">
                 <div className="chart-center-value">₱{totalExpense.toFixed(2)}M</div>
