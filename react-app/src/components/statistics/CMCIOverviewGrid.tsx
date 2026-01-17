@@ -1,36 +1,23 @@
+import { cmciOverview } from '@/data/statistics'
+
 export default function CMCIOverviewGrid() {
   return (
     <div className="cmci-overview-grid">
-      <div className="cmci-pillar-card">
-        <div className="pillar-icon"><i className="bi bi-graph-up-arrow"></i></div>
-        <h4>Economic Dynamism</h4>
-        <div className="pillar-score">0.23</div>
-        <div className="pillar-trend trend-up"><i className="bi bi-arrow-up"></i> +12%</div>
-      </div>
-      <div className="cmci-pillar-card">
-        <div className="pillar-icon"><i className="bi bi-building-check"></i></div>
-        <h4>Government Efficiency</h4>
-        <div className="pillar-score">1.17</div>
-        <div className="pillar-trend trend-down"><i className="bi bi-arrow-down"></i> -8%</div>
-      </div>
-      <div className="cmci-pillar-card">
-        <div className="pillar-icon"><i className="bi bi-building-gear"></i></div>
-        <h4>Infrastructure</h4>
-        <div className="pillar-score">0.40</div>
-        <div className="pillar-trend trend-up"><i className="bi bi-arrow-up"></i> +5%</div>
-      </div>
-      <div className="cmci-pillar-card">
-        <div className="pillar-icon"><i className="bi bi-shield-check"></i></div>
-        <h4>Resiliency</h4>
-        <div className="pillar-score">1.08</div>
-        <div className="pillar-trend trend-stable"><i className="bi bi-dash"></i> Stable</div>
-      </div>
-      <div className="cmci-pillar-card">
-        <div className="pillar-icon"><i className="bi bi-lightbulb"></i></div>
-        <h4>Innovation</h4>
-        <div className="pillar-score">0.68</div>
-        <div className="pillar-trend trend-up"><i className="bi bi-arrow-up"></i> +25%</div>
-      </div>
+      {cmciOverview.map((pillar) => {
+        const trendIcon = pillar.trend === 'Stable' ? 'bi-dash' : pillar.trend.startsWith('-') ? 'bi-arrow-down' : 'bi-arrow-up'
+        const trendClass = pillar.trend === 'Stable' ? 'trend-stable' : pillar.trend.startsWith('-') ? 'trend-down' : 'trend-up'
+        
+        return (
+          <div key={pillar.key} className="cmci-pillar-card">
+            <div className="pillar-icon"><i className={`bi ${pillar.icon}`}></i></div>
+            <h4>{pillar.label}</h4>
+            <div className="pillar-score">{pillar.score}</div>
+            <div className={`pillar-trend ${trendClass}`}>
+              <i className={`bi ${trendIcon}`}></i> {pillar.trend}
+            </div>
+          </div>
+        )
+      })}
     </div>
   )
 }

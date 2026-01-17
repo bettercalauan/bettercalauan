@@ -83,13 +83,43 @@ export const povertyStats = {
   iraDependencyLabel: 'National Tax Share',
 }
 
-export const cmciOverview = {
-  economicDynamism: { score: '0.23', trend: '+12%' },
-  governmentEfficiency: { score: '1.17', trend: '-8%' },
-  infrastructure: { score: '0.40', trend: '+5%' },
-  resiliency: { score: '1.08', trend: 'Stable' },
-  innovation: { score: '0.68', trend: '+25%' },
-}
+export const cmciOverview = [
+  {
+    key: 'economicDynamism',
+    icon: 'bi-graph-up-arrow',
+    label: 'Economic Dynamism',
+    score: '0.23',
+    trend: '+12%',
+  },
+  {
+    key: 'governmentEfficiency',
+    icon: 'bi-building-check',
+    label: 'Government Efficiency',
+    score: '1.17',
+    trend: '-8%',
+  },
+  {
+    key: 'infrastructure',
+    icon: 'bi-building-gear',
+    label: 'Infrastructure',
+    score: '0.40',
+    trend: '+5%',
+  },
+  {
+    key: 'resiliency',
+    icon: 'bi-shield-check',
+    label: 'Resiliency',
+    score: '1.08',
+    trend: 'Stable',
+  },
+  {
+    key: 'innovation',
+    icon: 'bi-lightbulb',
+    label: 'Innovation',
+    score: '0.68',
+    trend: '+25%',
+  },
+]
 
 export const economicSectors = [
   { name: 'Agriculture', pct: '__%' },
