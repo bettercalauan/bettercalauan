@@ -49,52 +49,52 @@ export const councilorsData: Councilor[] = [
   {
     "name": "Hon. Allan Antonio V. Sanchez II",
     "badge": "Councilor",
-    "committees": "Committee on Health, Nutrition and Sanitation"
+    "committees": "Health, Nutrition and Sanitation; Games and Amusements"
   },
   {
     "name": "Hon. Joewel M. Gonzales",
     "badge": "Councilor",
-    "committees": "Committee on Public Works and Public Utilities and Facilities"
+    "committees": "Public Works and Public Utilities and Facilities; Agriculture, Fisheries, Aquatic Resources and Environmental Protection"
   },
   {
-    "name": "June Joseph F. Brion",
+    "name": "Hon. June Joseph F. Brion",
     "badge": "Councilor",
-    "committees": "Committee on Market, Slaughterhouse, Trade, Commerce and Industry"
+    "committees": "Zoning, Housing, Land Utilization and Urban Development; Market, Slaughterhouse, Trade, Commerce and Industry; Rules, Laws, Ethics and Privileges"
   },
   {
     "name": "Hon. Dante C. Escarez",
     "badge": "Councilor",
-    "committees": "Committee on Finance, Budget, Appropriation and Ways and Means"
+    "committees": "Finance, Budget, Appropriation and Ways and Means"
   },
   {
     "name": "Hon. Homer Jeffrille E. Hilario",
     "badge": "Councilor",
-    "committees": "Committee on Women, Family and Social Welfare"
+    "committees": "Women, Family and Social Welfare; Cooperative and Livelihood and Accreditation"
   },
   {
     "name": "Hon. Joselito M. Manalo",
     "badge": "Councilor",
-    "committees": "Committee on Education"
+    "committees": "Education; Information Technology Advancement"
   },
   {
     "name": "Hon. Kenneth B. Kraft",
     "badge": "Councilor",
-    "committees": "Committee on Transportation"
+    "committees": "Transportation; Energy, and Water Resources Development"
   },
   {
     "name": "Hon. Mac Jefferson T. Roxas",
     "badge": "Councilor",
-    "committees": "Committee on Peace and Order, Public Safety and Communications"
+    "committees": "Peace and Order, Public Safety and Communications; Calamity and Disaster Management"
   },
   {
     "name": "Hon. Joan Pamela M. Babatid",
-    "badge": "Ex-Officio-LNB President",
-    "committees": "Committee on Human Resource Management, Development and Appointments"
+    "badge": "Ex-Officio LNB President",
+    "committees": "Human Resource Management, Development and Appointments; Barangay Affairs"
   },
   {
-    "name": "Olympio S. Amante",
-    "badge": "SK-Fed President",
-    "committees": "Committee on Youth Development"
+    "name": "Hon. Olympio S. Amante",
+    "badge": "SK Federation President",
+    "committees": "Tourism, Social Affairs & Cultural Heritage; Youth Development"
   }
 ]
 
