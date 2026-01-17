@@ -79,7 +79,7 @@ export const povertyStats = {
   year2021: '__',
   year2021CI: '__',
   improvement: '__%',
-  iraDependency: '__%',
+  iraDependency: '78%',
   iraDependencyLabel: 'National Tax Share',
 }
 
