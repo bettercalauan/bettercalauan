@@ -55,19 +55,19 @@ export const financeMetrics = {
 export const economyMetrics = [
   {
     icon: 'bi-shop',
-    value: '1,200',
+    value: '____',
     label: 'Registered Businesses',
-    trend: '+8% from last year',
+    trend: '_% from last year',
   },
   {
     icon: 'bi-tree-fill',
-    value: '8,500 ha',
+    value: '____ ha',
     label: 'Agricultural Land',
     trend: 'Rice & Corn Production',
   },
   {
     icon: 'bi-person-check-fill',
-    value: '94.2%',
+    value: '____',
     label: 'Employment Rate',
     trend: 'Labor Force Participation',
   },
