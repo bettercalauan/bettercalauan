@@ -501,7 +501,7 @@ export function KeyIndicatorsTrendChart() {
 
 // Barangay Population Horizontal Bar Chart
 export function BarangayPopulationChart() {
-    const barangayData = barangaysPopulation.slice(0, 10).map(b => ({
+    const barangayData = barangaysPopulation.slice(0, 18).map(b => ({
         name: b.name,
         pop: parseInt(b.pop.replace(/,/g, ''))
     }))
@@ -513,7 +513,7 @@ export function BarangayPopulationChart() {
                 label: 'Population',
                 data: barangayData.map(d => d.pop),
                 backgroundColor: barangayData.map((_, i) => {
-                    const opacity = 1 - (i * 0.07);
+                    const opacity = .90 - (i * 0.035);
                     return `rgba(0, 50, 160, ${opacity})`;
                 }),
                 borderRadius: 3,
