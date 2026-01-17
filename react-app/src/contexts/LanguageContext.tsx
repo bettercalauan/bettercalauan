@@ -155,7 +155,7 @@ const translations: Record<string, Record<string, string>> = {
     "distribution-section": "Distribution",
     "distribution-title": "Population by Barangay",
     "distribution-desc": "2024 Census of Population",
-    "view-all-barangays": "View all 16 barangays",
+    "view-all-barangays": "View all 17 barangays",
     "economy-section": "Economy",
     "economy-title": "Economic Indicators",
     "economy-desc": "Key economic data and business statistics",
@@ -169,7 +169,7 @@ const translations: Record<string, Record<string, string>> = {
     "key-indicators-trend": "Key Indicators Trend (2016-2024)",
     "visual-section": "Visual",
     "visual-title": "Population Bar Chart",
-    "visual-desc": "Comparative view of all 16 barangays",
+    "visual-desc": "Comparative view of all 17 barangays",
 
     // Legislative Page
     "legislative-title": "Legislative",
@@ -352,7 +352,7 @@ const translations: Record<string, Record<string, string>> = {
     "distribution-section": "Distribusyon",
     "distribution-title": "Populasyon ayon sa Barangay",
     "distribution-desc": "Sensus ng Populasyon 2024",
-    "view-all-barangays": "Tingnan ang lahat ng 16 barangay",
+    "view-all-barangays": "Tingnan ang lahat ng 17 barangay",
     "economy-section": "Ekonomiya",
     "economy-title": "Mga Indikador sa Ekonomiya",
     "economy-desc": "Mahahalagang datos sa ekonomiya at estadistika ng negosyo",
@@ -366,7 +366,7 @@ const translations: Record<string, Record<string, string>> = {
     "key-indicators-trend": "Trend ng Pangunahing mga Indikador (2016-2024)",
     "visual-section": "Biswal",
     "visual-title": "Bar Chart ng Populasyon",
-    "visual-desc": "Paghahambing ng lahat ng 16 barangay",
+    "visual-desc": "Paghahambing ng lahat ng 17 barangay",
 
     // Legislative Page
     "legislative-title": "Lehislatibo",
@@ -549,7 +549,7 @@ const translations: Record<string, Record<string, string>> = {
     "distribution-section": "Panangwaras",
     "distribution-title": "Populasion babaen ti Barangay",
     "distribution-desc": "Sensus ti Populasion 2024",
-    "view-all-barangays": "Kitaen dagiti amin a 16 a barangay",
+    "view-all-barangays": "Kitaen dagiti amin a 17 a barangay",
     "economy-section": "Ekonomia",
     "economy-title": "Dagiti Indikador ti Ekonomia",
     "economy-desc": "Nangruna a datos iti ekonomia ken estadistika ti negosyo",
@@ -563,7 +563,7 @@ const translations: Record<string, Record<string, string>> = {
     "key-indicators-trend": "Trend dagiti Pangruna a mga Indikador (2016-2024)",
     "visual-section": "Bisual",
     "visual-title": "Bar Chart ti Populasion",
-    "visual-desc": "Panagipadpada dagiti amin a 16 a barangay",
+    "visual-desc": "Panagipadpada dagiti amin a 17 a barangay",
 
     // Legislative Page
     "legislative-title": "Lehislatura",
