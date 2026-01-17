@@ -64,15 +64,13 @@ export default function BudgetPage() {
               onQuarterChange={setActiveQuarter}
             />
           </div>
-        </div>
 
-        <div className="sre-metrics-row">
+          <div className="sre-metrics-row">
             <SREMetricCard icon="bi-arrow-down-circle" label="Total Income" value={currentData.totalIncome} iconClassName="sre-metric-income" />
             <SREMetricCard icon="bi-arrow-up-circle" label="Total Expenditures" value={currentData.totalExpense} iconClassName="sre-metric-expense" />
             <SREMetricCard icon="bi-plus-slash-minus" label="Net Operating Income" value={currentData.netIncome} iconClassName="sre-metric-net" />
             <SREMetricCard icon="bi-wallet2" label="Fund Balance (End)" value={currentData.fundBalance} iconClassName="sre-metric-balance" />
           </div>
-
           <div className="sre-breakdown-v2">
             <div className="sre-breakdown-panel">
               <div className="sre-panel-header">
@@ -112,6 +110,7 @@ export default function BudgetPage() {
                 </div>
               </div>
             </div>
+
             <div className="sre-breakdown-panel">
               <div className="sre-panel-header">
                 <h3><i className="bi bi-bar-chart"></i> Expenditure Allocation</h3>
@@ -174,6 +173,7 @@ export default function BudgetPage() {
                 </div>
               </div>
             </div>
+        </div>
 
           <p className="sre-source"><i className="bi bi-info-circle"></i> Source: <a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer">Bureau of Local Government Finance (BLGF)</a></p>
         </div>
