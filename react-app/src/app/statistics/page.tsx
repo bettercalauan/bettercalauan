@@ -229,7 +229,7 @@ export default function StatisticsPage() {
             </div>
           </div>
 
-          <p className="data-source"><i className="bi bi-info-circle"></i> Source: <a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer">DTI Cities and Municipalities Competitiveness Index (CMCI)</a></p>
+          <p className="data-source"><i className="bi bi-info-circle"></i> Source: <a href="https://cmci.dti.gov.ph/data-portal.php" target="_blank" rel="noopener noreferrer">DTI Cities and Municipalities Competitiveness Index (CMCI)</a></p>
         </div>
       </section>
 
