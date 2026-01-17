@@ -14,19 +14,19 @@ export interface PopulationStats {
 export const keyMetrics: Metric[] = [
   {
     icon: 'bi-people-fill',
-    value: '69,296',
+    value: '89,670',
     label: 'Population',
     source: '2024 Census',
   },
   {
     icon: 'bi-geo-alt-fill',
-    value: '22',
+    value: '17',
     label: 'Barangays',
     source: 'Administrative Units',
   },
   {
     icon: 'bi-rulers',
-    value: '162.70',
+    value: '65.40',
     label: 'Land Area (km²)',
     source: 'Total Municipal Area',
   },
