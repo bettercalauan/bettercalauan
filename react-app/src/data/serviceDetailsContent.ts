@@ -87,7 +87,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'Can I request through email or online?', answer: 'Currently, requests must be made in person. Online services are being planned for the future.' },
             { question: 'What\'s the difference between local copy and PSA copy?', answer: 'Both are certified true copies. PSA copies are nationally-recognized and required for passport/visa applications. Local copies are accepted for most local transactions and school enrollment.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Marriage Certificate', link: '/service-details/marriage-certificate' },
             { title: 'Death Certificate', link: '/service-details/death-certificate' },
@@ -125,7 +125,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'How soon after the wedding should I register?', answer: 'Within 30 days of the marriage ceremony. Late registration may require additional documents.' },
             { question: 'Can I get a copy if I was married elsewhere?', answer: 'Only marriages registered in Calauan are available. Request from the municipality where you were married or from PSA.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Birth Certificate', link: '/service-details/birth-certificate' },
             { title: 'CENOMAR', link: '/services/certificates' },
@@ -160,7 +160,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'How soon must death be registered?', answer: 'Within 48 hours of death. Late registration requires additional documents and fees.' },
             { question: 'Do I need a burial permit?', answer: 'Yes, burial permit is required before interment in any cemetery.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Birth Certificate', link: '/service-details/birth-certificate' },
             { title: 'MSWDO Services', link: '/service-details/mswdo-services' },
@@ -177,7 +177,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         description: 'Birth, death, marriage registration, corrections, and certified copies',
         quickStats: [
             { icon: 'bi-clock', label: 'Office Hours', value: 'Mon-Fri 8AM-5PM' },
-            { icon: 'bi-telephone', label: 'Contact', value: '(078) 326-5001' },
+            { icon: 'bi-telephone', label: 'Contact', value: 'TBD' },
             { icon: 'bi-geo-alt', label: 'Location', value: '2nd Floor, Municipal Hall' },
             { icon: 'bi-calendar-check', label: 'Appointment', value: 'Walk-in' },
         ],
@@ -194,7 +194,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'What services are offered?', answer: 'Birth, death, marriage registration; certified copies; corrections; late registration; legitimation; and other civil registry services.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Birth Certificate', link: '/service-details/birth-certificate' },
             { title: 'Marriage Certificate', link: '/service-details/marriage-certificate' },
@@ -231,7 +231,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'When should I renew my business permit?', answer: 'Before January 20 of each year to avoid penalties.' },
             { question: 'What are the penalties for late renewal?', answer: 'A surcharge of 25% plus 2% interest per month on unpaid taxes.' },
         ],
-        office: { name: 'Business Permits & Licensing Office', location: 'Municipal Hall, Ground Floor', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Business Permits & Licensing Office', location: 'Municipal Hall, Ground Floor', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Municipal Treasurer', link: '/service-details/municipal-treasurer' },
             { title: 'Fire Safety Certificate', link: '/services/business' },
@@ -266,7 +266,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'Is there a discount for early payment?', answer: 'Yes, 10% discount for RPT paid in full before January 31.' },
             { question: 'Can I pay quarterly?', answer: 'Yes, RPT can be paid quarterly without discount.' },
         ],
-        office: { name: 'Municipal Treasurer\'s Office', location: 'Municipal Hall, Ground Floor', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Municipal Treasurer\'s Office', location: 'Municipal Hall, Ground Floor', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Property Declaration', link: '/service-details/property-declaration' },
             { title: 'Municipal Assessor', link: '/service-details/municipal-assessor' },
@@ -300,7 +300,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'How long is a tax declaration valid?', answer: 'Until the property is transferred or there are changes requiring reassessment.' },
         ],
-        office: { name: 'Municipal Assessor\'s Office', location: 'Municipal Hall, Ground Floor', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Municipal Assessor\'s Office', location: 'Municipal Hall, Ground Floor', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Municipal Treasurer', link: '/service-details/municipal-treasurer' },
             { title: 'Property Declaration', link: '/service-details/property-declaration' },
@@ -333,7 +333,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'What is the transfer tax rate?', answer: 'Usually 0.5% to 0.75% of the selling price or zonal value, whichever is higher.' },
         ],
-        office: { name: 'Municipal Assessor\'s Office', location: 'Municipal Hall, Ground Floor', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Municipal Assessor\'s Office', location: 'Municipal Hall, Ground Floor', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Municipal Assessor', link: '/service-details/municipal-assessor' },
             { title: 'Municipal Treasurer', link: '/service-details/municipal-treasurer' },
@@ -367,7 +367,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'How long is the franchise valid?', answer: 'Usually 3 years, subject to annual renewal of registration.' },
         ],
-        office: { name: 'Municipal Traffic Office', location: 'Municipal Hall', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Municipal Traffic Office', location: 'Municipal Hall', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Business Permits', link: '/service-details/business-permits-licensing' },
         ],
@@ -452,7 +452,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         description: 'Agricultural programs, farmer registration, and assistance',
         quickStats: [
             { icon: 'bi-clock', label: 'Office Hours', value: 'Mon-Fri 8AM-5PM' },
-            { icon: 'bi-telephone', label: 'Contact', value: '(078) 326-5001' },
+            { icon: 'bi-telephone', label: 'Contact', value: 'TBD' },
             { icon: 'bi-geo-alt', label: 'Location', value: 'Municipal Hall' },
             { icon: 'bi-cash', label: 'Programs', value: 'Free/Subsidized' },
         ],
@@ -470,7 +470,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'What is RSBSA?', answer: 'Registry System for Basic Sectors in Agriculture - a prerequisite for accessing government agricultural programs.' },
             { question: 'What assistance is available?', answer: 'Fertilizer subsidy, seeds distribution, livestock dispersal, crop insurance, and technical training.' },
         ],
-        office: { name: 'Municipal Agriculture Office', location: 'Municipal Hall', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Municipal Agriculture Office', location: 'Municipal Hall', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Fertilizer Assistance', link: '/services/agriculture' },
             { title: 'Crop Insurance', link: '/services/agriculture' },
@@ -506,7 +506,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'How long is a building permit valid?', answer: 'Usually 1 year, extendable upon request.' },
             { question: 'Do I need a permit for renovations?', answer: 'Yes, any structural modification requires a building permit.' },
         ],
-        office: { name: 'Municipal Engineering Office', location: 'Municipal Hall', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Municipal Engineering Office', location: 'Municipal Hall', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Municipal Planning', link: '/service-details/municipal-planning' },
             { title: 'Fire Safety Certificate', link: '/services/infrastructure' },
@@ -540,7 +540,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'What is zoning clearance?', answer: 'A document certifying that your proposed use of the property is compatible with the zonal classification.' },
         ],
-        office: { name: 'Municipal Planning & Development Office', location: 'Municipal Hall', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Municipal Planning & Development Office', location: 'Municipal Hall', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Municipal Engineering', link: '/service-details/municipal-engineering' },
         ],
@@ -556,7 +556,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         description: 'Budget preparation, appropriation, and financial management',
         quickStats: [
             { icon: 'bi-clock', label: 'Office Hours', value: 'Mon-Fri 8AM-5PM' },
-            { icon: 'bi-telephone', label: 'Contact', value: '(078) 326-5001' },
+            { icon: 'bi-telephone', label: 'Contact', value: 'TBD' },
             { icon: 'bi-geo-alt', label: 'Location', value: 'Municipal Hall' },
             { icon: 'bi-file-text', label: 'Reports', value: 'Public Access' },
         ],
@@ -572,7 +572,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'Is budget information available to the public?', answer: 'Yes, municipal budget documents are public records accessible under the Freedom of Information.' },
         ],
-        office: { name: 'Municipal Budget Office', location: 'Municipal Hall', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Municipal Budget Office', location: 'Municipal Hall', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Municipal Accounting', link: '/service-details/municipal-accounting' },
             { title: 'Budget Transparency', link: '/budget' },
@@ -589,7 +589,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         description: 'Financial transactions, payroll, and accounting records',
         quickStats: [
             { icon: 'bi-clock', label: 'Office Hours', value: 'Mon-Fri 8AM-5PM' },
-            { icon: 'bi-telephone', label: 'Contact', value: '(078) 326-5001' },
+            { icon: 'bi-telephone', label: 'Contact', value: 'TBD' },
             { icon: 'bi-geo-alt', label: 'Location', value: 'Municipal Hall' },
             { icon: 'bi-file-text', label: 'Records', value: 'Financial' },
         ],
@@ -605,7 +605,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'What services are offered?', answer: 'Financial statement verification, supplier payment processing, payroll services for LGU employees.' },
         ],
-        office: { name: 'Municipal Accounting Office', location: 'Municipal Hall', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Municipal Accounting Office', location: 'Municipal Hall', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Municipal Budget', link: '/service-details/municipal-budget' },
             { title: 'Municipal Treasurer', link: '/service-details/municipal-treasurer' },
@@ -638,7 +638,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'Who can request service records?', answer: 'Current and former LGU employees for their own records.' },
         ],
-        office: { name: 'HRMO', location: 'Municipal Hall', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'HRMO', location: 'Municipal Hall', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Employment Certification', link: '/services/certificates' },
         ],
@@ -654,7 +654,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         description: 'Market stall rentals and public market services',
         quickStats: [
             { icon: 'bi-clock', label: 'Market Hours', value: '5AM-6PM' },
-            { icon: 'bi-telephone', label: 'Contact', value: '(078) 326-5001' },
+            { icon: 'bi-telephone', label: 'Contact', value: 'TBD' },
             { icon: 'bi-geo-alt', label: 'Location', value: 'Calauan Public Market' },
             { icon: 'bi-cash', label: 'Stall Rental', value: 'Varies' },
         ],
@@ -670,7 +670,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'How are stalls assigned?', answer: 'Based on availability and first-come-first-served basis.' },
         ],
-        office: { name: 'SEEDO Office', location: 'Calauan Public Market', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'SEEDO Office', location: 'Calauan Public Market', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Business Permits', link: '/service-details/business-permits-licensing' },
         ],
@@ -686,7 +686,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         description: 'Livestock slaughtering and meat inspection services',
         quickStats: [
             { icon: 'bi-clock', label: 'Hours', value: '4AM-8AM' },
-            { icon: 'bi-telephone', label: 'Contact', value: '(078) 326-5001' },
+            { icon: 'bi-telephone', label: 'Contact', value: 'TBD' },
             { icon: 'bi-geo-alt', label: 'Location', value: 'Calauan Slaughterhouse' },
             { icon: 'bi-cash', label: 'Fee', value: 'Per head' },
         ],
@@ -703,7 +703,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'What time should I bring livestock?', answer: 'Animals should arrive between 4AM-6AM for morning slaughter.' },
         ],
-        office: { name: 'SEEDO - Slaughterhouse', location: 'Calauan Slaughterhouse', phone: '(078) 326-5001', hours: '4AM - 8AM' },
+        office: { name: 'SEEDO - Slaughterhouse', location: 'Calauan Slaughterhouse', phone: 'TBD', hours: '4AM - 8AM' },
         relatedServices: [
             { title: 'Veterinary Services', link: '/services/agriculture' },
         ],
@@ -719,7 +719,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         description: 'Equipment rental, vehicle use, and general services',
         quickStats: [
             { icon: 'bi-clock', label: 'Office Hours', value: 'Mon-Fri 8AM-5PM' },
-            { icon: 'bi-telephone', label: 'Contact', value: '(078) 326-5001' },
+            { icon: 'bi-telephone', label: 'Contact', value: 'TBD' },
             { icon: 'bi-geo-alt', label: 'Location', value: 'Municipal Hall' },
             { icon: 'bi-cash', label: 'Rental', value: 'Varies' },
         ],
@@ -735,7 +735,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'What equipment is available?', answer: 'Heavy equipment, service vehicles, and other municipal assets for public use.' },
         ],
-        office: { name: 'General Services Office', location: 'Municipal Hall', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'General Services Office', location: 'Municipal Hall', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Infrastructure', link: '/services/infrastructure' },
         ],
@@ -751,7 +751,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         description: 'General public services and information',
         quickStats: [
             { icon: 'bi-clock', label: 'Office Hours', value: 'Mon-Fri 8AM-5PM' },
-            { icon: 'bi-telephone', label: 'Contact', value: '(078) 326-5001' },
+            { icon: 'bi-telephone', label: 'Contact', value: 'TBD' },
             { icon: 'bi-geo-alt', label: 'Location', value: 'Municipal Hall' },
             { icon: 'bi-info-circle', label: 'Info Desk', value: 'Ground Floor' },
         ],
@@ -766,7 +766,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'Where can I get information about services?', answer: 'Visit the Information Desk at the ground floor of Municipal Hall.' },
         ],
-        office: { name: 'Information Desk', location: 'Municipal Hall, Ground Floor', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Information Desk', location: 'Municipal Hall, Ground Floor', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'All Services', link: '/services' },
         ],
