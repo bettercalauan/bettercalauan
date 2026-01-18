@@ -7,7 +7,7 @@ export const footerData = {
   social: [
     { href: "https://www.facebook.com/bettercalauan.org", icon: "bi-facebook", label: "Facebook" },
     { href: "https://www.facebook.com/groups/bettercalauan.org/", icon: "bi-people-fill", label: "FB Group" },
-    { href: "https://www.bettercalauan.org/discord", icon: "bi-discord", label: "Discord" },
+    { href: "https://discord.bettercalauan.org/", icon: "bi-discord", label: "Discord" },
   ],
   quickLinks: {
     title: "Quick Links",
