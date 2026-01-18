@@ -111,22 +111,6 @@ export default function SitemapPage() {
             </div>
           </div>
 
-          {/* Online Services */}
-          <div className="sitemap-section-new">
-            <div className="sitemap-section-header">
-              <span className="sitemap-section-icon sitemap-section-icon--online"><i className="bi bi-globe2"></i></span>
-              <h2>Online Services</h2>
-              <span className="sitemap-badge">via Filipizen</span>
-            </div>
-            <div className="sitemap-links-grid">
-              <a href="https://www.filipizen.com/partners/calauan/bpls/billing" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Business Billing &amp; Payment</a>
-              <a href="https://www.filipizen.com/partners/calauan/bpls/newbusiness" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> New Business Application</a>
-              <a href="https://www.filipizen.com/partners/calauan/bpls/renewbusiness" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Business Permit Renewal</a>
-              <a href="https://www.filipizen.com/partners/calauan/rptis/billing" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Real Property Tax Payment</a>
-              <a href="https://www.filipizen.com/partners/calauan/po/billing" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Online Payment Order</a>
-            </div>
-          </div>
-
           {/* External Resources */}
           <div className="sitemap-section-new">
             <div className="sitemap-section-header">
