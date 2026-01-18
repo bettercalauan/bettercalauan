@@ -1,6 +1,6 @@
-# BetterSolano React
+# BetterCalauan React
 
-React + TypeScript migration of BetterSolano.org using Next.js 14.
+React + TypeScript migration of BetterCalauan.org using Next.js 14.
 
 ## Getting Started
 
