@@ -16,4 +16,20 @@ export const newsData: NewsItem[] = [
     badgeClass: 'home-news-badge--info',
     description: 'An Ordinance Renaming Dayap National Integrated High School to Calauan National High School and Separating It from Its Mother School, the Dayap National High School.',
   },
+  {
+    id: 2,
+    title: '',
+    date: '',
+    badge: 'Project',
+    badgeClass: 'home-news-badge home-news-badge--success',
+    description: '',
+  },
+  {
+    id: 3,
+    title: '',
+    date: '',
+    badge: 'Advisory',
+    badgeClass: 'home-news-badge home-news-badge--warning',
+    description: '',
+  },
 ]
