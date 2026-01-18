@@ -15,6 +15,7 @@ export default function NewsList() {
           badge={item.badge}
           badgeClass={item.badgeClass}
           description={item.description}
+          externalLink={item.externalLink}
         />
       ))}
     </div>

@@ -5,6 +5,7 @@ export interface NewsItem {
   badge: string
   badgeClass: string
   description: string
+  externalLink: string
 }
 
 export const newsData: NewsItem[] = [
@@ -15,6 +16,7 @@ export const newsData: NewsItem[] = [
     badge: 'Announcement',
     badgeClass: 'home-news-badge--info',
     description: 'An Ordinance Renaming Dayap National Integrated High School to Calauan National High School and Separating It from Its Mother School, the Dayap National High School.',
+    externalLink: 'https://sb.calauanlaguna.gov.ph/osp/public/downloads/records/6733/MO-03-12-2025.pdf',
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ export const newsData: NewsItem[] = [
     badge: 'Project',
     badgeClass: 'home-news-badge home-news-badge--success',
     description: '',
+    externalLink: '',
   },
   {
     id: 3,
@@ -31,5 +34,6 @@ export const newsData: NewsItem[] = [
     badge: 'Advisory',
     badgeClass: 'home-news-badge home-news-badge--warning',
     description: '',
+    externalLink: '',
   },
 ]

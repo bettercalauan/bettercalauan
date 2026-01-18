@@ -9,9 +9,10 @@ interface NewsCardProps {
   badge: string
   badgeClass: string
   description: string
+  externalLink: string
 }
 
-export default function NewsCard({ id, title, date, badge, badgeClass, description }: NewsCardProps) {
+export default function NewsCard({ id, title, date, badge, badgeClass, description, externalLink }: NewsCardProps) {
   return (
     <article className="news-card">
       <div className="news-card-meta">
@@ -20,7 +21,7 @@ export default function NewsCard({ id, title, date, badge, badgeClass, descripti
       </div>
       <h2 className="news-card-title">{title}</h2>
       <p className="news-card-desc">{description}</p>
-      <Link href={`/news/${id}`} className="news-card-link">
+      <Link href={externalLink} className="news-card-link" target="_blank">
         Read More <i className="bi bi-arrow-right"></i>
       </Link>
     </article>
