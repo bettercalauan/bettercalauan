@@ -118,7 +118,7 @@ export default function HomePage() {
       {/* Weather & Map */}
       <WeatherMap />
 
-      {/* Brief History of Solano */}
+      {/* Brief History of Calauan */}
       <History />
 
       {/* Latest Updates */}
@@ -132,26 +132,26 @@ export default function HomePage() {
             <article className="home-news-card">
               <div className="home-news-meta">
                 <span className="home-news-badge home-news-badge--info">Announcement</span>
-                <span className="home-news-date">Nov 28, 2025</span>
+                <span className="home-news-date">Sept 02, 2025</span>
               </div>
-              <h3><Link href="/news">Business Permit Renewal 2025</Link></h3>
-              <p>Deadline for business permit renewal is set for January 20, 2025. Early renewal is encouraged.</p>
+              <h3><Link href="/news">Renaming DNIHS to CNHS</Link></h3>
+              <p>An Ordinance Renaming Dayap National Integrated High School to Calauan National High School and Separating It from Its Mother School, the Dayap National High School.</p>
             </article>
             <article className="home-news-card">
               <div className="home-news-meta">
                 <span className="home-news-badge home-news-badge--success">Project</span>
-                <span className="home-news-date">Nov 15, 2025</span>
+                <span className="home-news-date">...</span>
               </div>
-              <h3><Link href="/news">New Public Market Wing Opens</Link></h3>
-              <p>The renovated wing of the Solano Public Market is now open to vendors and the public.</p>
+              <h3><Link href="/news">...</Link></h3>
+              <p>...</p>
             </article>
             <article className="home-news-card">
               <div className="home-news-meta">
                 <span className="home-news-badge home-news-badge--warning">Advisory</span>
-                <span className="home-news-date">Nov 10, 2025</span>
+                <span className="home-news-date">...</span>
               </div>
-              <h3><Link href="/news">Scheduled Power Interruption</Link></h3>
-              <p>Maintenance scheduled for Barangay Osmeña on Dec 1, 8:00 AM - 5:00 PM.</p>
+              <h3><Link href="/news">...</Link></h3>
+              <p>...</p>
             </article>
           </div>
         </div>
