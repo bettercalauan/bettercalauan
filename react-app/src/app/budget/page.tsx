@@ -10,7 +10,7 @@ import QuarterToggle from '@/components/budget/QuarterToggle'
 import InfrastructureProjectList from '@/components/budget/InfrastructureProjectList'
 
 export default function BudgetPage() {
-  const [activeQuarter, setActiveQuarter] = useState<'q1' | 'q2'>('q1')
+  const [activeQuarter, setActiveQuarter] = useState<'q1' | 'q2' | 'q3' | 'q4'>('q1')
   const currentData = budgetData[activeQuarter]
 
   useEffect(() => {
