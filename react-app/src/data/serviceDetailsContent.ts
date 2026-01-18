@@ -62,7 +62,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         categoryLink: '/services/certificates',
         badgeText: 'Certificates',
         badgeIcon: 'bi-file-earmark-text',
-        description: 'Official certified copy of birth certificate registered in Solano',
+        description: 'Official certified copy of birth certificate registered in Calauan',
         quickStats: [
             { icon: 'bi-clock', label: 'Processing', value: '15-30 Minutes' },
             { icon: 'bi-cash', label: 'Fee', value: '₱150/copy' },
@@ -82,12 +82,12 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { title: 'If You Are a Representative', icon: 'bi-people', items: ['Authorization letter signed by the owner', 'Valid ID of the owner (photocopy)', 'Valid ID of the representative (original + photocopy)', 'Payment: ₱150 cash per copy'] },
         ],
         faqs: [
-            { question: 'Can I get a birth certificate registered in another municipality?', answer: 'No. The Solano Civil Registrar only has records for births registered in Solano. For other municipalities, request from that municipality\'s Civil Registrar or from PSA.' },
+            { question: 'Can I get a birth certificate registered in another municipality?', answer: 'No. The Calauan Civil Registrar only has records for births registered in Calauan. For other municipalities, request from that municipality\'s Civil Registrar or from PSA.' },
             { question: 'What if I don\'t know the exact date of birth?', answer: 'Provide an approximate year and month. The staff will help search the records, but this may take longer.' },
             { question: 'Can I request through email or online?', answer: 'Currently, requests must be made in person. Online services are being planned for the future.' },
             { question: 'What\'s the difference between local copy and PSA copy?', answer: 'Both are certified true copies. PSA copies are nationally-recognized and required for passport/visa applications. Local copies are accepted for most local transactions and school enrollment.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Solano, Nueva Vizcaya', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Marriage Certificate', link: '/service-details/marriage-certificate' },
             { title: 'Death Certificate', link: '/service-details/death-certificate' },
@@ -123,9 +123,9 @@ export const serviceDetailsContent: ServiceDetail[] = [
         ],
         faqs: [
             { question: 'How soon after the wedding should I register?', answer: 'Within 30 days of the marriage ceremony. Late registration may require additional documents.' },
-            { question: 'Can I get a copy if I was married elsewhere?', answer: 'Only marriages registered in Solano are available. Request from the municipality where you were married or from PSA.' },
+            { question: 'Can I get a copy if I was married elsewhere?', answer: 'Only marriages registered in Calauan are available. Request from the municipality where you were married or from PSA.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Solano, Nueva Vizcaya', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Birth Certificate', link: '/service-details/birth-certificate' },
             { title: 'CENOMAR', link: '/services/certificates' },
@@ -160,7 +160,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'How soon must death be registered?', answer: 'Within 48 hours of death. Late registration requires additional documents and fees.' },
             { question: 'Do I need a burial permit?', answer: 'Yes, burial permit is required before interment in any cemetery.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Solano, Nueva Vizcaya', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Birth Certificate', link: '/service-details/birth-certificate' },
             { title: 'MSWDO Services', link: '/service-details/mswdo-services' },
@@ -194,7 +194,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'What services are offered?', answer: 'Birth, death, marriage registration; certified copies; corrections; late registration; legitimation; and other civil registry services.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Solano, Nueva Vizcaya', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Birth Certificate', link: '/service-details/birth-certificate' },
             { title: 'Marriage Certificate', link: '/service-details/marriage-certificate' },
@@ -655,7 +655,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         quickStats: [
             { icon: 'bi-clock', label: 'Market Hours', value: '5AM-6PM' },
             { icon: 'bi-telephone', label: 'Contact', value: '(078) 326-5001' },
-            { icon: 'bi-geo-alt', label: 'Location', value: 'Solano Public Market' },
+            { icon: 'bi-geo-alt', label: 'Location', value: 'Calauan Public Market' },
             { icon: 'bi-cash', label: 'Stall Rental', value: 'Varies' },
         ],
         processSteps: [
@@ -670,7 +670,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'How are stalls assigned?', answer: 'Based on availability and first-come-first-served basis.' },
         ],
-        office: { name: 'SEEDO Office', location: 'Solano Public Market', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'SEEDO Office', location: 'Calauan Public Market', phone: '(078) 326-5001', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Business Permits', link: '/service-details/business-permits-licensing' },
         ],
@@ -687,7 +687,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         quickStats: [
             { icon: 'bi-clock', label: 'Hours', value: '4AM-8AM' },
             { icon: 'bi-telephone', label: 'Contact', value: '(078) 326-5001' },
-            { icon: 'bi-geo-alt', label: 'Location', value: 'Solano Slaughterhouse' },
+            { icon: 'bi-geo-alt', label: 'Location', value: 'Calauan Slaughterhouse' },
             { icon: 'bi-cash', label: 'Fee', value: 'Per head' },
         ],
         processSteps: [
@@ -703,7 +703,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'What time should I bring livestock?', answer: 'Animals should arrive between 4AM-6AM for morning slaughter.' },
         ],
-        office: { name: 'SEEDO - Slaughterhouse', location: 'Solano Slaughterhouse', phone: '(078) 326-5001', hours: '4AM - 8AM' },
+        office: { name: 'SEEDO - Slaughterhouse', location: 'Calauan Slaughterhouse', phone: '(078) 326-5001', hours: '4AM - 8AM' },
         relatedServices: [
             { title: 'Veterinary Services', link: '/services/agriculture' },
         ],
