@@ -22,7 +22,7 @@ export default function NewsPage() {
           <div className="page-header-content">
             <span className="page-header-badge"><i className="bi bi-newspaper"></i> News</span>
             <h1>News & Announcements</h1>
-            <p className="page-header-desc">Stay updated with the latest news and announcements from the Municipality of Solano</p>
+            <p className="page-header-desc">Stay updated with the latest news and announcements from the Municipality of Calauan</p>
           </div>
         </div>
       </section>
