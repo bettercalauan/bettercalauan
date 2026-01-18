@@ -16,6 +16,7 @@ import {
 } from 'chart.js';
 import { Line, Pie, Doughnut, Bar } from 'react-chartjs-2';
 import { barangaysPopulation, economicSectors } from '@/data/statistics';
+import { budgetData } from '@/data/budget';
 
 // Register Chart.js components
 ChartJS.register(
@@ -201,9 +202,9 @@ export function PopulationDistributionChart() {
 
 // Income Sources Doughnut Chart
 export function IncomeSourcesChart({
-    localValue = 88.85,
-    externalValue = 69.62,
-    totalIncome = 158.47
+    localValue = budgetData.q1.income.local.value,
+    externalValue = budgetData.q1.income.external.value,
+    totalIncome = budgetData.q1.totalIncomeValue
 }: {
     localValue?: number;
     externalValue?: number;
@@ -259,11 +260,11 @@ export function IncomeSourcesChart({
 
 // Expenditure Allocation Doughnut Chart
 export function ExpenditureChart({
-    gpsValue = 42.76,
-    socialValue = 13.33,
-    economicValue = 11.07,
-    debtValue = 0.35,
-    totalExpense = 67.51
+    gpsValue = budgetData.q1.expenditure.gps.value,
+    socialValue = budgetData.q1.expenditure.social.value,
+    economicValue = budgetData.q1.expenditure.economic.value,
+    debtValue = budgetData.q1.expenditure.debt.value,
+    totalExpense = budgetData.q1.totalExpenseValue
 }: {
     gpsValue?: number;
     socialValue?: number;
