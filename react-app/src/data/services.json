@@ -5,7 +5,7 @@
       "title": "Birth Certificate",
       "category": "Certificates & Vital Records",
       "categoryId": "certificates",
-      "description": "Get a certified copy of birth certificate registered in Solano",
+      "description": "Get a certified copy of birth certificate registered in Calauan",
       "keywords": ["birth", "certificate", "born", "baby", "civil registry", "lcr", "vital records"],
       "fee": "₱150",
       "processingTime": "15-30 minutes",
@@ -69,7 +69,7 @@
       "keywords": ["police", "clearance", "nbi", "criminal", "record"],
       "fee": "Varies",
       "processingTime": "3-5 days",
-      "office": "PNP Solano",
+      "office": "PNP Calauan",
       "url": "certificates.html"
     },
     {
@@ -623,66 +623,6 @@
       "processingTime": "Varies",
       "office": "Human Resource Management Office",
       "url": "../service-details/human-resource-management.html"
-    },
-    {
-      "id": "online-business-billing",
-      "title": "Business Online Billing & Payment",
-      "category": "Online Services",
-      "categoryId": "online",
-      "description": "View and pay your business tax bills online via Filipizen",
-      "keywords": ["online", "billing", "payment", "business tax", "filipizen", "e-payment", "digital"],
-      "fee": "Varies",
-      "processingTime": "Instant",
-      "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/billing"
-    },
-    {
-      "id": "online-new-business",
-      "title": "New Business Application Online",
-      "category": "Online Services",
-      "categoryId": "online",
-      "description": "Apply for a new business permit online via Filipizen",
-      "keywords": ["online", "new business", "application", "permit", "filipizen", "e-services"],
-      "fee": "Varies",
-      "processingTime": "3-5 days",
-      "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/newbusiness"
-    },
-    {
-      "id": "online-business-renewal",
-      "title": "Business Permit Renewal Online",
-      "category": "Online Services",
-      "categoryId": "online",
-      "description": "Renew your existing business permit online via Filipizen",
-      "keywords": ["online", "renewal", "business permit", "filipizen", "e-services", "renew"],
-      "fee": "Varies",
-      "processingTime": "Same day",
-      "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/renewbusiness"
-    },
-    {
-      "id": "online-rpt-billing",
-      "title": "Real Property Tax Online Billing & Payment",
-      "category": "Online Services",
-      "categoryId": "online",
-      "description": "View and pay your real property tax (amilyar) online via Filipizen",
-      "keywords": ["online", "property tax", "amilyar", "billing", "payment", "filipizen", "RPT"],
-      "fee": "Varies",
-      "processingTime": "Instant",
-      "office": "Municipal Treasurer's Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/rptis/billing"
-    },
-    {
-      "id": "online-payment-order",
-      "title": "Online Payment Order",
-      "category": "Online Services",
-      "categoryId": "online",
-      "description": "Process payment orders for various municipal fees online via Filipizen",
-      "keywords": ["online", "payment order", "fees", "filipizen", "e-payment", "municipal fees"],
-      "fee": "Varies",
-      "processingTime": "Instant",
-      "office": "Municipal Treasurer's Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/po/billing"
     }
   ]
 }
