@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { newsData } from '@/data/news';
 import SearchAutocomplete from '@/components/SearchAutocomplete';
 import History from '@/components/home/History';
 import QuickStats from '@/components/home/QuickStats';
@@ -129,30 +130,16 @@ export default function HomePage() {
             <Link href="/news" className="home-section-link"><span>{t('btn-view-all')}</span> <i className="bi bi-arrow-right"></i></Link>
           </div>
           <div className="home-news-grid">
-            <article className="home-news-card">
-              <div className="home-news-meta">
-                <span className="home-news-badge home-news-badge--info">Announcement</span>
-                <span className="home-news-date">Sept 02, 2025</span>
-              </div>
-              <h3><Link href="/news">Renaming DNIHS to CNHS</Link></h3>
-              <p>An Ordinance Renaming Dayap National Integrated High School to Calauan National High School and Separating It from Its Mother School, the Dayap National High School.</p>
-            </article>
-            <article className="home-news-card">
-              <div className="home-news-meta">
-                <span className="home-news-badge home-news-badge--success">Project</span>
-                <span className="home-news-date">...</span>
-              </div>
-              <h3><Link href="/news">...</Link></h3>
-              <p>...</p>
-            </article>
-            <article className="home-news-card">
-              <div className="home-news-meta">
-                <span className="home-news-badge home-news-badge--warning">Advisory</span>
-                <span className="home-news-date">...</span>
-              </div>
-              <h3><Link href="/news">...</Link></h3>
-              <p>...</p>
-            </article>
+            {newsData.map((item) => (
+              <article key={item.id} className="home-news-card">
+                <div className="home-news-meta">
+                  <span className={`home-news-badge ${item.badgeClass}`}>{item.badge}</span>
+                  <span className="home-news-date">{item.date}</span>
+                </div>
+                <h3><Link href="/news">{item.title}</Link></h3>
+                <p>{item.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
