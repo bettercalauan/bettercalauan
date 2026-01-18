@@ -32,41 +32,77 @@ interface InfrastructureProject {
 
 export const budgetData: Record<string, BudgetQuarter> = {
   q1: {
-    totalIncome: '₱158.47 M',
-    totalExpense: '₱67.51 M',
-    netIncome: '₱90.96 M',
-    fundBalance: '₱283.29 M',
-    income: {
-      local: { amount: '₱88.85 M', pct: '56.1%', value: 88.85 },
-      external: { amount: '₱69.62 M', pct: '43.9%', value: 69.62 }
+      totalIncome: '₱TBD M',
+      totalExpense: '₱TBD M',
+      netIncome: '₱TBD M',
+      fundBalance: '₱TBD M',
+      income: {
+        local: { amount: '₱0.02 M', pct: '50.00%', value: 0.50 },
+        external: { amount: '₱0.02 M', pct: '50.00%', value: 0.50 }
+      },
+      expenditure: {
+        gps: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        social: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        economic: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        debt: { amount: '₱0.01 M', pct: '25%', value: 0.25 }
+      },
+      totalIncomeValue: 0.04,
+      totalExpenseValue: 0.04
     },
-    expenditure: {
-      gps: { amount: '₱42.76 M', pct: '63.3%', value: 42.76 },
-      social: { amount: '₱13.33 M', pct: '19.7%', value: 13.33 },
-      economic: { amount: '₱11.07 M', pct: '16.4%', value: 11.07 },
-      debt: { amount: '₱0.35 M', pct: '0.5%', value: 0.35 }
-    },
-    totalIncomeValue: 158.47,
-    totalExpenseValue: 67.51
-  },
   q2: {
-    totalIncome: '₱172.34 M',
-    totalExpense: '₱78.92 M',
-    netIncome: '₱93.42 M',
-    fundBalance: '₱376.71 M',
-    income: {
-      local: { amount: '₱95.28 M', pct: '55.3%', value: 95.28 },
-      external: { amount: '₱77.06 M', pct: '44.7%', value: 77.06 }
+      totalIncome: '₱TBD M',
+      totalExpense: '₱TBD M',
+      netIncome: '₱TBD M',
+      fundBalance: '₱TBD M',
+      income: {
+        local: { amount: '₱0.02 M', pct: '50.00%', value: 0.50 },
+        external: { amount: '₱0.02 M', pct: '50.00%', value: 0.50 }
+      },
+      expenditure: {
+        gps: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        social: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        economic: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        debt: { amount: '₱0.01 M', pct: '25%', value: 0.25 }
+      },
+      totalIncomeValue: 0.04,
+      totalExpenseValue: 0.04
     },
-    expenditure: {
-      gps: { amount: '₱48.15 M', pct: '61.0%', value: 48.15 },
-      social: { amount: '₱16.82 M', pct: '21.3%', value: 16.82 },
-      economic: { amount: '₱13.16 M', pct: '16.7%', value: 13.16 },
-      debt: { amount: '₱0.79 M', pct: '1.0%', value: 0.79 }
+  q3: {
+      totalIncome: '₱TBD M',
+      totalExpense: '₱TBD M',
+      netIncome: '₱TBD M',
+      fundBalance: '₱TBD M',
+      income: {
+        local: { amount: '₱0.02 M', pct: '50.00%', value: 0.50 },
+        external: { amount: '₱0.02 M', pct: '50.00%', value: 0.50 }
+      },
+      expenditure: {
+        gps: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        social: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        economic: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        debt: { amount: '₱0.01 M', pct: '25%', value: 0.25 }
+      },
+      totalIncomeValue: 0.04,
+      totalExpenseValue: 0.04
     },
-    totalIncomeValue: 172.34,
-    totalExpenseValue: 78.92
-  }
+  q4: {
+      totalIncome: '₱TBD M',
+      totalExpense: '₱TBD M',
+      netIncome: '₱TBD M',
+      fundBalance: '₱TBD M',
+      income: {
+        local: { amount: '₱0.02 M', pct: '50.00%', value: 0.50 },
+        external: { amount: '₱0.02 M', pct: '50.00%', value: 0.50 }
+      },
+      expenditure: {
+        gps: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        social: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        economic: { amount: '₱0.01 M', pct: '25%', value: 0.25  },
+        debt: { amount: '₱0.01 M', pct: '25%', value: 0.25 }
+      },
+      totalIncomeValue: 0.04,
+      totalExpenseValue: 0.04
+    },
 }
 
 export const infrastructureProjects: InfrastructureProject[] = [
