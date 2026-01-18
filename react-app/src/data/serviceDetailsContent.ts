@@ -87,7 +87,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'Can I request through email or online?', answer: 'Currently, requests must be made in person. Online services are being planned for the future.' },
             { question: 'What\'s the difference between local copy and PSA copy?', answer: 'Both are certified true copies. PSA copies are nationally-recognized and required for passport/visa applications. Local copies are accepted for most local transactions and school enrollment.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Marriage Certificate', link: '/service-details/marriage-certificate' },
             { title: 'Death Certificate', link: '/service-details/death-certificate' },
@@ -111,7 +111,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         ],
         processSteps: [
             { title: 'Gather Documents', description: 'Prepare marriage certificate from solemnizing officer and valid IDs.' },
-            { title: 'Visit Civil Registrar', description: 'Go to the Civil Registrar Office, 2nd Floor, Municipal Hall.' },
+            { title: 'Visit Civil Registrar', description: 'Go to the Civil Registrar Office, Municipal Hall.' },
             { title: 'Submit Documents', description: 'Submit marriage certificate and supporting documents for registration.' },
             { title: 'Verification', description: 'Staff verifies document authenticity and completeness.' },
             { title: 'Registration', description: 'Marriage is officially registered in the civil registry.' },
@@ -125,7 +125,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'How soon after the wedding should I register?', answer: 'Within 30 days of the marriage ceremony. Late registration may require additional documents.' },
             { question: 'Can I get a copy if I was married elsewhere?', answer: 'Only marriages registered in Calauan are available. Request from the municipality where you were married or from PSA.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Birth Certificate', link: '/service-details/birth-certificate' },
             { title: 'CENOMAR', link: '/services/certificates' },
@@ -160,7 +160,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'How soon must death be registered?', answer: 'Within 48 hours of death. Late registration requires additional documents and fees.' },
             { question: 'Do I need a burial permit?', answer: 'Yes, burial permit is required before interment in any cemetery.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Birth Certificate', link: '/service-details/birth-certificate' },
             { title: 'MSWDO Services', link: '/service-details/mswdo-services' },
@@ -184,7 +184,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         processSteps: [
             { title: 'Identify Service', description: 'Determine what civil registry service you need.' },
             { title: 'Prepare Documents', description: 'Gather all required documents for your transaction.' },
-            { title: 'Visit Office', description: 'Go to Civil Registrar, 2nd Floor of Municipal Hall.' },
+            { title: 'Visit Office', description: 'Go to Civil Registrar of Municipal Hall.' },
             { title: 'Submit Application', description: 'Submit documents and pay applicable fees.' },
             { title: 'Claim Documents', description: 'Return to claim processed documents.', isFinal: true },
         ],
@@ -194,7 +194,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'What services are offered?', answer: 'Birth, death, marriage registration; certified copies; corrections; late registration; legitimation; and other civil registry services.' },
         ],
-        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, 2nd Floor, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'Local Civil Registrar', location: 'Municipal Hall, Calauan, Laguna', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Birth Certificate', link: '/service-details/birth-certificate' },
             { title: 'Marriage Certificate', link: '/service-details/marriage-certificate' },
