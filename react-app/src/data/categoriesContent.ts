@@ -36,7 +36,7 @@ export const categoriesContent: CategoryContent[] = [
         badgeText: 'Certificates',
         description: 'Official documents for birth, death, marriage, and other vital records',
         services: [
-            { id: 'birth-cert', title: 'Birth Certificate', icon: 'bi-file-earmark-text', description: 'Get a certified copy of birth certificate registered in Solano', fee: '₱150', time: '15-30 mins', link: '/service-details/birth-certificate' },
+            { id: 'birth-cert', title: 'Birth Certificate', icon: 'bi-file-earmark-text', description: 'Get a certified copy of birth certificate registered in Calauan', fee: '₱150', time: '15-30 mins', link: '/service-details/birth-certificate' },
             { id: 'marriage-cert', title: 'Marriage Certificate', icon: 'bi-heart', description: 'Register or request certified true copy of marriage certificate', fee: 'Free (Registration)', time: '5 mins', link: '/service-details/marriage-certificate' },
             { id: 'death-cert', title: 'Death Certificate', icon: 'bi-file-earmark-x', description: 'Register death certificate and obtain burial/transfer permit', fee: '₱50-150', time: '~1.5 hrs', link: '/service-details/death-certificate' },
             { id: 'brgy-clearance', title: 'Barangay Clearance', icon: 'bi-house-check', description: 'Certificate of residence from your barangay', fee: '₱50-100', time: 'Same day' },

@@ -23,7 +23,7 @@ export default function SitemapPage() {
           <div className="page-header-content">
             <span className="page-header-badge"><i className="bi bi-diagram-3-fill"></i> Navigation</span>
             <h1>Sitemap</h1>
-            <p className="page-header-desc">Navigate all pages and services of Better Solano</p>
+            <p className="page-header-desc">Navigate all pages and services of Better Calauan</p>
           </div>
         </div>
       </section>
@@ -111,22 +111,6 @@ export default function SitemapPage() {
             </div>
           </div>
 
-          {/* Online Services */}
-          <div className="sitemap-section-new">
-            <div className="sitemap-section-header">
-              <span className="sitemap-section-icon sitemap-section-icon--online"><i className="bi bi-globe2"></i></span>
-              <h2>Online Services</h2>
-              <span className="sitemap-badge">via Filipizen</span>
-            </div>
-            <div className="sitemap-links-grid">
-              <a href="https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/billing" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Business Billing &amp; Payment</a>
-              <a href="https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/newbusiness" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> New Business Application</a>
-              <a href="https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/renewbusiness" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Business Permit Renewal</a>
-              <a href="https://www.filipizen.com/partners/nuevavizcaya_solano/rptis/billing" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Real Property Tax Payment</a>
-              <a href="https://www.filipizen.com/partners/nuevavizcaya_solano/po/billing" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Online Payment Order</a>
-            </div>
-          </div>
-
           {/* External Resources */}
           <div className="sitemap-section-new">
             <div className="sitemap-section-header">
@@ -134,9 +118,9 @@ export default function SitemapPage() {
               <h2>External Resources</h2>
             </div>
             <div className="sitemap-links-grid">
-              <a href="https://solano.gov.ph" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Official Solano Website</a>
-              <a href="https://sangguniangbayan.solano.gov.ph/" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Sangguniang Bayan</a>
-              <a href="https://www.facebook.com/OfficialLguSolanoFanpage/" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Facebook Page</a>
+              <a href="https://calauanlaguna.gov.ph/" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Official Calauan Website</a>
+              <a href="https://calauansb.online/" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Sangguniang Bayan</a>
+              <a href="https://www.facebook.com/calauansb/" target="_blank" rel="noopener noreferrer" className="sitemap-link-item sitemap-link-item--external"><i className="bi bi-box-arrow-up-right"></i> Facebook Page</a>
               <Link href="/terms" className="sitemap-link-item"><i className="bi bi-arrow-right"></i> Terms of Use</Link>
               <Link href="/privacy" className="sitemap-link-item"><i className="bi bi-arrow-right"></i> Privacy Policy</Link>
             </div>

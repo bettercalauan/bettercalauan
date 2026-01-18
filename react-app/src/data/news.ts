@@ -1,0 +1,39 @@
+export interface NewsItem {
+  id: number
+  title: string
+  date: string
+  badge: string
+  badgeClass: string
+  description: string
+  externalLink: string
+}
+
+export const newsData: NewsItem[] = [
+  {
+    id: 1,
+    title: 'Renaming DNIHS to CNHS',
+    date: 'September 02, 2025',
+    badge: 'Announcement',
+    badgeClass: 'home-news-badge--info',
+    description: 'An Ordinance Renaming Dayap National Integrated High School to Calauan National High School and Separating It from Its Mother School, the Dayap National High School.',
+    externalLink: 'https://sb.calauanlaguna.gov.ph/osp/public/downloads/records/6733/MO-03-12-2025.pdf',
+  },
+  {
+    id: 2,
+    title: '',
+    date: '',
+    badge: 'Project',
+    badgeClass: 'home-news-badge home-news-badge--success',
+    description: '',
+    externalLink: '',
+  },
+  {
+    id: 3,
+    title: '',
+    date: '',
+    badge: 'Advisory',
+    badgeClass: 'home-news-badge home-news-badge--warning',
+    description: '',
+    externalLink: '',
+  },
+]

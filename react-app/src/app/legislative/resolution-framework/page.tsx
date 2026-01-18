@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Resolution Framework | BetterSolano.org',
-  description: 'Browse resolutions passed by the Sangguniang Bayan of Solano, Nueva Vizcaya.',
+  title: 'Resolution Framework | BetterCalauan.org',
+  description: 'Browse resolutions passed by the Sangguniang Bayan of Calauan, Calauan.',
 };
 
 const resolutionTypes = [
@@ -14,22 +14,12 @@ const resolutionTypes = [
 ];
 
 const resolutions2025 = [
-  { no: '2025-205-II', title: 'A Resolution Authorizing the Municipality of Solano, Nueva Vizcaya, thru the Honorable Municipal Mayor, Virginia R. Soriano, to Enter into a Memorandum of Agreement with the Department of Labor and Employment (DOLE) for Youth Employment Program', date: 'April 21, 2025' },
-  { no: '2025-204-II', title: 'A Resolution Approving the Municipal and Barangay Council for the Protection of Children (MCPC/BCPC) Work and Financial Plan for CY 2025', date: 'April 21, 2025' },
-  { no: '2025-203-II', title: 'A Resolution Authorizing Mayor Virginia R. Soriano to Enter Into Contract with ABC Construction for the Improvement of Road Network in Brgy. Quezon', date: 'April 7, 2025' },
-  { no: '2025-202-II', title: 'A Resolution Authorizing the Local Chief Executive, Hon. Virginia R. Soriano, to Procure Various Agricultural Equipment and Supplies for Distribution to Local Farmers', date: 'April 7, 2025' },
-  { no: '2025-201-II', title: 'A Resolution Expressing Full Support to the Implementation of Enhanced Community Learning Centers (ECLCs) in All Barangays of Solano, Nueva Vizcaya', date: 'March 24, 2025' },
-  { no: '2025-200-II', title: 'A Resolution Commending the Philippine National Police - Solano Municipal Police Station for Exemplary Performance in Crime Prevention and Public Safety', date: 'March 24, 2025' },
-  { no: '2025-199-II', title: 'A Resolution Requesting the Department of Public Works and Highways to Expedite the Rehabilitation of the Solano-Bagabag National Road Section', date: 'March 10, 2025' },
-  { no: '2025-198-II', title: 'A Resolution Approving the Annual Budget for the Sangguniang Kabataan Federation of Solano, Nueva Vizcaya for Fiscal Year 2025', date: 'March 10, 2025' },
-  { no: '2025-197-II', title: 'A Resolution Authorizing the Municipal Mayor to Accept Donation of Lot from the Provincial Government for the Construction of Multi-Purpose Hall', date: 'February 24, 2025' },
-  { no: '2025-196-II', title: 'A Resolution Expressing Condolence to the Family of the Late Honorable Councilor Emeritus Ricardo S. Marcos', date: 'February 24, 2025' },
-  { no: '2025-195-II', title: 'A Resolution Supporting the National Anti-Drug Campaign and Reiterating the Municipal Government\'s Commitment to Drug-Free Communities', date: 'February 10, 2025' },
-  { no: '2025-194-II', title: 'A Resolution Approving the Supplemental Budget No. 1 for Fiscal Year 2025 of the Municipality of Solano, Nueva Vizcaya', date: 'February 10, 2025' },
-  { no: '2025-193-II', title: 'A Resolution Authorizing the Creation of Task Force Kalinisan to Implement Solid Waste Management Programs in All Barangays', date: 'January 27, 2025' },
-  { no: '2025-192-II', title: 'A Resolution Endorsing the Application of Barangay Roxas for the Seal of Good Local Governance (SGLG) Award', date: 'January 27, 2025' },
-  { no: '2025-191-II', title: 'A Resolution Declaring February 2025 as "Solano Heritage Month" and Authorizing Related Cultural Activities and Celebrations', date: 'January 13, 2025' },
-  { no: '2025-190-II', title: 'A Resolution Expressing Gratitude to the Department of Health for the Successful Implementation of the COVID-19 Vaccination Program in Solano', date: 'January 13, 2025' },
+  { no: '163-12-2025', title: 'A Resolution Approving Resolution No. 44 Series of 2025 and Appropriation Ordinance No. 66 Series of 2025 of the Sangguniang Barangay of Lamot 2, Calauan, Laguna "An Ordinance Authorizing the Annual Budget of Barangay Lamot 2, Calauan, Laguna for Fiscal Year 2026 in the Amount of Eleven Million Seven Hundred Ninety-One Thousand Three Hundred Fifty-Nine Pesos (PHP 11,791,359.00)."', date: 'December 22, 2025' },
+  { no: '147-12-2025', title: 'A Resolution Approving Appropriation Ordinance No. 01 Series of 2025 of the Sangguniang Barangay of Barangay Silangan, Calauan, Laguna "An Ordinance Authorizing the Annual Budget of Barangay Silangan, Calauan, Laguna for Fiscal Year 2026 in the Amount of Five Million One Hundred Fifteen Thousand Ninety-Two Pesos (PHP 5,115,092.00)".', date: 'December 01, 2025' },
+  { no: '141-12-2025', title: 'A Resolution Adopting and Approving the FY 2025-2028 Farm-to-Market Road Network Plan (FMRNP) of the Municipality of Calauan, Laguna', date: 'November 24, 2025' },
+  { no: '118-12-2025', title: 'A Resolution Approving the FY 2026 Peace and Order and Public Safety (POPS) Plan Amounting to Seven Million Pesos (Php 7,000,000.00) Integrating Therein the FY 2026 Local Anti-Drug Plan of Action (LADPA) of the Municipality of Calauan, Laguna.', date: 'November 03, 2025' },
+  { no: '102-12-2025', title: 'A Resolution Requesting to Honorable Mayor Roseller G. Caraithan to Create a Municipal Veterinary Office in the Municipality of Calauan', date: 'October 20, 2025' },
+  { no: '106-12-2025', title: 'A Resolution Approving the Priority Programs and Projects Funded Under the 20% Development Fund for Fiscal Year 2026 of the Municipal Government of Calauan, Laguna Embodied Under Municipal Development Council Resolution No. 09-2025 Amounting to Seventy-Three Million Three Hundred Fifty-Six Thousand Fifty-Four Pesos and Sixty Centavos (Php 73,356,054.60).', date: 'October 20, 2025' },
 ];
 
 export default function ResolutionFrameworkPage() {
@@ -52,7 +42,7 @@ export default function ResolutionFrameworkPage() {
           <div className="page-header-content">
             <span className="page-header-badge"><i className="bi bi-file-earmark-text"></i> Legislative</span>
             <h1>Resolution Framework</h1>
-            <p className="page-header-desc">Resolutions passed by the Sangguniang Bayan ng Solano</p>
+            <p className="page-header-desc">Resolutions passed by the Sangguniang Bayan ng Calauan</p>
           </div>
         </div>
       </section>
@@ -92,11 +82,11 @@ export default function ResolutionFrameworkPage() {
         <div className="container">
           <div className="text-center" style={{ marginBottom: 'var(--spacing-lg)' }}>
             <h2 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-xs)' }}>2025 Resolutions</h2>
-            <p style={{ color: 'var(--color-text-light)' }}>Official resolutions passed by the Sangguniang Bayan ng Solano in 2025</p>
+            <p style={{ color: 'var(--color-text-light)' }}>Official resolutions passed by the Sangguniang Bayan ng Calauan in 2025</p>
           </div>
           <div className="table-responsive">
             <table className="data-table resolution-table">
-              <caption className="sr-only">List of 2025 Resolutions from Sangguniang Bayan ng Solano</caption>
+              <caption className="sr-only">List of 2025 Resolutions from Sangguniang Bayan ng Calauan</caption>
               <thead>
                 <tr>
                   <th scope="col" style={{ width: '130px' }}>Resolution No.</th>
@@ -117,7 +107,7 @@ export default function ResolutionFrameworkPage() {
           </div>
           <div className="text-center" style={{ marginTop: 'var(--spacing-lg)' }}>
             <a
-              href="https://sangguniangbayan.solano.gov.ph/index.php?page=legislative_framework_reso"
+              href="https://sb.calauanlaguna.gov.ph/osp/records?set_doc_type=resolution&set_year=2025&set_month="
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"

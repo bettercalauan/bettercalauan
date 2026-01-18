@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useLayoutEffect } from 'react';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -15,6 +15,8 @@ import {
     Filler,
 } from 'chart.js';
 import { Line, Pie, Doughnut, Bar } from 'react-chartjs-2';
+import { barangaysPopulation, economicSectors } from '@/data/statistics';
+import { budgetData } from '@/data/budget';
 
 // Register Chart.js components
 ChartJS.register(
@@ -30,6 +32,35 @@ ChartJS.register(
     Filler
 );
 
+// Hook to constrain chart width and prevent overflow
+function useChartConstrain(containerRef: React.RefObject<HTMLDivElement | null>, enabled = true) {
+  useLayoutEffect(() => {
+    if (!enabled || !containerRef.current) return
+
+    const container = containerRef.current
+    const chartContainer = container.closest('.sre-breakdown-panel')
+    if (!chartContainer) return
+
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const { width } = entry.contentRect
+        const chartCanvas = container.querySelector('canvas')
+        if (chartCanvas) {
+          const chartWidth = Math.floor((width - 20) / 2) // Subtract 20px gap, divide by 2 for 2 columns
+          Object.assign(chartCanvas.style, {
+            width: `${chartWidth}px`,
+            maxWidth: `${chartWidth}px`,
+          })
+        }
+      }
+    })
+
+    observer.observe(chartContainer)
+
+    return () => observer.disconnect()
+  }, [containerRef, enabled])
+}
+
 // Population Trends Line Chart
 export function PopulationTrendsChart() {
     const data = {
@@ -37,7 +68,7 @@ export function PopulationTrendsChart() {
         datasets: [
             {
                 label: 'Population',
-                data: [38006, 42857, 47288, 53004, 56831, 62649, 65896, 69296],
+                data: [32736, 36677, 43284, 54248, 74890, 80453, 87693, 89670],
                 borderColor: '#0032a0',
                 backgroundColor: 'rgba(0, 50, 160, 0.12)',
                 fill: true,
@@ -106,10 +137,10 @@ export function PopulationTrendsChart() {
 // Population Distribution Pie Chart
 export function PopulationDistributionChart() {
     const data = {
-        labels: ['Roxas', 'Quirino', 'Osmeña', 'Quezon', 'Curifang', 'Bagahabag', 'Uddiawan', 'Bascaran', 'Aggub', 'San Luis'],
+        labels: barangaysPopulation.slice(0, 10).map(b => b.name),
         datasets: [
             {
-                data: [9088, 6572, 6403, 5758, 4885, 4731, 4217, 3845, 3101, 2668],
+                data: barangaysPopulation.slice(0, 10).map(b => parseInt(b.pop.replace(/,/g, ''))),
                 backgroundColor: [
                     '#0032a0',
                     '#F77F00',
@@ -171,14 +202,17 @@ export function PopulationDistributionChart() {
 
 // Income Sources Doughnut Chart
 export function IncomeSourcesChart({
-    localValue = 88.85,
-    externalValue = 69.62,
-    totalIncome = 158.47
+    localValue = budgetData.q1.income.local.value,
+    externalValue = budgetData.q1.income.external.value,
+    totalIncome = budgetData.q1.totalIncomeValue
 }: {
     localValue?: number;
     externalValue?: number;
     totalIncome?: number;
 }) {
+    const containerRef = useRef<HTMLDivElement>(null)
+    useChartConstrain(containerRef)
+
     const data = {
         labels: ['Local Sources', 'External Sources (NTA)'],
         datasets: [
@@ -194,7 +228,7 @@ export function IncomeSourcesChart({
 
     const options = {
         responsive: true,
-        maintainAspectRatio: false,
+        aspectRatio: 1.6,
         cutout: '62%',
         plugins: {
             legend: {
@@ -214,7 +248,7 @@ export function IncomeSourcesChart({
     };
 
     return (
-        <div className="chart-container-doughnut" style={{ height: '160px', width: '100%', position: 'relative' }}>
+        <div ref={containerRef} className="chart-container-doughnut">
             <Doughnut data={data} options={options} />
             <div className="chart-center-label">
                 <div className="chart-center-value">₱{totalIncome.toFixed(2)}M</div>
@@ -226,11 +260,11 @@ export function IncomeSourcesChart({
 
 // Expenditure Allocation Doughnut Chart
 export function ExpenditureChart({
-    gpsValue = 42.76,
-    socialValue = 13.33,
-    economicValue = 11.07,
-    debtValue = 0.35,
-    totalExpense = 67.51
+    gpsValue = budgetData.q1.expenditure.gps.value,
+    socialValue = budgetData.q1.expenditure.social.value,
+    economicValue = budgetData.q1.expenditure.economic.value,
+    debtValue = budgetData.q1.expenditure.debt.value,
+    totalExpense = budgetData.q1.totalExpenseValue
 }: {
     gpsValue?: number;
     socialValue?: number;
@@ -238,6 +272,9 @@ export function ExpenditureChart({
     debtValue?: number;
     totalExpense?: number;
 }) {
+    const containerRef = useRef<HTMLDivElement>(null)
+    useChartConstrain(containerRef)
+
     const data = {
         labels: ['General Public Services', 'Social Services', 'Economic Services', 'Debt Service'],
         datasets: [
@@ -253,7 +290,7 @@ export function ExpenditureChart({
 
     const options = {
         responsive: true,
-        maintainAspectRatio: false,
+        aspectRatio: 1.6,
         cutout: '62%',
         plugins: {
             legend: {
@@ -273,7 +310,7 @@ export function ExpenditureChart({
     };
 
     return (
-        <div className="chart-container-doughnut" style={{ height: '160px', width: '100%', position: 'relative' }}>
+        <div ref={containerRef} className="chart-container-doughnut">
             <Doughnut data={data} options={options} />
             <div className="chart-center-label">
                 <div className="chart-center-value">₱{totalExpense.toFixed(2)}M</div>
@@ -358,7 +395,7 @@ export function KeyIndicatorsTrendChart() {
         datasets: [
             {
                 label: 'Health',
-                data: [2.40, 0.70, 0.45, 0.35, 0.35, 0.40, 0.38, 0.35, 0.32],
+                data: [0.2068, 0.1125, 0.0000, 0.0795, 0.0653, 0.1025, 0.0307, 0.0760, 0.0795],
                 borderColor: '#0032a0',
                 backgroundColor: '#0032a0',
                 tension: 0.35,
@@ -368,7 +405,7 @@ export function KeyIndicatorsTrendChart() {
             },
             {
                 label: 'Education',
-                data: [0.65, 0.32, 0.28, 0.25, 0.18, 0.15, 0.12, 0.10, 0.08],
+                data: [0.0717, 0.0974, 0.0000, 0.0729, 0.0796, 0.0274, 0.0851, 0.0830, 0.0682],
                 borderColor: '#f59e0b',
                 backgroundColor: '#f59e0b',
                 tension: 0.35,
@@ -378,7 +415,7 @@ export function KeyIndicatorsTrendChart() {
             },
             {
                 label: 'Social Protection',
-                data: [0.25, 0.28, 0.22, 0.05, 0.28, 0.35, 0.30, 0.22, 0.18],
+                data: [0.3736, 0.2655, 0.0000, 0.4092, 0.5424, 0.4651, 0.0009, 0.8550, 0.4097],
                 borderColor: '#10b981',
                 backgroundColor: '#10b981',
                 tension: 0.35,
@@ -388,7 +425,7 @@ export function KeyIndicatorsTrendChart() {
             },
             {
                 label: 'Peace & Order',
-                data: [0.12, 0.35, 0.55, 0.42, 0.38, 0.42, 0.40, 0.38, 0.35],
+                data: [0.0572, 0.5076, 0.0000, 0.0659, 0.0659, 0.0543, 0.0333, 0.2000, 0.0722],
                 borderColor: '#0ea5e9',
                 backgroundColor: '#0ea5e9',
                 tension: 0.35,
@@ -398,7 +435,7 @@ export function KeyIndicatorsTrendChart() {
             },
             {
                 label: 'LGU Investment',
-                data: [0.08, 0.15, 0.18, 0.12, 0.10, 0.15, 0.18, 0.22, 0.25],
+                data: [0.7483, 0.4761, 0.0000, 0.2341, 0.1384, 0.0157, 0.0008, 0.0058, 0.0043],
                 borderColor: '#8b5cf6',
                 backgroundColor: '#8b5cf6',
                 tension: 0.35,
@@ -434,7 +471,7 @@ export function KeyIndicatorsTrendChart() {
         scales: {
             y: {
                 beginAtZero: true,
-                max: 2.5,
+                max: .9,
                 ticks: {
                     font: { size: 10 },
                     color: '#666',
@@ -465,18 +502,10 @@ export function KeyIndicatorsTrendChart() {
 
 // Barangay Population Horizontal Bar Chart
 export function BarangayPopulationChart() {
-    const barangayData = [
-        { name: 'Roxas', pop: 9088 },
-        { name: 'Quirino', pop: 6572 },
-        { name: 'Osmeña', pop: 6403 },
-        { name: 'Quezon', pop: 5758 },
-        { name: 'Curifang', pop: 4885 },
-        { name: 'Bagahabag', pop: 4731 },
-        { name: 'Uddiawan', pop: 4217 },
-        { name: 'Bascaran', pop: 3845 },
-        { name: 'Aggub', pop: 3101 },
-        { name: 'San Luis', pop: 2668 },
-    ];
+    const barangayData = barangaysPopulation.slice(0, 18).map(b => ({
+        name: b.name,
+        pop: parseInt(b.pop.replace(/,/g, ''))
+    }))
 
     const data = {
         labels: barangayData.map(d => d.name),
@@ -485,7 +514,7 @@ export function BarangayPopulationChart() {
                 label: 'Population',
                 data: barangayData.map(d => d.pop),
                 backgroundColor: barangayData.map((_, i) => {
-                    const opacity = 1 - (i * 0.07);
+                    const opacity = .90 - (i * 0.035);
                     return `rgba(0, 50, 160, ${opacity})`;
                 }),
                 borderRadius: 3,
@@ -547,11 +576,11 @@ export function BarangayPopulationChart() {
 // Economic Sectors Bar Chart
 export function EconomicSectorsChart() {
     const data = {
-        labels: ['Agriculture', 'Trade & Commerce', 'Services', 'Industry'],
+        labels: economicSectors.map(s => s.name),
         datasets: [
             {
                 label: 'Share',
-                data: [45, 30, 20, 5],
+                data: economicSectors.map(s => parseInt(s.pct)),
                 backgroundColor: ['#0032a0', '#0077BE', '#06A77D', '#F77F00'],
                 borderRadius: 4,
             },

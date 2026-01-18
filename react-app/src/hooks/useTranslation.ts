@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Language, TranslationKeys } from '@/types';
 import { translations } from '@/data/translations';
 
-const STORAGE_KEY = 'bettersolano-lang';
+const STORAGE_KEY = 'bettercalauan-lang';
 
 export function useTranslation() {
   const [language, setLanguageState] = useState<Language>('en');

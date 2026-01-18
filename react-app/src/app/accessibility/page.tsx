@@ -47,7 +47,7 @@ export default function AccessibilityPage() {
             {/* Commitment Section */}
             <div className="a11y-section">
               <h2>{t('access-commitment') || 'Our Commitment'}</h2>
-              <p>Better Solano is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.</p>
+              <p>Better Calauan is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.</p>
             </div>
 
             {/* Features Grid */}
@@ -101,9 +101,9 @@ export default function AccessibilityPage() {
               <h2>{t('access-alternative') || 'Alternative Access'}</h2>
               <p>If you encounter difficulty accessing any information, contact us:</p>
               <div className="a11y-contact-grid">
-                <a href="mailto:volunteer@bettersolano.org" className="a11y-contact-item">
+                <a href="mailto:volunteer@bettercalauan.org" className="a11y-contact-item">
                   <i className="bi bi-envelope-fill"></i>
-                  <span>volunteer@bettersolano.org</span>
+                  <span>volunteer@bettercalauan.org</span>
                 </a>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function AccessibilityPage() {
               <i className="bi bi-heart-fill"></i>
               <div>
                 <h3>{t('access-promise') || 'Our Promise'}</h3>
-                <p>Better Solano is committed to ensuring that our digital services are accessible to all citizens, regardless of ability. We view accessibility not as a feature, but as a fundamental right.</p>
+                <p>Better Calauan is committed to ensuring that our digital services are accessible to all citizens, regardless of ability. We view accessibility not as a feature, but as a fundamental right.</p>
               </div>
             </div>
 
