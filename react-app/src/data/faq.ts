@@ -40,7 +40,7 @@ export const faqData: FAQCategory[] = [
     items: [
       {
         question: 'How long does it take to get a birth certificate?',
-        answer: 'For birth certificates registered in Solano, it typically takes 15-30 minutes while you wait, provided record is readily available.'
+        answer: 'For birth certificates registered in Calauan, it typically takes 15-30 minutes while you wait, provided record is readily available.'
       },
       {
         question: 'Can someone else request my certificate for me?',
@@ -63,7 +63,7 @@ export const faqData: FAQCategory[] = [
         answer: 'Business permits must be renewed annually, preferably in January. The deadline for penalty-free renewal is typically January 20th of each year.'
       },
       {
-        question: 'What do I need to start a new business in Solano?',
+        question: 'What do I need to start a new business in Calauan?',
         answer: 'To start a new business, you will need: DTI Registration (for sole proprietorship) or SEC Registration (for corporation), Barangay Clearance, Community Tax Certificate (Cedula), Location Sketch/Map, Contract of Lease (if renting)'
       },
     ],
@@ -108,11 +108,11 @@ export const faqData: FAQCategory[] = [
     items: [
       {
         question: 'I found a broken link or error on this website. How do I report it?',
-        answer: 'Thank you for helping us improve! Please send us message at volunteer@bettersolano.org and write "Website Issue" as subject. Describe problem and include page URL if possible.'
+        answer: 'Thank you for helping us improve! Please send us message at volunteer@bettercalauan.org and write "Website Issue" as subject. Describe problem and include page URL if possible.'
       },
       {
         question: 'Is this website mobile-friendly?',
-        answer: 'Yes! Better Solano is fully responsive and optimized for mobile phones, tablets, and desktop computers.'
+        answer: 'Yes! Better Calauan is fully responsive and optimized for mobile phones, tablets, and desktop computers.'
       },
     ],
   },
@@ -123,8 +123,8 @@ export const faqData: FAQCategory[] = [
     titleKey: 'faq-developer',
     items: [
       {
-        question: 'Who developed Better Solano?',
-        answer: 'Ramon Logan Jr. is the developer behind BetterSolano.org. Based in the United Arab Emirates, he works in IT and practices full-stack development, helping build practical digital solutions in web development, design, cloud services, and cybersecurity. He also started HelloPinas.com, a small cloud-based solutions initiative. Ramon contributes to BetterGov.ph, a volunteer-driven civic-tech effort focused on improving access to local government information and services in the Philippines. He is also an individual participant of OpenJS Foundation, a nonprofit supporting open-source JavaScript communities worldwide. Ramon has made the Solano Project open source under MIT | CC BY 4.0 to empower community-driven development, and contributions are warmly welcomed from everyone; whether you are a developer, data researcher, designer, content writer, translator, or a concerned citizen of Solano, your participation helps shape the project for all.'
+        question: 'Who developed Better Calauan?',
+        answer: 'Ramon Logan Jr. is the developer behind BetterCalauan.org. Based in the United Arab Emirates, he works in IT and practices full-stack development, helping build practical digital solutions in web development, design, cloud services, and cybersecurity. He also started HelloPinas.com, a small cloud-based solutions initiative. Ramon contributes to BetterGov.ph, a volunteer-driven civic-tech effort focused on improving access to local government information and services in the Philippines. He is also an individual participant of OpenJS Foundation, a nonprofit supporting open-source JavaScript communities worldwide. Ramon has made the Calauan Project open source under MIT | CC BY 4.0 to empower community-driven development, and contributions are warmly welcomed from everyone; whether you are a developer, data researcher, designer, content writer, translator, or a concerned citizen of Calauan, your participation helps shape the project for all.'
       },
     ],
   },
