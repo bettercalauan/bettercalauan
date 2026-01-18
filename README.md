@@ -288,8 +288,7 @@ See [LICENSE](LICENSE) for full details.
 | Website | [bettercalauan.org](https://bettercalauan.org) |
 | Email | volunteer@bettercalauan.org |
 | Facebook | [@bettercalauan.org](https://www.facebook.com/bettercalauan.org) |
-| LinkedIn | [BetterCalauan](https://www.linkedin.com/company/bettercalauan/) |
-| Discord | [Join Community](https://discord.com/invite/qeSu7RJkjQ) |
+| Discord | [Join Community](https://discord.bettercalauan.org) |
 | GitHub | [BetterCalauan/bettercalauan](https://github.com/BetterCalauan/bettercalauan) |
 
 ## Acknowledgments
@@ -303,6 +302,10 @@ See [LICENSE](LICENSE) for full details.
 ---
 
 Made for the people of Calauan, Laguna
+
+## Local Developer
+
+**xpall** is a self-taught developer from Calauan who forked and adapted this project for the local government unit.
 
 ## Upstream Developer
 
