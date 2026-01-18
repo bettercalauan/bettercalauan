@@ -427,6 +427,8 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 .barangay-row {
@@ -439,6 +441,8 @@
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     transition: all 0.2s ease;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .barangay-row:hover {
@@ -472,6 +476,10 @@
     font-size: 0.8125rem;
     font-weight: 500;
     color: var(--color-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
 }
 
 .bar-wrap {
@@ -494,10 +502,14 @@
     font-weight: 600;
     color: var(--color-primary);
     text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .more-barangays {
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .more-barangays summary {
@@ -513,6 +525,11 @@
 
 .more-barangays summary:hover {
     background: rgba(0, 50, 160, 0.04);
+}
+
+.more-barangays[open] {
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 .distribution-list-full {
