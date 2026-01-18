@@ -1,4 +1,4 @@
-/* Better Solano - Complete Main Stylesheet */
+/* Better Calauan - Complete Main Stylesheet */
 :root {
     --color-primary: #0032a0;
     --color-primary-dark: #002170;
@@ -2218,7 +2218,7 @@ h6 {
 }
 
 .cost-badge::before {
-    content: "Cost to the People of Solano";
+    content: "Cost to the People of Calauan";
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
