@@ -384,7 +384,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         quickStats: [
             { icon: 'bi-clock', label: 'Processing', value: 'Varies' },
             { icon: 'bi-cash', label: 'Fee', value: 'Free' },
-            { icon: 'bi-telephone', label: 'Hotline', value: '0916 284 0885' },
+            { icon: 'bi-telephone', label: 'Hotline', value: 'TBD' },
             { icon: 'bi-calendar-check', label: 'Appointment', value: 'Walk-in' },
         ],
         processSteps: [
@@ -403,7 +403,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
             { question: 'What assistance programs are available?', answer: 'Senior Citizen ID, PWD ID, Solo Parent ID, financial assistance, burial assistance, medical assistance, educational assistance, and various social welfare programs.' },
             { question: 'Who can apply for financial assistance?', answer: 'Indigent families and individuals in crisis situations.' },
         ],
-        office: { name: 'MSWDO', location: 'Municipal Hall, Ground Floor', phone: '0916 284 0885', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'MSWDO', location: 'Municipal Hall, Ground Floor', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'Senior Citizen Services', link: '/services/social-services' },
             { title: 'PWD Services', link: '/services/social-services' },
@@ -420,7 +420,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         description: 'Social welfare programs and community development',
         quickStats: [
             { icon: 'bi-clock', label: 'Office Hours', value: 'Mon-Fri 8AM-5PM' },
-            { icon: 'bi-telephone', label: 'Hotline', value: '0916 284 0885' },
+            { icon: 'bi-telephone', label: 'Hotline', value: 'TBD' },
             { icon: 'bi-geo-alt', label: 'Location', value: 'Ground Floor' },
             { icon: 'bi-cash', label: 'Services', value: 'Free' },
         ],
@@ -436,7 +436,7 @@ export const serviceDetailsContent: ServiceDetail[] = [
         faqs: [
             { question: 'What are the office hours?', answer: 'Monday to Friday, 8:00 AM to 5:00 PM.' },
         ],
-        office: { name: 'MSWDO', location: 'Municipal Hall, Ground Floor', phone: '0916 284 0885', hours: 'Mon-Fri: 8AM - 5PM' },
+        office: { name: 'MSWDO', location: 'Municipal Hall, Ground Floor', phone: 'TBD', hours: 'Mon-Fri: 8AM - 5PM' },
         relatedServices: [
             { title: 'MSWDO Services', link: '/service-details/mswdo-services' },
         ],
