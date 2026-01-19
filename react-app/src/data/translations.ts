@@ -215,6 +215,25 @@ export const translations: Record<Language, TranslationKeys> = {
     'footer-privacy': 'Privacy Policy',
     'footer-terms': 'Terms of Use',
     'accessibility-statement': 'Accessibility Statement',
+
+    // Home Page
+    'home-calauan-glance': 'Calauan at a Glance',
+    'home-weather-map': 'Weather and Map of Calauan',
+    'home-brief-history': 'Brief History of Calauan',
+
+    // Budget / Transparency Page
+    'budget-financial-transparency': 'Financial Transparency',
+    'budget-title': 'Budget & Financial Transparency',
+    'budget-description': 'Tracking municipal finances and projects for accountability',
+    'budget-financial-report': 'Financial Report',
+    'budget-statement-receipts': 'Statement of Receipts & Expenditures',
+    'budget-fy2025-quarterly': 'FY 2025 quarterly financial performance',
+    'budget-public-works': 'Public Works',
+    'budget-infrastructure-investments': 'Infrastructure Investments',
+    'budget-infrastructure-desc': 'Major development projects serving community',
+    'budget-national-projects': 'National Government Projects',
+    'budget-dpwh-projects': 'DPWH Infrastructure Projects in Calauan',
+    'budget-implementing-agency': 'Implementing Agency',
   },
 
   fil: {
@@ -431,6 +450,24 @@ export const translations: Record<Language, TranslationKeys> = {
     'footer-privacy': 'Patakaran sa Privacy',
     'footer-terms': 'Mga Tuntunin ng Paggamit',
     'accessibility-statement': 'Pahayag ng Aksesibilidad',
+    // Home Page
+    'home-calauan-glance': 'Isang Sulyap sa Calauan',
+    'home-weather-map': 'Panahon at Mapa ng Calauan',
+    'home-brief-history': 'Maikling Kasaysayan ng Calauan',
+
+    // Budget / Transparency Page
+    'budget-financial-transparency': 'Transparency sa Pananalapi',
+    'budget-title': 'Badyet at Transparency sa Pananalapi',
+    'budget-description': 'Pagsubaybay sa pananalapi at mga proyekto ng munisipyo para sa pananagutan',
+    'budget-financial-report': 'Ulat Pinansyal',
+    'budget-statement-receipts': 'Ulat ng mga Kita at Gastusin',
+    'budget-fy2025-quarterly': 'Quarterly na ulat pinansyal para sa FY 2025',
+    'budget-public-works': 'Pampublikong Gawain',
+    'budget-infrastructure-investments': 'Pamumuhunan sa Imprastraktura',
+    'budget-infrastructure-desc': 'Mga pangunahing proyekto sa pagpapaunlad para sa komunidad',
+    'budget-national-projects': 'Mga Proyekto ng Pambansang Pamahalaan',
+    'budget-dpwh-projects': 'Mga Proyekto ng DPWH sa Imprastraktura sa Calauan',
+    'budget-implementing-agency': 'Ahensyang Tagapagpatupad',
   },
 
   ilo: {
@@ -647,5 +684,23 @@ export const translations: Record<Language, TranslationKeys> = {
     'footer-privacy': 'Patakaran ti Privacy',
     'footer-terms': 'Dagiti Kondision ti Panagusar',
     'accessibility-statement': 'Pahayag ti Aksesibilidad',
+    // Home Page
+    'home-calauan-glance': 'Maysa a Sirmata iti Calauan',
+    'home-weather-map': 'Tiempo ken Mapa ti Calauan',
+    'home-brief-history': 'Ababa a Pakasaritaan ti Calauan',
+
+    // Budget / Transparency Page
+    'budget-financial-transparency': 'Transparency iti Pinansya',
+    'budget-title': 'Badyet ken Transparency iti Pinansya',
+    'budget-description': 'Panagsukimat iti pinansya ken dagiti proyekto ti munisipalidad para iti panagrebbengan',
+    'budget-financial-report': 'Report ti Pinansya',
+    'budget-statement-receipts': 'Ulat dagiti Umawat ken Gastos',
+    'budget-fy2025-quarterly': 'Quarterly a report ti pinansya para iti FY 2025',
+    'budget-public-works': 'Trabaho Publiko',
+    'budget-infrastructure-investments': 'Panagimbuag iti Imprastraktura',
+    'budget-infrastructure-desc': 'Dagiti kangrunaan a proyekto ti panagdur-as para iti komunidad',
+    'budget-national-projects': 'Dagiti Proyekto ti Gobierno Nacional',
+    'budget-dpwh-projects': 'Dagiti Proyekto ti DPWH iti Imprastraktura idiay Calauan',
+    'budget-implementing-agency': 'Ahensya a Mangitungpal',
   },
 }

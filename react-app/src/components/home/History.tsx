@@ -1,5 +1,7 @@
 'use client';
 
+import { useLanguage } from '@/contexts/LanguageContext';
+
 interface TimelineItem {
   year: string;
   content: React.ReactNode;
@@ -18,27 +20,27 @@ const timeline: TimelineItem[] = [
   },
   { 
     year: '1582', 
-    content: <>Spanish authorities established a town government two kilometers from the present Poblacion, in what is now <strong>Barrio Mabacan</strong>. The town was named <em>Calauan</em> from the Tagalog word <em>kalawang</em> (rust).</> 
+    content: <>Spanish authorities established a town government two kilometers from present Poblacion, in what is now <strong>Barrio Mabacan</strong>. The town was named <em>Calauan</em> from Tagalog word <em>kalawang</em> (rust).</> 
   },
   { 
     year: '1703', 
-    content: <>Following an <strong>epidemic in 1694</strong>, the town was relocated from its original site in <strong>Barrio Mabacan</strong> to its present location at the fork of three roads leading to San Pablo, Santa Cruz, and Manila.</> 
+    content: <>Following an <strong>epidemic in 1694</strong>, town was relocated from its original site in <strong>Barrio Mabacan</strong> to its present location at fork of three roads leading to San Pablo, Santa Cruz, and Manila.</> 
   },
   { 
     year: '1800s', 
-    content: <>When <strong>Bay</strong> was designated as the provincial capital of Laguna, Calauan became a sitio of Bay and served as a passage for merchants traveling to Southern Luzon.</> 
+    content: <>When <strong>Bay</strong> was designated as provincial capital of Laguna, Calauan became a sitio of Bay and served as a passage for merchants traveling to Southern Luzon.</> 
   },
   { 
     year: '1812', 
-    content: <>A wealthy Spaniard named <strong>Iñigo</strong> bought large tracts of land in Calauan, which became known as <strong>Hacienda Calauan</strong>. The estate would later be inherited by his descendants, the Roxas family.</> 
+    content: <>A wealthy Spaniard named <strong>Iñigo</strong> bought large tracts of land in Calauan, which became known as <strong>Hacienda Calauan</strong>. The estate would later be inherited by his descendants, Roxas family.</> 
   },
   { 
     year: '1897', 
-    content: <><strong>Basilio Geiroza</strong> (Cabesang Basilio) and his men routed a battalion of <em>guardia civiles</em> in a five-hour battle in Barrio Cupangan (now Lamot I) during the Philippine Revolution.</> 
+    content: <><strong>Basilio Geiroza</strong> (Cabesang Basilio) and his men routed a battalion of <em>guardia civiles</em> in a five-hour battle in Barrio Cupangan (now Lamot I) during Philippine Revolution.</> 
   },
   { 
     year: '1902', 
-    content: <>With the establishment of civilian authority, the Americans assigned <strong>Mariano Marfori</strong> as the first <em>presidente</em> of Calauan.</> 
+    content: <>With establishment of civilian authority, Americans assigned <strong>Mariano Marfori</strong> as first <em>presidente</em> of Calauan.</> 
   },
   { 
     year: '1926', 
@@ -49,15 +51,15 @@ const timeline: TimelineItem[] = [
     content: <>By request of President <strong>Manuel L. Quezon</strong>, Doña Margarita Roxas vda. de Soriano subdivided Hacienda Calauan and sold it to the tenants.</> 
   },
   { 
-  year: '1945', 
-  content: <>Filipino guerrillas, including the <strong>HUKBALAHAP</strong>, <strong>Hunters ROTC</strong>, and <strong>Marking Guerrillas</strong>, liberated Calauan from Japanese occupation as part of the Laguna liberation campaigns during World War II.</> 
+    year: '1945', 
+    content: <>Filipino guerrillas, including the <strong>HUKBALAHAP</strong>, <strong>Hunters ROTC</strong>, and <strong>Marking Guerrillas</strong>, liberated Calauan from Japanese occupation as part of the Laguna liberation campaigns during World War II.</> 
   },
 ];
 
 const historyCards: HistoryCard[] = [
   {
     icon: 'bi-droplet-fill',
-    title: 'Origin of the Name',
+    title: 'Origin of Name',
     description: 'Calauan derives from "kalawang" (rust). Legend says rusty-colored water seeped from holes dug for the church foundation, or from Macalawang Spring where rust-colored lumps surfaced.',
   },
   {
@@ -88,11 +90,13 @@ const historyCards: HistoryCard[] = [
 ];
 
 export default function History() {
+  const { t } = useLanguage();
+
   return (
     <section className="section history-section">
       <div className="container">
         <div className="home-stats-v2-header">
-          <h2><i className="bi bi-book" aria-hidden="true" /> Brief History of Calauan</h2>
+          <h2><i className="bi bi-book" aria-hidden="true" /> {t('home-brief-history')}</h2>
         </div>
         <div className="history-content">
           <div className="history-timeline">
