@@ -202,6 +202,32 @@ export const translations: Record<Language, TranslationKeys> = {
     'transparency-info': 'Transparency',
     'transparency-info-desc': 'All enacted ordinances and resolutions are made available to the public as part of our commitment to open governance.',
 
+    // Ordinance Framework
+    'ordinance-info-title': 'What is an Ordinance?',
+    'ordinance-info-desc': 'A municipal ordinance is a local law enacted by Sangguniang Bayan (Municipal Council) that governs municipality and its residents. Ordinances have force and effect of law within territorial jurisdiction of municipality.',
+    'ordinance-info-subjects': 'Ordinances may cover various subjects including but not limited to: taxation, business regulations, public safety, environmental protection, traffic management, and zoning.',
+    'ordinance-categories': 'Ordinance Categories',
+    'ordinance-2025': '2025 Ordinances',
+    'ordinance-2025-desc': 'Official ordinances enacted by Sangguniang Bayan ng Calauan in 2025',
+    'ordinance-2025-caption': 'List of 2025 Ordinances from Sangguniang Bayan ng Calauan',
+    'ordinance-no': 'Ordinance No.',
+    'ordinance-title': 'Title',
+    'ordinance-session-date': 'Session Date',
+    'ordinance-view-all': 'View All Ordinances on SB Website',
+
+    // Resolution Framework
+    'resolution-info-title': 'What is a Resolution?',
+    'resolution-info-desc': 'A resolution is a formal expression of opinion or will of Sangguniang Bayan. Unlike ordinances, resolutions do not have the force and effect of law but serve as official statements of the legislative body.',
+    'resolution-info-uses': 'Resolutions are commonly used for: commendations, requests to higher government agencies, expressions of support or opposition, and administrative matters of Sangguniang Bayan.',
+    'resolution-types': 'Types of Resolutions',
+    'resolution-2025': '2025 Resolutions',
+    'resolution-2025-desc': 'Official resolutions passed by Sangguniang Bayan ng Calauan in 2025',
+    'resolution-2025-caption': 'List of 2025 Resolutions from Sangguniang Bayan ng Calauan',
+    'resolution-no': 'Resolution No.',
+    'resolution-title': 'Title',
+    'resolution-session-date': 'Session Date',
+    'resolution-view-all': 'View All Resolutions on SB Website',
+
     // Footer
     'footer-title': 'Better Calauan',
     'footer-desc': 'A service-first information portal for the Municipality of Calauan, Laguna.',
@@ -437,6 +463,32 @@ export const translations: Record<Language, TranslationKeys> = {
     'transparency-info': 'Transparensiya',
     'transparency-info-desc': 'Lahat ng naitalagang mga ordinansa at resolusyon ay ginagawang available sa publiko bilang bahagi ng ating pangako sa bukas na pamumuno.',
 
+    // Ordinance Framework
+    'ordinance-info-title': 'Ano ang Ordinansa?',
+    'ordinance-info-desc': 'Ang ordinansa ng munisipalidad ay isang lokal na batas na ipinatutupad ng Sangguniang Bayan (Konseho ng Munisipalidad) na namamahala sa munisipalidad at mga residente nito. Ang mga ordinansa ay may bisa at epekto ng batas sa loob ng teritoryal na hurisdiksyon ng munisipalidad.',
+    'ordinance-info-subjects': 'Ang mga ordinansa ay maaaring sumasaklaw sa iba\'t ibang paksa kabilang ngunit hindi limitado sa: pagbubuwis, regulasyon sa negosyo, kaligtasan ng publiko, proteksyon sa kapaligiran, pamamahala ng trapiko, at zoning.',
+    'ordinance-categories': 'Mga Kategorya ng Ordinansa',
+    'ordinance-2025': 'Mga Ordinansa ng 2025',
+    'ordinance-2025-desc': 'Mga opisyal na ordinansa na ipinatupad ng Sangguniang Bayan ng Calauan noong 2025',
+    'ordinance-2025-caption': 'Listahan ng mga Ordinansa ng 2025 mula sa Sangguniang Bayan ng Calauan',
+    'ordinance-no': 'Ordinansa Blg.',
+    'ordinance-title': 'Pamagat',
+    'ordinance-session-date': 'Petsa ng Sesyon',
+    'ordinance-view-all': 'Tingnan ang Lahat ng Ordinansa sa Website ng SB',
+
+    // Resolution Framework
+    'resolution-info-title': 'Ano ang Resolusyon?',
+    'resolution-info-desc': 'Ang resolusyon ay isang pormal na pagpapahayag ng opinyon o kalooban ng Sangguniang Bayan. Hindi tulad ng mga ordinansa, ang mga resolusyon ay walang bisa at epekto ng batas ngunit nagsisilbing opisyal na pahayag ng lehislaturang sangay.',
+    'resolution-info-uses': 'Ang mga resolusyon ay karaniwang ginagamit para sa: mga pagkilala, mga kahilingan sa mas mataas na ahensya ng pamahalaan, mga pagpapahayag ng suporta o pagtutol, at mga administratibong usapin ng Sangguniang Bayan.',
+    'resolution-types': 'Mga Uri ng Resolusyon',
+    'resolution-2025': 'Mga Resolusyon ng 2025',
+    'resolution-2025-desc': 'Mga opisyal na resolusyon na ipinasa ng Sangguniang Bayan ng Calauan noong 2025',
+    'resolution-2025-caption': 'Listahan ng mga Resolusyon ng 2025 mula sa Sangguniang Bayan ng Calauan',
+    'resolution-no': 'Resolusyon Blg.',
+    'resolution-title': 'Pamagat',
+    'resolution-session-date': 'Petsa ng Sesyon',
+    'resolution-view-all': 'Tingnan ang Lahat ng Resolusyon sa Website ng SB',
+
     // Footer
     'footer-title': 'Better Calauan',
     'footer-desc': 'Isang portal ng impormasyon na inuuna ang serbisyo para sa Munisipalidad ng Calauan, Laguna.',
@@ -670,6 +722,32 @@ export const translations: Record<Language, TranslationKeys> = {
     'public-participation-desc': 'Mabalin a dumalo dagiti umili kadagiti sesion ti Sangguniang Bayan ken aglaok kadagiti pampubliko a panangdinig para kadagiti panukalang ordinansa.',
     'transparency-info': 'Transparensiya',
     'transparency-info-desc': 'Amin dagiti naenact a ordinansa ken resolusyon ket maibaga kadagiti publiko a kas paset ti pangakotayo iti nalukneng a panangulo.',
+
+    // Ordinance Framework
+    'ordinance-info-title': 'Ania ti Ordinansa?',
+    'ordinance-info-desc': 'Ti ordinansa ti munisipalidad ket maysa a lokal a linteg nga ipatpatungpal ti Sangguniang Bayan (Konseho ti Munisipalidad) a mangituray iti munisipalidad ken dagiti residente na. Dagiti ordinansa ket addaan iti bileg ken epekto ti linteg iti uneg ti teritoryal a hurisdiksyon ti munisipalidad.',
+    'ordinance-info-subjects': 'Dagiti ordinansa ket mabalin a mangsakup kadagiti nadumaduma a topiko a mairaman ngem saan a limitado iti: panagbuwis, regulasyon ti negosyo, kinatalged ti publiko, proteksyon ti aglawlaw, panagtaripato ti trapiko, ken zoning.',
+    'ordinance-categories': 'Dagiti Kategorya ti Ordinansa',
+    'ordinance-2025': 'Dagiti Ordinansa ti 2025',
+    'ordinance-2025-desc': 'Dagiti opisyal nga ordinansa nga ipatpatungpal ti Sangguniang Bayan ng Calauan idi 2025',
+    'ordinance-2025-caption': 'Listaan dagiti Ordinansa ti 2025 manipud iti Sangguniang Bayan ng Calauan',
+    'ordinance-no': 'Ordinansa Bil.',
+    'ordinance-title': 'Titulo',
+    'ordinance-session-date': 'Petsa ti Sesyon',
+    'ordinance-view-all': 'Kitaen Amin nga Ordinansa iti Website ti SB',
+
+    // Resolution Framework
+    'resolution-info-title': 'Ania ti Resolusyon?',
+    'resolution-info-desc': 'Ti resolusyon ket maysa a pormal a panangipakita ti opinyon wenno pagayatan ti Sangguniang Bayan. Saan a kas kadagiti ordinansa, dagiti resolusyon ket awan ti bileg ken epekto ti linteg ngem agserbi a kas opisyal a pahayag ti lehislatibo a bagi.',
+    'resolution-info-uses': 'Dagiti resolusyon ket gagangay nga us-usaren para kadagiti: pammadayaw, dagiti kiddaw kadagiti nangatngato nga ahensya ti gobierno, panangipakita ti suporta wenno pangsupiat, ken dagiti administratibo a banag ti Sangguniang Bayan.',
+    'resolution-types': 'Dagiti Kita ti Resolusyon',
+    'resolution-2025': 'Dagiti Resolusyon ti 2025',
+    'resolution-2025-desc': 'Dagiti opisyal a resolusyon a naipasa ti Sangguniang Bayan ng Calauan idi 2025',
+    'resolution-2025-caption': 'Listaan dagiti Resolusyon ti 2025 manipud iti Sangguniang Bayan ng Calauan',
+    'resolution-no': 'Resolusyon Bil.',
+    'resolution-title': 'Titulo',
+    'resolution-session-date': 'Petsa ti Sesyon',
+    'resolution-view-all': 'Kitaen Amin a Resolusyon iti Website ti SB',
 
     // Footer
     'footer-title': 'Better Calauan',

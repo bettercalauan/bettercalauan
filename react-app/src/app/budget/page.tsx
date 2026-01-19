@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Script from 'next/script'
 import { useEffect, useState } from 'react'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { IncomeSourcesChart, ExpenditureChart } from '@/components/charts/Charts'
 import { budgetData } from '@/data/budget'
 import SREMetricCard from '@/components/budget/SREMetricCard'
@@ -10,6 +11,7 @@ import QuarterToggle from '@/components/budget/QuarterToggle'
 import InfrastructureProjectList from '@/components/budget/InfrastructureProjectList'
 
 export default function BudgetPage() {
+  const { t } = useLanguage()
   const [activeQuarter, setActiveQuarter] = useState<'q1' | 'q2' | 'q3' | 'q4'>('q1')
   const currentData = budgetData[activeQuarter]
 
@@ -44,9 +46,9 @@ export default function BudgetPage() {
       <section className="trans-hero-v2">
         <div className="container">
           <div className="trans-hero-content-v2">
-            <span className="trans-hero-badge-v2"><i className="bi bi-shield-check"></i> Financial Transparency</span>
-            <h1>Budget &amp; Financial Transparency</h1>
-            <p>Tracking municipal finances and projects for accountability</p>
+            <span className="trans-hero-badge-v2"><i className="bi bi-shield-check"></i> {t('budget-financial-transparency')}</span>
+            <h1>{t('budget-title')}</h1>
+            <p>{t('budget-description')}</p>
           </div>
         </div>
       </section>
@@ -55,9 +57,9 @@ export default function BudgetPage() {
         <div className="container">
           <div className="sre-header-v2">
             <div className="sre-title-group">
-              <span className="sre-label"><i className="bi bi-graph-up-arrow"></i> Financial Report</span>
-              <h2>Statement of Receipts &amp; Expenditures</h2>
-              <p>FY 2025 quarterly financial performance</p>
+              <span className="sre-label"><i className="bi bi-graph-up-arrow"></i> {t('budget-financial-report')}</span>
+              <h2>{t('budget-statement-receipts')}</h2>
+              <p>{t('budget-fy2025-quarterly')}</p>
             </div>
             <QuarterToggle
               activeQuarter={activeQuarter}
@@ -182,9 +184,9 @@ export default function BudgetPage() {
       <section className="infra-section-v5 animate-on-scroll">
         <div className="container">
           <div className="infra-header-v5">
-            <span className="infra-label-v5"><i className="bi bi-building-gear"></i> Public Works</span>
-            <h2>Infrastructure Investments</h2>
-            <p>Major development projects serving the community</p>
+            <span className="infra-label-v5"><i className="bi bi-building-gear"></i> {t('budget-public-works')}</span>
+            <h2>{t('budget-infrastructure-investments')}</h2>
+            <p>{t('budget-infrastructure-desc')}</p>
           </div>
 
           <InfrastructureProjectList />
@@ -194,9 +196,9 @@ export default function BudgetPage() {
       <section className="infra-section-v5 infra-section-alt animate-on-scroll">
         <div className="container">
           <div className="infra-header-v5">
-            <span className="infra-label-v5"><i className="bi bi-building"></i> National Government Projects</span>
-            <h2>DPWH Infrastructure Projects in Calauan</h2>
-            <p>Implementing Agency: <a href="https://www.dpwh.gov.ph/dpwh/node/1559" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Laguna 3rd District Engineering Office - San Pablo City</a></p>
+            <span className="infra-label-v5"><i className="bi bi-building"></i> {t('budget-national-projects')}</span>
+            <h2>{t('budget-dpwh-projects')}</h2>
+            <p>{t('budget-implementing-agency')}: <a href="https://www.dpwh.gov.ph/dpwh/node/1559" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Laguna 3rd District Engineering Office - San Pablo City</a></p>
           </div>
           <div id="dpwh-projects-container">
             <p className="loading-text">Loading DPWH projects...</p>
