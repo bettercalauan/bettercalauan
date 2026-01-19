@@ -1,9 +1,15 @@
+'use client';
+
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export default function WeatherMap() {
+  const { t } = useLanguage();
+
   return (
     <section className="section weather-map-section">
       <div className="container">
         <div className="home-stats-v2-header">
-          <h2>Weather and Map of Calauan</h2>
+          <h2>{t('home-weather-map')}</h2>
         </div>
         <div className="weather-map-grid">
           <div className="weather-column">

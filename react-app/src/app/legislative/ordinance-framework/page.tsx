@@ -1,9 +1,7 @@
-import Link from 'next/link';
+'use client';
 
-export const metadata = {
-  title: 'Ordinance Framework | BetterCalauan.org',
-  description: 'Browse municipal ordinances enacted by the Sangguniang Bayan of Calauan, Laguna.',
-};
+import Link from 'next/link';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const ordinanceCategories = [
   { icon: 'bi-cash-coin', label: 'Revenue & Taxation' },
@@ -16,36 +14,38 @@ const ordinanceCategories = [
 
 const ordinances2025 = [
   { no: 'MO-10-12-2025', title: 'An Ordinance Reclassifying Parcels of Land Applied by Borland Development Corporation with a Total Land Area of Two Hundred Forty-Eight Thousand Four Hundred Eleven (248,411) Square Meters Located at Barangay Limao, Calauan, Laguna from Agricultural to Residential.', date: 'December 09, 2025' },
-  { no: 'MO-09-12-2025', title: 'An Ordinance Institutionalizing Environmental, Social, and Governance Management System (ESGMS) of the Municipality of Calauan, Laguna, with Focus on Hydrological, Geological, Biodiversity and Social Frameworks for Comprehensive Environmental and Spatial Capacity Planning and Creating the Municipal Technical Working Group for Its Formulation, Implementation, Monitoring and for Other Purposes.', date: 'December 09, 2025' },
-  { no: 'MO-08-12-2025', title: 'An Ordinance Approving the Issuance of Development Permit for the Residential Subdivision Project (Phirst Sights Calauan West) of Phirst Park Homes Inc. Located at Barangay Masiit, Calauan, Laguna.', date: 'December 09, 2025' },
+  { no: 'MO-09-12-2025', title: 'An Ordinance Institutionalizing Environmental, Social, and Governance Management System (ESGMS) of the Municipality of Calauan, Laguna, with Focus on Hydrological, Geological, Biodiversity and Social Frameworks for Comprehensive Environmental and Spatial Capacity Planning and Creating a Municipal Technical Working Group for Its Formulation, Implementation, Monitoring and for Other Purposes.', date: 'December 09, 2025' },
+  { no: 'MO-08-12-2025', title: 'An Ordinance Approving Issuance of Development Permit for a Residential Subdivision Project (Phirst Sights Calauan West) of Phirst Park Homes Inc. Located at Barangay Masiit, Calauan, Laguna.', date: 'December 09, 2025' },
   { no: 'MO-07-12-2025', title: 'An Ordinance Reclassifying Parcels of Land Applied by Phirst Park Homes Inc. with a Total Land Area of Sixty Thousand Seven Hundred Twenty-Seven (60,727) Square Meters Located at Barangay Masiit, Calauan, Laguna from Agricultural to Residential.', date: 'November 17, 2025' },
-  { no: 'MO-03-12-2025', title: 'An Ordinance Renaming Dayap National Integrated High School to Calauan National High School and Separating It from Its Mother School, the Dayap National High School.', date: 'September 02, 2025' },
+  { no: 'MO-03-12-2025', title: 'An Ordinance Renaming Dayap National Integrated High School to Calauan National High School and Separating It from Its Mother School, Dayap National High School.', date: 'September 02, 2025' },
 ];
 
 export default function OrdinanceFrameworkPage() {
+  const { t } = useLanguage();
+
   return (
     <>
       {/* Breadcrumbs */}
       <div className="container">
         <nav className="breadcrumbs" aria-label="Breadcrumb">
-          <Link href="/">Home</Link>
+          <Link href="/">{t('nav-home')}</Link>
           <span>/</span>
-          <Link href="/legislative">Legislative</Link>
+          <Link href="/legislative">{t('nav-legislative')}</Link>
           <span>/</span>
-          <span aria-current="page">Ordinance Framework</span>
+          <span aria-current="page">{t('ordinance-framework')}</span>
         </nav>
-      </div>
+      </div> 
 
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
           <div className="page-header-content">
-            <span className="page-header-badge"><i className="bi bi-journal-text"></i> Legislative</span>
-            <h1>Ordinance Framework</h1>
-            <p className="page-header-desc">Municipal ordinances enacted by the Sangguniang Bayan ng Calauan</p>
+            <span className="page-header-badge"><i className="bi bi-journal-text"></i> {t('legislative-title')}</span>
+            <h1>{t('ordinance-framework')}</h1>
+            <p className="page-header-desc">{t('ordinance-framework-desc')}</p>
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* About Ordinances */}
       <section className="section">
@@ -53,19 +53,19 @@ export default function OrdinanceFrameworkPage() {
           <div className="info-card">
             <div className="info-card-icon"><i className="bi bi-info-circle"></i></div>
             <div className="info-card-content">
-              <h3>What is an Ordinance?</h3>
-              <p>A municipal ordinance is a local law enacted by the Sangguniang Bayan (Municipal Council) that governs the municipality and its residents. Ordinances have the force and effect of law within the territorial jurisdiction of the municipality.</p>
-              <p>Ordinances may cover various subjects including but not limited to: taxation, business regulations, public safety, environmental protection, traffic management, and zoning.</p>
+              <h3>{t('ordinance-info-title')}</h3>
+              <p>{t('ordinance-info-desc')}</p>
+              <p>{t('ordinance-info-subjects')}</p>
             </div>
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* Ordinance Categories */}
       <section className="section" style={{ background: 'var(--color-bg-alt)' }}>
         <div className="container">
           <div className="text-center" style={{ marginBottom: 'var(--spacing-lg)' }}>
-            <h2 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-xs)' }}>Ordinance Categories</h2>
+            <h2 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-xs)' }}>{t('ordinance-categories')}</h2>
           </div>
           <div className="grid grid-3" style={{ gap: 'var(--spacing-sm)' }}>
             {ordinanceCategories.map((cat) => (
@@ -75,23 +75,23 @@ export default function OrdinanceFrameworkPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* 2025 Ordinances Table */}
       <section className="section">
         <div className="container">
           <div className="text-center" style={{ marginBottom: 'var(--spacing-lg)' }}>
-            <h2 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-xs)' }}>2025 Ordinances</h2>
-            <p style={{ color: 'var(--color-text-light)' }}>Official ordinances enacted by the Sangguniang Bayan ng Calauan in 2025</p>
+            <h2 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-xs)' }}>{t('ordinance-2025')}</h2>
+            <p style={{ color: 'var(--color-text-light)' }}>{t('ordinance-2025-desc')}</p>
           </div>
           <div className="table-responsive">
             <table className="data-table ordinance-table">
-              <caption className="sr-only">List of 2025 Ordinances from Sangguniang Bayan ng Calauan</caption>
+              <caption className="sr-only">{t('ordinance-2025-caption')}</caption>
               <thead>
                 <tr>
-                  <th scope="col" style={{ width: '120px' }}>Ordinance No.</th>
-                  <th scope="col">Title</th>
-                  <th scope="col" style={{ width: '120px' }}>Session Date</th>
+                  <th scope="col" style={{ width: '120px' }}>{t('ordinance-no')}</th>
+                  <th scope="col">{t('ordinance-title')}</th>
+                  <th scope="col" style={{ width: '120px' }}>{t('ordinance-session-date')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -112,7 +112,7 @@ export default function OrdinanceFrameworkPage() {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              <i className="bi bi-box-arrow-up-right"></i> View All Ordinances on SB Website
+              <i className="bi bi-box-arrow-up-right"></i> {t('ordinance-view-all')}
             </a>
           </div>
         </div>

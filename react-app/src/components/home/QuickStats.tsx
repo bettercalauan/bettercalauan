@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface StatCard {
   href: string;
@@ -18,13 +19,15 @@ const stats: StatCard[] = [
 ];
 
 export default function QuickStats() {
+  const { t } = useLanguage();
+
   return (
     <section className="home-stats-v2">
       <div className="container">
         <div className="home-stats-v2-header">
-          <h2>Calauan at a Glance</h2>
+          <h2>{t('home-calauan-glance')}</h2>
           <Link href="/statistics" className="home-section-link">
-            View Statistics <i className="bi bi-arrow-right" />
+            {t('btn-view-all')} <i className="bi bi-arrow-right" />
           </Link>
         </div>
         <div className="home-stats-v2-grid">
